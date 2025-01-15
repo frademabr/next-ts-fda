@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   corePlugins: {
     // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
-    preflight: false,
+    preflight: true,
   },
   plugins: [require("tailwindcss-animate")],
 };

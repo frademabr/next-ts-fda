@@ -1,4 +1,5 @@
 import globals from "globals";
+import js from "@eslint/js";
 import eslintJs from "@eslint/js";
 import eslintTs from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
@@ -24,7 +25,7 @@ const compat = new FlatCompat({
 
 export const eslintConfig = [
   ...compat.config({
-    extends: ["next", "eslint:recommended", "next/core-web-vitals", "next/typescript"],
+    extends: ["next/core-web-vitals", "next/typescript"],
     rules: {
       "perfectionist/sort-imports": "off",
       "@typescript-eslint/no-unused-vars": "off",
