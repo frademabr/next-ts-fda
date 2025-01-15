@@ -75,13 +75,13 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
     <>
       <m.div variants={variants}>
         <Typography variant="overline" sx={{ color: "text.disabled" }}>
-          Interface Starter Kit
+          As melhores estratégias
         </Typography>
       </m.div>
 
       <m.div variants={variants}>
         <Typography variant="h2" sx={{ my: 3 }}>
-          Flexible components
+          Serviços Prestados
         </Typography>
       </m.div>
 
