@@ -4,8 +4,23 @@ import eslintTs from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import importPlugin from "eslint-plugin-import";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
-import perfectionistPlugin from "eslint-plugin-perfectionist";
-import unusedImportsPlugin from "eslint-plugin-unused-imports";
+// import perfectionistPlugin from "eslint-plugin-perfectionist";
+// import unusedImportsPlugin from "eslint-plugin-unused-imports";
+import { FlatCompat } from "@eslint/eslintrc";
+const compat = new FlatCompat({
+  // import.meta.dirname is available after Node.js v20.11.0
+  baseDirectory: import.meta.dirname,
+});
+const eslintConfig = [
+  ...compat.config({
+    extends: ["next"],
+    settings: {
+      next: {
+        rootDir: "packages/my-app/",
+      },
+    },
+  }),
+];
 
 // ----------------------------------------------------------------------
 
@@ -90,7 +105,7 @@ const importRules = () => ({
 //     sections: ["custom-sections"],
 //     components: ["custom-components"],
 //   };
-
+return {};
 // return {
 //     "perfectionist/sort-named-imports": [1, { type: "line-length", order: "asc" }],
 //     "perfectionist/sort-named-exports": [1, { type: "line-length", order: "asc" }],
