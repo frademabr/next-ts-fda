@@ -21,6 +21,7 @@ import { HomeForDesigner } from "../home-for-designer";
 import { HomeAdvertisement } from "../home-advertisement";
 import { HomeFeatureHighlights } from "../home-feature-highlights";
 import { HomeFlexibleComponents } from "../home-flexible-components";
+import { MarketingServicesHowItWork } from "src/sections/_marketing/services/marketing-services-how-it-work";
 
 // ----------------------------------------------------------------------
 
@@ -39,7 +40,9 @@ export function HomeView() {
 
       <BackToTopButton isVisible={isVisible} onClick={onBackToTop} />
 
-      <HomeHero />
+      <MarketingServicesHowItWork />
+
+      {/* <HomeHero /> */}
 
       <HomeNewStart />
 
