@@ -59,7 +59,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
                 component="span"
                 sx={(theme) => ({
                   ...theme.mixins.textGradient(
-                    `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 50%`
+                    `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
                   ),
                 })}
               >

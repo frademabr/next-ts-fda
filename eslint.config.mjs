@@ -4,23 +4,8 @@ import eslintTs from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
 import importPlugin from "eslint-plugin-import";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
-// import perfectionistPlugin from "eslint-plugin-perfectionist";
-// import unusedImportsPlugin from "eslint-plugin-unused-imports";
-import { FlatCompat } from "@eslint/eslintrc";
-const compat = new FlatCompat({
-  // import.meta.dirname is available after Node.js v20.11.0
-  baseDirectory: import.meta.dirname,
-});
-const eslintConfig = [
-  ...compat.config({
-    extends: ["next"],
-    settings: {
-      next: {
-        rootDir: "packages/my-app/",
-      },
-    },
-  }),
-];
+import perfectionistPlugin from "eslint-plugin-perfectionist";
+import unusedImportsPlugin from "eslint-plugin-unused-imports";
 
 // ----------------------------------------------------------------------
 
@@ -78,6 +63,31 @@ const importRules = () => ({
   ],
 });
 
+export const customConfig = {
+  plugins: {
+    "react-hooks": reactHooksPlugin,
+    "unused-imports": unusedImportsPlugin,
+    perfectionist: perfectionistPlugin,
+    import: importPlugin,
+  },
+  settings: {
+    // https://www.npmjs.com/package/eslint-import-resolver-typescript
+    ...importPlugin.configs.typescript.settings,
+    "import/resolver": {
+      ...importPlugin.configs.typescript.settings["import/resolver"],
+      typescript: {
+        project: "./tsconfig.json",
+      },
+    },
+  },
+  rules: {
+    ...commonRules(),
+    ...importRules(),
+    ...unusedImportsRules(),
+    ...sortImportsRules(),
+  },
+};
+
 /**
  * @rules unused imports
  * from 'eslint-plugin-unused-imports'.
@@ -105,90 +115,66 @@ const importRules = () => ({
 //     sections: ["custom-sections"],
 //     components: ["custom-components"],
 //   };
-return {};
-// return {
-//     "perfectionist/sort-named-imports": [1, { type: "line-length", order: "asc" }],
-//     "perfectionist/sort-named-exports": [1, { type: "line-length", order: "asc" }],
-//     "perfectionist/sort-exports": [
-//       1,
-//       {
-//         order: "asc",
-//         type: "line-length",
-//         groupKind: "values-first",
-//       },
-//     ],
-//     "perfectionist/sort-imports": [
-//       2,
-//       {
-//         order: "asc",
-//         ignoreCase: true,
-//         type: "line-length",
-//         environment: "node",
-//         maxLineLength: undefined,
-//         newlinesBetween: "always",
-//         internalPattern: ["^src/.+"],
-//         groups: [
-//           "style",
-//           "side-effect",
-//           "type",
-//           ["builtin", "external"],
-//           customGroups.mui,
-//           customGroups.routes,
-//           customGroups.hooks,
-//           customGroups.utils,
-//           "internal",
-//           customGroups.components,
-//           customGroups.sections,
-//           customGroups.auth,
-//           customGroups.types,
-//           ["parent", "sibling", "index"],
-//           ["parent-type", "sibling-type", "index-type"],
-//           "object",
-//           "unknown",
-//         ],
-//         customGroups: {
-//           value: {
-//             [customGroups.mui]: ["^@mui/.+"],
-//             [customGroups.auth]: ["^src/auth/.+"],
-//             [customGroups.hooks]: ["^src/hooks/.+"],
-//             [customGroups.utils]: ["^src/utils/.+"],
-//             [customGroups.types]: ["^src/types/.+"],
-//             [customGroups.routes]: ["^src/routes/.+"],
-//             [customGroups.sections]: ["^src/sections/.+"],
-//             [customGroups.components]: ["^src/components/.+"],
-//           },
-//         },
-//       },
-//     ],
-//   };
-// };
-// /**
-//  * Custom ESLint configuration.
-//  */
-// export const customConfig = {
-//   plugins: {
-//     "react-hooks": reactHooksPlugin,
-//     "unused-imports": unusedImportsPlugin,
-//     perfectionist: perfectionistPlugin,
-//     import: importPlugin,
-//   },
-//   settings: {
-//     // https://www.npmjs.com/package/eslint-import-resolver-typescript
-//     ...importPlugin.configs.typescript.settings,
-//     "import/resolver": {
-//       ...importPlugin.configs.typescript.settings["import/resolver"],
-//       typescript: {
-//         project: "./tsconfig.json",
-//       },
-//     },
-//   },
-//   rules: {
-//     ...commonRules(),
-//     ...importRules(),
-//     ...unusedImportsRules(),
-//     ...sortImportsRules(),
-//   },
-// };
+
+return {
+  "perfectionist/sort-named-imports": [0, { type: "line-length", order: "asc" }],
+  "perfectionist/sort-named-exports": [0, { type: "line-length", order: "asc" }],
+  "perfectionist/sort-exports": [
+    0,
+    {
+      order: "asc",
+      type: "line-length",
+      groupKind: "values-first",
+    },
+  ],
+  "perfectionist/sort-imports": [
+    0,
+    {
+      order: "asc",
+      ignoreCase: true,
+      type: "line-length",
+      environment: "node",
+      maxLineLength: undefined,
+      newlinesBetween: "always",
+      internalPattern: ["^src/.+"],
+      groups: [
+        "style",
+        "side-effect",
+        "type",
+        ["builtin", "external"],
+        customGroups.mui,
+        customGroups.routes,
+        customGroups.hooks,
+        customGroups.utils,
+        "internal",
+        customGroups.components,
+        customGroups.sections,
+        customGroups.auth,
+        customGroups.types,
+        ["parent", "sibling", "index"],
+        ["parent-type", "sibling-type", "index-type"],
+        "object",
+        "unknown",
+      ],
+      customGroups: {
+        value: {
+          [customGroups.mui]: ["^@mui/.+"],
+          [customGroups.auth]: ["^src/auth/.+"],
+          [customGroups.hooks]: ["^src/hooks/.+"],
+          [customGroups.utils]: ["^src/utils/.+"],
+          [customGroups.types]: ["^src/types/.+"],
+          [customGroups.routes]: ["^src/routes/.+"],
+          [customGroups.sections]: ["^src/sections/.+"],
+          [customGroups.components]: ["^src/components/.+"],
+        },
+      },
+    },
+  ],
+};
+
+/**
+ * Custom ESLint configuration.
+ */
 
 // ----------------------------------------------------------------------
 

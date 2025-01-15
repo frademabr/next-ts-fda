@@ -45,8 +45,8 @@ export const themeConfig: ThemeConfig = {
   palette: {
     primary: {
       lighter: "#CAFDF5",
-      light: "#61F3F3",
-      main: "#00B8D9",
+      light: "#3b82f6",
+      main: "#1d4ed8",
       dark: "#006C9C",
       darker: "#003768",
       contrastText: "#FFFFFF",
@@ -54,15 +54,15 @@ export const themeConfig: ThemeConfig = {
     secondary: {
       lighter: "#EFD6FF",
       light: "#CAFDF5",
-      main: "#61F3F3",
+      main: "#60a5fa",
       dark: "#5119B7",
       darker: "#27097A",
       contrastText: "#FFFFFF",
     },
     info: {
       lighter: "#CAFDF5",
-      light: "#61F3F3",
-      main: "#00B8D9",
+      light: "#3b82f6",
+      main: "#1d4ed8",
       dark: "#006C9C",
       darker: "#003768",
       contrastText: "#FFFFFF",
