@@ -47,7 +47,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
           </m.div>
 
           <m.div variants={variants}>
-            <Typography variant="overline" sx={{ color: "text.disabled" }}>
+            <Typography className="text-green-600" variant="overline">
               Soluções inteligentes e inovadoras voltadas para seu negócio
             </Typography>
           </m.div>
@@ -59,7 +59,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
                 component="span"
                 sx={(theme) => ({
                   ...theme.mixins.textGradient(
-                    `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
+                    `90deg, ${theme.vars.palette.success.main} 40%, ${theme.vars.palette.primary.main} 80%`
                   ),
                 })}
               >
@@ -69,7 +69,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
           </m.div>
 
           <m.div variants={variants}>
-            <Typography sx={{ color: "text.secondary", maxWidth: 700 }}>
+            <Typography className="opacity-85" sx={{ color: "text.primary", maxWidth: 700 }}>
               A Fradema Consultores Tributários está há <strong>36 anos no mercado</strong>,
               possuindo vasta <strong>experiência e qualificação</strong> para pensar nas{" "}
               <strong>melhores soluções</strong> em <strong>consultoria tributária</strong> para o
@@ -80,8 +80,8 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
                 forte atuação em estratégias empresariais e procedimento administrativos
               </strong>{" "}
               nas esferas federal, estadual e municipal, com{" "}
-              <strong>filiais em todo o território nacional.</strong>
-              Nossos escritórios estão localizados no{" "}
+              <strong>filiais em todo o território nacional.</strong> Nossos escritórios estão
+              localizados no{" "}
               <strong>
                 Distrito Federal, Bahia, Pernambuco, Espírito Santo, Minas Gerais, Rio de Janeiro,
                 Santa Catarina, São Paulo, Paraná e Amazonas

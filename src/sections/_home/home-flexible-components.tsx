@@ -74,7 +74,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderSummary = () => (
     <>
       <m.div variants={variants}>
-        <Typography variant="overline" sx={{ color: "text.disabled" }}>
+        <Typography className="text-green-600" variant="overline">
           As melhores estratégias
         </Typography>
       </m.div>
@@ -158,7 +158,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
 
   const renderRow2 = () => (
     <>
-      <Tabs
+      {/* <Tabs
         value={tab}
         onChange={(event, newValue) => setTab(newValue)}
         sx={{ [`& .${tabsClasses.flexContainer}`]: { gap: 3 } }}
@@ -166,9 +166,9 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         <Tab value="angular" label="Angular" />
         <Tab value="react" label="React" />
         <Tab value="vue" label="Vue" />
-      </Tabs>
+      </Tabs> */}
 
-      <ToggleButtonGroup
+      {/* <ToggleButtonGroup
         exclusive
         color="primary"
         value={toggleButton}
@@ -188,7 +188,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         <ToggleButton disabled value="email" aria-label="email">
           <Iconify icon="carbon:email" />
         </ToggleButton>
-      </ToggleButtonGroup>
+      </ToggleButtonGroup> */}
 
       <Chip
         variant="soft"
@@ -210,12 +210,6 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         ))}
       </AvatarGroup>
 
-      <Tooltip title="Tooltip e falo o que eu quiser" placement="top" arrow>
-        <Button color="inherit" variant="outlined">
-          Hover me
-        </Button>
-      </Tooltip>
-
       <Rating value={rating} onChange={(event, newValue) => setRating(newValue)} />
     </>
   );
@@ -235,15 +229,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         placement="top"
         arrow
       >
-        <Alert
-          severity="success"
-          // action={
-          //   <IconButton color="inherit" size="small" aria-label="close" onClick={() => {}}>
-          //     <Iconify icon="eva:close-outline" />
-          //   </IconButton>
-          // }
-          sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}
-        >
+        <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
           Consultoria Tributária
         </Alert>
       </Tooltip>
@@ -251,7 +237,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   );
 
   const renderRow5 = () => (
-    <>
+    <div>
       <Card sx={{ maxWidth: 320 }}>
         <CardHeader
           title="Jayvion Simon"
@@ -299,53 +285,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           </IconButton>
         </Box>
       </Card>
-
-      <Box
-        sx={{
-          gap: 2.5,
-          display: "flex",
-          flex: "1 1 auto",
-          maxWidth: { lg: 220 },
-          flexDirection: "column",
-        }}
-      >
-        <FormControlLabel
-          control={<Switch defaultChecked inputProps={{ id: "demo-switch" }} />}
-          label="Switch"
-        />
-
-        <FormControlLabel
-          control={<Checkbox inputProps={{ id: "demo-checkbox" }} />}
-          label="Checkbox"
-        />
-
-        <FormControlLabel
-          value="Radio"
-          control={<Radio defaultChecked inputProps={{ id: "demo-radio" }} />}
-          label="Radio button"
-        />
-
-        <TextField label="Full name" defaultValue="Pamela Mclellan" />
-
-        <TextField
-          select
-          label="Category"
-          value={categorySelect}
-          onChange={(event) => setCategorySelect(event.target.value)}
-          slotProps={{ select: { native: true } }}
-        >
-          {[
-            { value: "clothes", label: "Clothes" },
-            { value: "footwear", label: "Footwear" },
-            { value: "jean", label: "Jean" },
-          ].map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </TextField>
-      </Box>
-    </>
+    </div>
   );
 
   return (

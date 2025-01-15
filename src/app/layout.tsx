@@ -11,11 +11,15 @@ import { LocalizationProvider } from "src/locales";
 import { themeConfig, ThemeProvider } from "src/theme";
 import { themeOverrides } from "src/theme/theme-overrides";
 
+import { Inter } from "next/font/google";
+
 import { ProgressBar } from "src/components/progress-bar";
 import { MotionLazy } from "src/components/animate/motion-lazy";
 import { SettingsDrawer, defaultSettings, SettingsProvider } from "src/components/settings";
 
 // ----------------------------------------------------------------------
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -39,7 +43,7 @@ type Props = {
 export default async function RootLayout({ children }: Props) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className={`${inter.className} antialiased`}>
         <InitColorSchemeScript
           defaultMode={themeConfig.defaultMode}
           modeStorageKey={themeConfig.modeStorageKey}

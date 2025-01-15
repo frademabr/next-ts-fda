@@ -52,8 +52,6 @@ export function HomeView() {
 
       <HomeForDesigner />
 
-      <HomePricing plans={_pricingHome} />
-
       <HomeFAQs />
 
       <HomeMinimalUI />
