@@ -1,11 +1,11 @@
-// import globals from "globals";
-// import eslintJs from "@eslint/js";
-// import eslintTs from "typescript-eslint";
-// import reactPlugin from "eslint-plugin-react";
-// import importPlugin from "eslint-plugin-import";
-// import reactHooksPlugin from "eslint-plugin-react-hooks";
-// import perfectionistPlugin from "eslint-plugin-perfectionist";
-// import unusedImportsPlugin from "eslint-plugin-unused-imports";
+import globals from "globals";
+import eslintJs from "@eslint/js";
+import eslintTs from "typescript-eslint";
+import reactPlugin from "eslint-plugin-react";
+import importPlugin from "eslint-plugin-import";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
+import perfectionistPlugin from "eslint-plugin-perfectionist";
+import unusedImportsPlugin from "eslint-plugin-unused-imports";
 
 // ----------------------------------------------------------------------
 
@@ -13,12 +13,14 @@
  * @rules common
  * from 'react', 'eslint-plugin-react-hooks'...
  */
-// import { FlatCompat } from "@eslint/eslintrc";
+import { FlatCompat } from "@eslint/eslintrc";
 
-// const compat = new FlatCompat({
-//   // import.meta.dirname is available after Node.js v20.11.0
-//   baseDirectory: import.meta.dirname,
-// });
+const compat = new FlatCompat({
+  // import.meta.dirname is available after Node.js v20.11.0
+  baseDirectory: import.meta.dirname,
+  recommendedConfig: js.configs.recommended,
+  allConfig: js.configs.all,
+});
 
 export const eslintConfig = [
   ...compat.config({
