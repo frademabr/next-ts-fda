@@ -1,66 +1,66 @@
-import type { Variants } from 'framer-motion';
-import type { BoxProps } from '@mui/material/Box';
-import type { Theme, SxProps } from '@mui/material/styles';
+import type { Variants } from "framer-motion";
+import type { BoxProps } from "@mui/material/Box";
+import type { Theme, SxProps } from "@mui/material/styles";
 
-import { m } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { m } from "framer-motion";
+import { useState, useEffect } from "react";
 
-import Tab from '@mui/material/Tab';
-import Fab from '@mui/material/Fab';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import Chip from '@mui/material/Chip';
-import Grid from '@mui/material/Grid2';
-import Alert from '@mui/material/Alert';
-import Radio from '@mui/material/Radio';
-import Badge from '@mui/material/Badge';
-import Slider from '@mui/material/Slider';
-import Switch from '@mui/material/Switch';
-import Rating from '@mui/material/Rating';
-import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-import Tooltip from '@mui/material/Tooltip';
-import Checkbox from '@mui/material/Checkbox';
-import TextField from '@mui/material/TextField';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import CardHeader from '@mui/material/CardHeader';
-import AvatarGroup from '@mui/material/AvatarGroup';
-import ToggleButton from '@mui/material/ToggleButton';
-import Tabs, { tabsClasses } from '@mui/material/Tabs';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import CircularProgress from '@mui/material/CircularProgress';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import Tab from "@mui/material/Tab";
+import Fab from "@mui/material/Fab";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Chip from "@mui/material/Chip";
+import Grid from "@mui/material/Grid2";
+import Alert from "@mui/material/Alert";
+import Radio from "@mui/material/Radio";
+import Badge from "@mui/material/Badge";
+import Slider from "@mui/material/Slider";
+import Switch from "@mui/material/Switch";
+import Rating from "@mui/material/Rating";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Tooltip from "@mui/material/Tooltip";
+import Checkbox from "@mui/material/Checkbox";
+import TextField from "@mui/material/TextField";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import CardHeader from "@mui/material/CardHeader";
+import AvatarGroup from "@mui/material/AvatarGroup";
+import ToggleButton from "@mui/material/ToggleButton";
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import CircularProgress from "@mui/material/CircularProgress";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { _mock } from 'src/_mock';
+import { _mock } from "src/_mock";
 
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
-import { varFade, MotionViewport } from 'src/components/animate';
+import { Image } from "src/components/image";
+import { Iconify } from "src/components/iconify";
+import { varFade, MotionViewport } from "src/components/animate";
 
 // ----------------------------------------------------------------------
 
 const rowStyles: SxProps<Theme> = {
-  width: '100%',
-  display: 'flex',
-  flexWrap: 'wrap',
-  alignItems: 'center',
+  width: "100%",
+  display: "flex",
+  flexWrap: "wrap",
+  alignItems: "center",
   gap: { xs: 3, md: 5 },
-  justifyContent: 'center',
+  justifyContent: "center",
 };
 
-const variants: Variants = varFade('inUp', { distance: 24 });
+const variants: Variants = varFade("inUp", { distance: 24 });
 
 export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
-  const [tab, setTab] = useState('angular');
+  const [tab, setTab] = useState("angular");
   const [rating, setRating] = useState<number | null>(5);
-  const [toggleButton, setToggleButton] = useState('search');
+  const [toggleButton, setToggleButton] = useState("search");
   const [circularProgress, setCircularProgress] = useState(0);
-  const [categorySelect, setCategorySelect] = useState('clothes');
+  const [categorySelect, setCategorySelect] = useState("clothes");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -75,7 +75,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderSummary = () => (
     <>
       <m.div variants={variants}>
-        <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+        <Typography variant="overline" sx={{ color: "text.disabled" }}>
           Interface Starter Kit
         </Typography>
       </m.div>
@@ -87,7 +87,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </m.div>
 
       <m.div variants={variants}>
-        <Typography sx={{ color: 'text.secondary', mb: 5 }}>
+        <Typography sx={{ color: "text.secondary", mb: 5 }}>
           Pre-set components are easy to customize and use. We collected most popular elements.
           Menu, sliders, buttons, inputs etc. are all here. Just dive in!
         </Typography>
@@ -110,7 +110,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
 
   const renderRow1 = () => (
     <>
-      <Button
+      {/* <Button
         size="large"
         variant="contained"
         color="primary"
@@ -126,30 +126,34 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
 
       <Fab color="info" aria-label="media">
         <Iconify width={22} icon="solar:play-outline" />
-      </Fab>
+      </Fab> */}
 
       <Box
         sx={{
-          display: 'flex',
-          alignItems: 'center',
-          position: 'relative',
-          typography: 'caption',
-          justifyContent: 'center',
+          display: "flex",
+          alignItems: "center",
+          position: "relative",
+          typography: "caption",
+          justifyContent: "center",
         }}
       >
         <CircularProgress
-          size={56}
+          size={64}
           thickness={3}
-          color="warning"
+          color="success"
           variant="determinate"
           aria-label="Progress"
           value={circularProgress}
         />
+
         <Box
           component="span"
-          sx={{ position: 'absolute' }}
+          sx={{ position: "absolute" }}
         >{`${Math.round(circularProgress)}%`}</Box>
       </Box>
+      <Typography sx={{ color: "text.secondary", mb: 5 }}>
+        Evoluir juntos é a chave para o nosso sucesso!
+      </Typography>
     </>
   );
 
@@ -207,7 +211,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         ))}
       </AvatarGroup>
 
-      <Tooltip title="Tooltip" placement="top" arrow>
+      <Tooltip title="Tooltip e falo o que eu quiser" placement="top" arrow>
         <Button color="inherit" variant="outlined">
           Hover me
         </Button>
@@ -226,18 +230,24 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         aria-label="Demo slider"
         sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}
       />
-
-      <Alert
-        severity="success"
-        action={
-          <IconButton color="inherit" size="small" aria-label="close" onClick={() => {}}>
-            <Iconify icon="eva:close-outline" />
-          </IconButton>
-        }
-        sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}
+      <Tooltip
+        title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+        porque eu faço o que eu queroan..."
+        placement="top"
+        arrow
       >
-        This is a <strong>success</strong> alert
-      </Alert>
+        <Alert
+          severity="success"
+          // action={
+          //   <IconButton color="inherit" size="small" aria-label="close" onClick={() => {}}>
+          //     <Iconify icon="eva:close-outline" />
+          //   </IconButton>
+          // }
+          sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}
+        >
+          Consultoria Tributária
+        </Alert>
+      </Tooltip>
     </>
   );
 
@@ -256,8 +266,8 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
               />
             </Badge>
           }
-          titleTypographyProps={{ typography: 'subtitle2', sx: { mb: 0.25 } }}
-          subheaderTypographyProps={{ typography: 'caption' }}
+          titleTypographyProps={{ typography: "subtitle2", sx: { mb: 0.25 } }}
+          subheaderTypographyProps={{ typography: "caption" }}
           sx={{ p: 2 }}
         />
 
@@ -268,18 +278,18 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           sx={{ p: 1, borderRadius: 1.5 }}
         />
 
-        <Typography variant="body2" sx={{ color: 'text.secondary', pt: 2, px: 2 }}>
+        <Typography variant="body2" sx={{ color: "text.secondary", pt: 2, px: 2 }}>
           Phasellus dolor. Fusce egestas elit eget lorem. Quisque id odio.
         </Typography>
 
-        <Box sx={{ display: 'flex', alignItems: 'center', px: 2, py: 1 }}>
+        <Box sx={{ display: "flex", alignItems: "center", px: 2, py: 1 }}>
           <Checkbox
             defaultChecked
             color="error"
             size="small"
             icon={<Iconify icon="solar:heart-outline" />}
             checkedIcon={<Iconify icon="solar:heart-bold" />}
-            inputProps={{ id: 'favorite-checkbox', 'aria-label': 'Favorite checkbox' }}
+            inputProps={{ id: "favorite-checkbox", "aria-label": "Favorite checkbox" }}
           />
           <Box sx={{ flexGrow: 1 }} />
           <IconButton aria-label="Share">
@@ -294,25 +304,25 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       <Box
         sx={{
           gap: 2.5,
-          display: 'flex',
-          flex: '1 1 auto',
+          display: "flex",
+          flex: "1 1 auto",
           maxWidth: { lg: 220 },
-          flexDirection: 'column',
+          flexDirection: "column",
         }}
       >
         <FormControlLabel
-          control={<Switch defaultChecked inputProps={{ id: 'demo-switch' }} />}
+          control={<Switch defaultChecked inputProps={{ id: "demo-switch" }} />}
           label="Switch"
         />
 
         <FormControlLabel
-          control={<Checkbox inputProps={{ id: 'demo-checkbox' }} />}
+          control={<Checkbox inputProps={{ id: "demo-checkbox" }} />}
           label="Checkbox"
         />
 
         <FormControlLabel
           value="Radio"
-          control={<Radio defaultChecked inputProps={{ id: 'demo-radio' }} />}
+          control={<Radio defaultChecked inputProps={{ id: "demo-radio" }} />}
           label="Radio button"
         />
 
@@ -326,9 +336,9 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           slotProps={{ select: { native: true } }}
         >
           {[
-            { value: 'clothes', label: 'Clothes' },
-            { value: 'footwear', label: 'Footwear' },
-            { value: 'jean', label: 'Jean' },
+            { value: "clothes", label: "Clothes" },
+            { value: "footwear", label: "Footwear" },
+            { value: "jean", label: "Jean" },
           ].map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
@@ -346,9 +356,9 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       {...other}
     >
       <Container component={MotionViewport}>
-        <Grid container spacing={{ xs: 5, md: 3 }} sx={{ justifyContent: { md: 'space-between' } }}>
+        <Grid container spacing={{ xs: 5, md: 3 }} sx={{ justifyContent: { md: "space-between" } }}>
           <Grid
-            sx={{ pt: { md: 10 }, textAlign: { xs: 'center', md: 'left' } }}
+            sx={{ pt: { md: 10 }, textAlign: { xs: "center", md: "left" } }}
             size={{ xs: 12, md: 4 }}
           >
             {renderSummary()}
@@ -361,10 +371,10 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
             sx={(theme) => ({
               gap: 5,
               borderRadius: 3,
-              display: 'flex',
+              display: "flex",
               p: { xs: 3, sm: 5 },
-              alignItems: 'center',
-              flexDirection: 'column',
+              alignItems: "center",
+              flexDirection: "column",
               border: `dashed 1px ${theme.vars.palette.divider}`,
             })}
           >

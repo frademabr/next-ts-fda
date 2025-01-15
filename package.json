@@ -1,8 +1,8 @@
 {
-  "name": "@zone-kit/next-ts",
-  "author": "Minimals",
-  "version": "3.2.0",
-  "description": "Next & TypeScript",
+  "name": "fradema-web",
+  "author": "Patrick Arinelli",
+  "version": "1.0.0",
+  "description": "Fradema Consultoria Tributária",
   "private": true,
   "scripts": {
     "dev": "next dev -p 8002",

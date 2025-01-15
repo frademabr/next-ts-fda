@@ -4,29 +4,6 @@
 
 ## Installation
 
-**Using Yarn (Recommended)**
+## Read MUI, Shadcn, TailwindCSS documentation ( by Arinelli Dev ). @NPM Package Manager Recommended.
 
-```sh
-yarn install
-yarn dev
-```
-
-**Using Npm**
-
-```sh
-npm i
-npm run dev
-```
-
-## Build
-
-```sh
-yarn build
-# or
-npm run build
-```
-
----
-
-**NOTE:**
-_When copying folders remember to also copy hidden files like .env. This is important because .env files often contain environment variables that are crucial for the application to run correctly._
+**Developed by Arinelli Dev @ Fradema Jan, 2025**
