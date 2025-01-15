@@ -1,19 +1,19 @@
-import type { Variants } from 'framer-motion';
-import type { BoxProps } from '@mui/material/Box';
+import type { Variants } from "framer-motion";
+import type { BoxProps } from "@mui/material/Box";
 
-import { m } from 'framer-motion';
+import { m } from "framer-motion";
 
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { varFade, MotionViewport } from 'src/components/animate';
+import { varFade, MotionViewport } from "src/components/animate";
 
 // ----------------------------------------------------------------------
 
-const variants: Variants = varFade('inUp', { distance: 24 });
+const variants: Variants = varFade("inUp", { distance: 24 });
 
 export function HomeNewStart({ sx, ...other }: BoxProps) {
   return (
@@ -28,12 +28,12 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
             px: 3,
             gap: 3,
             pb: 10,
-            display: 'flex',
+            display: "flex",
             borderRadius: 3,
-            textAlign: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            bgcolor: 'background.neutral',
+            textAlign: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            bgcolor: "background.neutral",
           }}
         >
           <m.div variants={variants}>
@@ -47,32 +47,46 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
           </m.div>
 
           <m.div variants={variants}>
-            <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-              new start
+            <Typography variant="overline" sx={{ color: "text.disabled" }}>
+              Soluções inteligentes e inovadoras voltadas para seu negócio
             </Typography>
           </m.div>
 
           <m.div variants={variants}>
             <Typography variant="h2">
-              The
+              Sobre
               <Box
                 component="span"
                 sx={(theme) => ({
                   ...theme.mixins.textGradient(
-                    `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
+                    `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 50%`
                   ),
                 })}
               >
-                {` ZONE `}
+                {` A EMPRESA `}
               </Box>
-              UI Kit
             </Typography>
           </m.div>
 
           <m.div variants={variants}>
-            <Typography sx={{ color: 'text.secondary', maxWidth: 480 }}>
-              Modern ui kit to save your time, boost your creativity. Neat and super stylish layout
-              ready to help with your projects
+            <Typography sx={{ color: "text.secondary", maxWidth: 700 }}>
+              A Fradema Consultores Tributários está há <strong>36 anos no mercado</strong>,
+              possuindo vasta <strong>experiência e qualificação</strong> para pensar nas{" "}
+              <strong>melhores soluções</strong> em <strong>consultoria tributária</strong> para o
+              seu negócio. Com atuação <strong>desde 1988</strong>, a{" "}
+              <strong>Fradema Consultores Tributários </strong>
+              possui{" "}
+              <strong>
+                forte atuação em estratégias empresariais e procedimento administrativos
+              </strong>{" "}
+              nas esferas federal, estadual e municipal, com{" "}
+              <strong>filiais em todo o território nacional.</strong>
+              Nossos escritórios estão localizados no{" "}
+              <strong>
+                Distrito Federal, Bahia, Pernambuco, Espírito Santo, Minas Gerais, Rio de Janeiro,
+                Santa Catarina, São Paulo, Paraná e Amazonas
+              </strong>
+              .
             </Typography>
           </m.div>
         </Box>
