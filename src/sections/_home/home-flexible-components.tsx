@@ -101,7 +101,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           variant="outlined"
           endIcon={<Iconify width={16} icon="solar:alt-arrow-right-outline" />}
         >
-          Browse components
+          WhatsApp
         </Button>
       </m.div>
     </>
