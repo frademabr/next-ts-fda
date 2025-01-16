@@ -38,6 +38,7 @@ const commonRules = () => ({
   "func-names": 1,
   "no-bitwise": 2,
   "no-unused-vars": 0,
+  "prefer-const": 0,
   "object-shorthand": 1,
   "no-useless-rename": 1,
   "default-case-last": 2,

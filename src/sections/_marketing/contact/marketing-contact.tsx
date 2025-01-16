@@ -180,7 +180,7 @@ export function MarketingContact() {
                   />
                 </div>
                 {errors?.cel?.message && (
-                  <p className="text-orange-600 mb-4 text-sm">{errors.cel.message}</p>
+                  <p className="text-orange-600 mb-2 text-sm">{errors.cel.message}</p>
                 )}
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
@@ -218,9 +218,9 @@ export function MarketingContact() {
                         <SelectItem value="sp">Fradema - SP</SelectItem>
                         <SelectItem value="campinas">Fradema - Campinas</SelectItem>
                       </SelectContent>
-                      {errors?.filiais?.message && (
+                      {/* {errors?.filiais?.message && (
                         <p className="text-orange-600 mb-4 text-sm">{errors.filiais.message}</p>
-                      )}
+                      )} */}
                     </Select>
                   </div>
 
@@ -240,7 +240,7 @@ export function MarketingContact() {
                   </SelectContent>
                 </Select>
               </div> */}
-                  <div>
+                  <div className="mt-5">
                     <div className="mb-2.5 text-sm font-medium">
                       <label htmlFor="id">
                         Como descobriu a Empresa ?{" "}
@@ -266,7 +266,7 @@ export function MarketingContact() {
                   <div className="flex w-full flex-col justify-end space-y-3 pt-2">
                     <Button
                       onClick={handleSubmit(onSubmit)}
-                      className="bg-green-500 hover:bg-green-600 text-white"
+                      className="bg-green-500 hover:bg-green-600 text-white mt-5"
                       type="submit"
                     >
                       Enviar formulário

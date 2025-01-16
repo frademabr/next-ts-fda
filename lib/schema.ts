@@ -9,7 +9,7 @@ export const MarketingContactSchema = z.object({
   empresa: z.string().optional(),
   nome: z
     .string({ message: "Campo requerido!" })
-    .regex(/^[a-zA-Z]+$/, { message: "Formato Inválido" })
+    // .regex(/^[a-zA-Z]+$/)
     .min(2, { message: "Nome é requerido!" }),
   cel: z
     .string()
