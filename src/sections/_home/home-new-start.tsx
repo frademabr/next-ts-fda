@@ -55,34 +55,26 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
           <m.div variants={variants}>
             <Typography variant="h2">
               Sobre
-              <Box
-                component="span"
-                sx={(theme) => ({
-                  ...theme.mixins.textGradient(
-                    `90deg, ${theme.vars.palette.primary.main} 40%, ${theme.vars.palette.primary.main} 80%`
-                  ),
-                })}
-              >
-                {` A EMPRESA `}
-              </Box>
+              <Box component="span">{` A EMPRESA `}</Box>
             </Typography>
           </m.div>
 
           <m.div className="mt-5" variants={variants}>
-            <Typography className="opacity-85" sx={{ color: "text.primary", maxWidth: 700 }}>
-              A Fradema Consultores Tributários está há <strong>36 anos no mercado</strong>,
-              possuindo vasta <strong>experiência e qualificação</strong> para pensar nas{" "}
-              <strong>melhores soluções</strong> em <strong>consultoria tributária</strong> para o
-              seu negócio. Com atuação <strong>desde 1988</strong>, a{" "}
-              <strong>Fradema Consultores Tributários </strong>
-              possui{" "}
-              <strong>
-                forte atuação em estratégias empresariais e procedimento administrativos
+            <Typography className="opacity-100" sx={{ color: "text.secondary", maxWidth: 700 }}>
+              A Fradema Consultores Tributários está há{" "}
+              <strong className="text-white opacity-75">36 anos no mercado</strong>, possuindo vasta{" "}
+              <strong className="text-white opacity-75">experiência e qualificação</strong> para
+              pensar nas <strong className="text-white opacity-75">melhores soluções</strong> em{" "}
+              <strong className="text-white opacity-75">consultoria tributária</strong> para o seu
+              negócio. Com atuação <strong className="text-white opacity-75">desde 1988</strong>, a{" "}
+              <strong className="text-white opacity-75">Fradema Consultores Tributários </strong>
+              possui forte atuação em{" "}
+              <strong className="text-white opacity-75">
+                estratégias empresariais e procedimento administrativos
               </strong>{" "}
-              nas esferas federal, estadual e municipal, com{" "}
-              <strong>filiais em todo o território nacional.</strong> Nossos escritórios estão
-              localizados no{" "}
-              <strong>
+              nas esferas federal, estadual e municipal, com filiais em todo o território nacional.
+              Nossos escritórios estão localizados no{" "}
+              <strong className="text-white opacity-75">
                 Distrito Federal, Bahia, Pernambuco, Espírito Santo, Minas Gerais, Rio de Janeiro,
                 Santa Catarina, São Paulo, Paraná e Amazonas
               </strong>
