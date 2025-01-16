@@ -199,54 +199,106 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
 
   const renderRow4 = () => (
     <>
-      <div>
+      <div className="mb-10">
         <Tooltip
           title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
         porque eu faço o que eu queroan..."
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Consultoria Tributária
           </Alert>
         </Tooltip>
       </div>
 
-      <div>
+      <div className="mb-10">
         <Tooltip
           title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
   porque eu faço o que eu queroan..."
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Contabilidade
           </Alert>
         </Tooltip>
       </div>
 
-      <div>
+      <div className="mb-10">
         <Tooltip
           title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
   porque eu faço o que eu queroan..."
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Auditoria fiscal e contábil
           </Alert>
         </Tooltip>
       </div>
 
-      <div>
+      <div className="mb-10">
         <Tooltip
           title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
   porque eu faço o que eu queroan..."
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Blindagem Patrimonial
+          </Alert>
+        </Tooltip>
+      </div>
+
+      <div className="mb-10">
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+            Recuperação de Empresas
+          </Alert>
+        </Tooltip>
+      </div>
+
+      <div className="mb-10">
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+            Offshore no Exterior
+          </Alert>
+        </Tooltip>
+      </div>
+
+      <div className="mb-10">
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+            Contratos Artísticos
+          </Alert>
+        </Tooltip>
+      </div>
+
+      <div className="mb-10">
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+            Marcas e Patentes
           </Alert>
         </Tooltip>
       </div>
