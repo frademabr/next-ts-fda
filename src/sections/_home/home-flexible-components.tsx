@@ -189,40 +189,27 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           <Iconify icon="carbon:email" />
         </ToggleButton>
       </ToggleButtonGroup> */}
-
-      <Chip
-        variant="soft"
-        color="primary"
-        label="Pamela"
-        onDelete={() => {}}
-        avatar={<Avatar alt="Pamela">P</Avatar>}
-      />
+      <Tooltip title="descrição" placement="top" arrow>
+        <Typography variant="h6">
+          <Chip
+            variant="soft"
+            color="primary"
+            label="Consultoria Tributária"
+            sx={{ padding: "20px", fontSize: "16px" }}
+            // onDelete={() => {}}
+            avatar={<Avatar alt="Pamela">1</Avatar>}
+          />
+        </Typography>
+      </Tooltip>
     </>
   );
 
   const renderRow3 = () => (
-    <>
-      <Avatar alt="Remy Sharp" src={_mock.image.avatar(4)} sx={{ width: 64, height: 64 }} />
-
-      <AvatarGroup max={4}>
-        {Array.from({ length: 8 }, (_, index) => (
-          <Avatar key={index} alt={_mock.fullName(index)} src={_mock.image.avatar(index)} />
-        ))}
-      </AvatarGroup>
-
-      <Rating value={rating} onChange={(event, newValue) => setRating(newValue)} />
-    </>
+    <Rating value={rating} onChange={(event, newValue) => setRating(newValue)} />
   );
 
   const renderRow4 = () => (
-    <>
-      <Slider
-        size="small"
-        defaultValue={72}
-        valueLabelDisplay="on"
-        aria-label="Demo slider"
-        sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}
-      />
+    <div>
       <Tooltip
         title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
         porque eu faço o que eu queroan..."
@@ -233,7 +220,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           Consultoria Tributária
         </Alert>
       </Tooltip>
-    </>
+    </div>
   );
 
   const renderRow5 = () => (
