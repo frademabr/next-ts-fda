@@ -151,45 +151,15 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         >{`${Math.round(circularProgress)}%`}</Box>
       </Box>
       <Typography sx={{ color: "text.secondary", mb: 5 }}>
-        Evoluir juntos é a chave para o nosso sucesso!
+        Evoluir juntos é a chave para o nosso sucesso! Venha conosco e eleve o potencial do seu
+        negócio!
       </Typography>
     </>
   );
 
   const renderRow2 = () => (
     <>
-      {/* <Tabs
-        value={tab}
-        onChange={(event, newValue) => setTab(newValue)}
-        sx={{ [`& .${tabsClasses.flexContainer}`]: { gap: 3 } }}
-      >
-        <Tab value="angular" label="Angular" />
-        <Tab value="react" label="React" />
-        <Tab value="vue" label="Vue" />
-      </Tabs> */}
-
-      {/* <ToggleButtonGroup
-        exclusive
-        color="primary"
-        value={toggleButton}
-        onChange={(event, newAlignment) => {
-          if (newAlignment !== null) {
-            setToggleButton(newAlignment);
-          }
-        }}
-        aria-label="actions"
-      >
-        <ToggleButton value="share" aria-label="share">
-          <Iconify icon="solar:share-outline" />
-        </ToggleButton>
-        <ToggleButton value="search" aria-label="search">
-          <Iconify icon="carbon:search" />
-        </ToggleButton>
-        <ToggleButton disabled value="email" aria-label="email">
-          <Iconify icon="carbon:email" />
-        </ToggleButton>
-      </ToggleButtonGroup> */}
-      <Tooltip title="descrição" placement="top" arrow>
+      {/* <Tooltip title="descrição" placement="top" arrow>
         <Typography variant="h6">
           <Chip
             variant="soft"
@@ -201,78 +171,86 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           />
         </Typography>
       </Tooltip>
+
+      <Tooltip title="descrição" placement="top" arrow>
+        <Typography variant="h6">
+          <Chip
+            variant="soft"
+            color="primary"
+            label="Contabilidade"
+            sx={{
+              padding: "20px",
+              paddingTop: "28px",
+              paddingBottom: "28px",
+              fontSize: "16px",
+            }}
+            // onDelete={() => {}}
+            avatar={<Avatar alt="Pamela">2</Avatar>}
+          />
+        </Typography>
+      </Tooltip> */}
     </>
   );
 
-  const renderRow3 = () => (
-    <Rating value={rating} onChange={(event, newValue) => setRating(newValue)} />
-  );
+  //   const renderRow3 = () => (
+  //     <> <Rating value={rating} onChange={(event, newValue) => setRating(newValue)} /></>
+  //    );
+  //  }
 
   const renderRow4 = () => (
-    <div>
-      <Tooltip
-        title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+    <>
+      <div>
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
         porque eu faço o que eu queroan..."
-        placement="top"
-        arrow
-      >
-        <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
-          Consultoria Tributária
-        </Alert>
-      </Tooltip>
-    </div>
-  );
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+            Consultoria Tributária
+          </Alert>
+        </Tooltip>
+      </div>
 
-  const renderRow5 = () => (
-    <div>
-      <Card sx={{ maxWidth: 320 }}>
-        <CardHeader
-          title="Jayvion Simon"
-          subheader="California, United States"
-          avatar={
-            <Badge variant="online" badgeContent="">
-              <Avatar
-                alt={_mock.fullName(0)}
-                src={_mock.image.avatar(0)}
-                sx={{ width: 48, height: 48 }}
-              />
-            </Badge>
-          }
-          titleTypographyProps={{ typography: "subtitle2", sx: { mb: 0.25 } }}
-          subheaderTypographyProps={{ typography: "caption" }}
-          sx={{ p: 2 }}
-        />
+      <div>
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+            Contabilidade
+          </Alert>
+        </Tooltip>
+      </div>
 
-        <Image
-          alt="Cover"
-          src={_mock.image.cover(20)}
-          ratio="4/3"
-          sx={{ p: 1, borderRadius: 1.5 }}
-        />
+      <div>
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+            Auditoria fiscal e contábil
+          </Alert>
+        </Tooltip>
+      </div>
 
-        <Typography variant="body2" sx={{ color: "text.secondary", pt: 2, px: 2 }}>
-          Phasellus dolor. Fusce egestas elit eget lorem. Quisque id odio.
-        </Typography>
-
-        <Box sx={{ display: "flex", alignItems: "center", px: 2, py: 1 }}>
-          <Checkbox
-            defaultChecked
-            color="error"
-            size="small"
-            icon={<Iconify icon="solar:heart-outline" />}
-            checkedIcon={<Iconify icon="solar:heart-bold" />}
-            inputProps={{ id: "favorite-checkbox", "aria-label": "Favorite checkbox" }}
-          />
-          <Box sx={{ flexGrow: 1 }} />
-          <IconButton aria-label="Share">
-            <Iconify icon="solar:share-outline" />
-          </IconButton>
-          <IconButton aria-label="Comment">
-            <Iconify icon="solar:chat-line-outline" />
-          </IconButton>
-        </Box>
-      </Card>
-    </div>
+      <div>
+        <Tooltip
+          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
+  porque eu faço o que eu queroan..."
+          placement="top"
+          arrow
+        >
+          <Alert severity="success" sx={{ width: 1, minWidth: 240, maxWidth: 0.44 }}>
+            Blindagem Patrimonial
+          </Alert>
+        </Tooltip>
+      </div>
+    </>
   );
 
   return (
@@ -305,10 +283,9 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
             })}
           >
             <Box sx={rowStyles}> {renderRow1()}</Box>
-            <Box sx={rowStyles}> {renderRow2()}</Box>
-            <Box sx={rowStyles}> {renderRow3()}</Box>
+            {/* <Box sx={rowStyles}> {renderRow2()}</Box> */}
+            {/* <Box sx={rowStyles}> {renderRow3()}</Box> */}
             <Box sx={rowStyles}> {renderRow4()}</Box>
-            <Box sx={rowStyles}>{renderRow5()}</Box>
           </Grid>
         </Grid>
       </Container>
