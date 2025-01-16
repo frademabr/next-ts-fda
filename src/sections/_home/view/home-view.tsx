@@ -55,7 +55,7 @@ export function HomeView() {
       <HomeFAQs />
 
       <HomeMinimalUI />
-
+      {/* Typebot no footer e footer geral no layouts */}
       <HomeAdvertisement />
     </>
   );
