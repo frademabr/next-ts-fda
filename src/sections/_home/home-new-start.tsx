@@ -26,8 +26,8 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
         <Box
           sx={{
             px: 3,
-            gap: 3,
-            pb: 10,
+            gap: 0,
+            pb: 15,
             display: "flex",
             borderRadius: 3,
             textAlign: "center",
@@ -46,7 +46,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
             />
           </m.div>
 
-          <m.div variants={variants}>
+          <m.div className="mb-5" variants={variants}>
             <Typography className="text-green-600" variant="overline">
               Soluções inteligentes e inovadoras voltadas para seu negócio
             </Typography>
@@ -59,7 +59,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
                 component="span"
                 sx={(theme) => ({
                   ...theme.mixins.textGradient(
-                    `90deg, ${theme.vars.palette.success.main} 40%, ${theme.vars.palette.primary.main} 80%`
+                    `90deg, ${theme.vars.palette.primary.main} 40%, ${theme.vars.palette.primary.main} 80%`
                   ),
                 })}
               >
@@ -68,7 +68,7 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
             </Typography>
           </m.div>
 
-          <m.div variants={variants}>
+          <m.div className="mt-5" variants={variants}>
             <Typography className="opacity-85" sx={{ color: "text.primary", maxWidth: 700 }}>
               A Fradema Consultores Tributários está há <strong>36 anos no mercado</strong>,
               possuindo vasta <strong>experiência e qualificação</strong> para pensar nas{" "}

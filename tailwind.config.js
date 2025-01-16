@@ -7,7 +7,7 @@ module.exports = {
   },
   corePlugins: {
     // Remove the Tailwind CSS preflight styles so it can use Material UI's preflight instead (CssBaseline).
-    preflight: true,
+    preflight: false,
   },
   plugins: [require("tailwindcss-animate")],
 };
