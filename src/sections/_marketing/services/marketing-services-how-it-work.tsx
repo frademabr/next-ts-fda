@@ -55,7 +55,7 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
                 theme.vars.palette.common.blackChannel,
                 0
               )}, ${varAlpha(theme.vars.palette.common.blackChannel, 0)})`,
-              `url(${CONFIG.assetsDir}/assets/images/home/galaxybig2.jpg)`,
+              `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
             ],
           }),
           color: "common.white",
@@ -73,12 +73,12 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
             sx={{
               display: "flex",
               alignContent: "center",
-              fontSize: "152px",
+              fontSize: "172px",
               fontWeight: "bold",
               marginBottom: "-150px",
               paddingTop: "200px",
-              // mixBlendMode: "plus-lighter",
-              opacity: "0.75",
+              mixBlendMode: "soft-light",
+              opacity: "1",
             }}
           >
             FRADEMA

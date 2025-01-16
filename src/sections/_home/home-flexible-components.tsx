@@ -195,7 +195,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
             variant="soft"
             color="primary"
             label="Consultoria Tributária"
-            sx={{ padding: "20px", fontSize: "16px" }}
+            sx={{ padding: "20px", paddingTop: "28px", paddingBottom: "28px", fontSize: "16px" }}
             // onDelete={() => {}}
             avatar={<Avatar alt="Pamela">1</Avatar>}
           />

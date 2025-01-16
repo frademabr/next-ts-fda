@@ -53,8 +53,6 @@ export function HomeView() {
       <HomeForDesigner />
 
       <HomeFAQs />
-
-      <HomeMinimalUI />
       {/* Typebot no footer e footer geral no layouts */}
       <HomeAdvertisement />
     </>
