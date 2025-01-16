@@ -78,7 +78,7 @@ export function MarketingContact() {
         <div className="ml-20 w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
             <h1 className="text-4xl font-bold lg:text-5xl ml-3">
-              Fale com um de nossos <span className="text-blue-700">Consultores</span>
+              Fale com um de nossos <span className="text-green-500 mt-5">Consultores</span>
             </h1>
             <div className="text-muted-foreground md:text-base lg:text-lg lg:leading-7 ml-3">
               In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum, dolor
@@ -142,7 +142,7 @@ export function MarketingContact() {
                     <label htmlFor="nome">Nome Completo</label>
                   </div>
                   <Input
-                    className="text-slate-200 border-gray-500 opacity-75"
+                    className="text-slate-700 border-gray-500 opacity-75"
                     {...register("nome")}
                     id="nome"
                     name="nome"
@@ -150,7 +150,7 @@ export function MarketingContact() {
                   />
                 </div>
                 {errors?.nome?.message && (
-                  <p className="text-red-700 mb-4">{errors.nome.message}</p>
+                  <p className="text-orange-600 mb-4 text-sm">{errors.nome.message}</p>
                 )}
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
@@ -158,7 +158,7 @@ export function MarketingContact() {
                     <span className="text-muted-foreground">(Opcional)</span>
                   </div>
                   <Input
-                    className="text-slate-200 border-gray-500 opacity-75"
+                    className="text-slate-700 border-gray-500 opacity-75"
                     {...register("empresa")}
                     id="empresa"
                     name="empresa"
@@ -171,7 +171,7 @@ export function MarketingContact() {
                     <label htmlFor="cel">Celular</label>
                   </div>
                   <Input
-                    className="text-slate-200 border-gray-500 opacity-75"
+                    className="text-slate-700 border-gray-500 opacity-75"
                     {...register("cel")}
                     type="number"
                     id="cel"
@@ -179,7 +179,9 @@ export function MarketingContact() {
                     placeholder="(xx)99888-7766"
                   />
                 </div>
-                {errors?.cel?.message && <p className="text-red-700 mb-4">{errors.cel.message}</p>}
+                {errors?.cel?.message && (
+                  <p className="text-orange-600 mb-4 text-sm">{errors.cel.message}</p>
+                )}
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
                     <div className="mb-2.5 text-sm font-medium">
@@ -187,7 +189,7 @@ export function MarketingContact() {
                       {/* <span className="text-muted-foreground"></span> */}
                     </div>
                     <Input
-                      className="text-slate-200 border-gray-500 opacity-75"
+                      className="text-slate-700 border-gray-500 opacity-75"
                       {...register("email")}
                       id="email"
                       name="email"
@@ -196,7 +198,7 @@ export function MarketingContact() {
                     />
                   </div>
                   {errors?.email?.message && (
-                    <p className="text-red-700 mb-4">{errors.email.message}</p>
+                    <p className="text-orange-600 mb-4 text-sm">{errors.email.message}</p>
                   )}
                   <div>
                     <div className="mb-2.5 text-sm font-medium">
@@ -204,7 +206,7 @@ export function MarketingContact() {
                     </div>
                     <Select {...register("filiais")}>
                       <SelectTrigger
-                        className="text-slate-200 border-gray-500 opacity-75"
+                        className="text-slate-700 border-gray-500 opacity-75"
                         id="filiais"
                         name="filiais"
                       >
@@ -217,7 +219,7 @@ export function MarketingContact() {
                         <SelectItem value="campinas">Fradema - Campinas</SelectItem>
                       </SelectContent>
                       {errors?.filiais?.message && (
-                        <p className="text-red-700 mb-4">{errors.filiais.message}</p>
+                        <p className="text-orange-600 mb-4 text-sm">{errors.filiais.message}</p>
                       )}
                     </Select>
                   </div>
@@ -247,7 +249,7 @@ export function MarketingContact() {
                     </div>
                     <Select>
                       <SelectTrigger
-                        className="text-slate-200 border-gray-500 opacity-75"
+                        className="text-slate-700 border-gray-500 opacity-75"
                         id="outros"
                         name="outros"
                       >
@@ -264,7 +266,7 @@ export function MarketingContact() {
                   <div className="flex w-full flex-col justify-end space-y-3 pt-2">
                     <Button
                       onClick={handleSubmit(onSubmit)}
-                      className="bg-blue-700 hover:bg-blue-800 text-white"
+                      className="bg-green-500 hover:bg-green-600 text-white"
                       type="submit"
                     >
                       Enviar formulário
