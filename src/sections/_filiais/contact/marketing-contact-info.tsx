@@ -58,7 +58,7 @@ export function MarketingContactInfo({ sx, ...other }: BoxProps) {
         >
           Ligue
         </Box>
-        <Typography variant="body2">+5521 234 567 890</Typography>
+        <Typography variant="body2">+5521 2217-0600</Typography>
       </div>
     </Box>
   );
@@ -78,11 +78,7 @@ export function MarketingContactInfo({ sx, ...other }: BoxProps) {
           Fale conosco
         </Box>
         <Typography variant="body2">
-          <Link
-            color="inherit"
-            variant="body2"
-            href="mailto:fradema@fradema.com.br"
-          >
+          <Link color="inherit" variant="body2" href="mailto:fradema@fradema.com.br">
             fradema@fradema.com.br
           </Link>
         </Typography>
@@ -92,11 +88,7 @@ export function MarketingContactInfo({ sx, ...other }: BoxProps) {
 
   const renderTime = () => (
     <Box {...rowStyles}>
-      <Iconify
-        width={24}
-        icon="solar:clock-circle-outline"
-        sx={{ mt: "2px" }}
-      />
+      <Iconify width={24} icon="solar:clock-circle-outline" sx={{ mt: "2px" }} />
       <div>
         <Box
           sx={{
@@ -108,9 +100,7 @@ export function MarketingContactInfo({ sx, ...other }: BoxProps) {
         >
           Horários da empresa
         </Box>
-        <Typography variant="body2">
-          Seg-Quin: 9:00 — 18:00, Sexta: 9:00 — 17:00
-        </Typography>
+        <Typography variant="body2">Seg-Quin: 9:00 — 18:00, Sexta: 9:00 — 17:00</Typography>
       </div>
     </Box>
   );

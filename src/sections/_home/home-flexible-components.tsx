@@ -96,7 +96,8 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       <m.div variants={variants}>
         <Button
           component={RouterLink}
-          href="https://wa.me/552122170600?text=I'm%20interested%20in%20your%20car%20for%20sale"
+          href="https://wa.me/5521991026185?text=WhatsApp%20Fradema%20Consultoria%20Tributária"
+          target="_blank"
           color="inherit"
           size="large"
           variant="outlined"

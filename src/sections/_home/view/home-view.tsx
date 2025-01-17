@@ -38,8 +38,6 @@ export function HomeView() {
 
       <MarketingServicesHowItWork />
 
-      {/* <HomeHero /> */}
-
       <HomeNewStart />
 
       <HomeFlexibleComponents />
