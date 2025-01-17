@@ -1,22 +1,22 @@
-import type { BoxProps } from '@mui/material/Box';
-import type { Theme, SxProps } from '@mui/material/styles';
-import type { ICaseStudyProps } from 'src/types/case-study';
+import type { BoxProps } from "@mui/material/Box";
+import type { Theme, SxProps } from "@mui/material/styles";
+import type { ICaseStudyProps } from "src/types/case-study";
 
-import { varAlpha } from 'minimal-shared/utils';
+import { varAlpha } from "minimal-shared/utils";
 
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid2';
-import Paper from '@mui/material/Paper';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid2";
+import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { Iconify } from 'src/components/iconify';
-import { Image, imageClasses } from 'src/components/image';
+import { Iconify } from "src/components/iconify";
+import { Image, imageClasses } from "src/components/image";
 
 // ----------------------------------------------------------------------
 
@@ -26,8 +26,8 @@ type Props = BoxProps & {
 
 export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props) {
   const renderTexts = () => (
-    <Box sx={{ textAlign: { xs: 'center', md: 'unset' } }}>
-      <Typography variant="overline" sx={{ mb: 3, display: 'block', color: 'text.disabled' }}>
+    <Box sx={{ textAlign: { xs: "center", md: "unset" } }}>
+      <Typography variant="overline" sx={{ mb: 3, display: "block", color: "text.disabled" }}>
         Our work
       </Typography>
       <Typography variant="h2">Case studies</Typography>
@@ -38,7 +38,7 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
     <Box
       component="section"
       sx={[
-        { pb: 10, overflow: 'hidden', pt: { xs: 5, md: 10 } },
+        { pb: 10, overflow: "hidden", pt: { xs: 5, md: 10 } },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
       {...other}
@@ -46,29 +46,29 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
       <Container>
         {renderTexts()}
 
-        <Grid spacing={3} container sx={{ alignItems: 'center', py: { xs: 5, md: 10 } }}>
+        <Grid spacing={3} container sx={{ alignItems: "center", py: { xs: 5, md: 10 } }}>
           <Grid size={{ xs: 6, md: 2 }}>
             <SmallItem item={caseStudies[0]} />
           </Grid>
 
-          <Grid sx={{ display: { md: 'none' } }} size={{ xs: 6, md: 2 }}>
+          <Grid sx={{ display: { md: "none" } }} size={{ xs: 6, md: 2 }}>
             <SmallItem item={caseStudies[5]} />
           </Grid>
 
           <Grid container size={{ xs: 12, sm: 12, md: 8 }}>
             <Grid size={{ xs: 6, md: 9 }}>
-              <LargeItem item={caseStudies[1]} sx={{ display: { xs: 'none', md: 'flex' } }} />
-              <SmallItem item={caseStudies[1]} isSquare sx={{ display: { md: 'none' } }} />
+              <LargeItem item={caseStudies[1]} sx={{ display: { xs: "none", md: "flex" } }} />
+              <SmallItem item={caseStudies[1]} isSquare sx={{ display: { md: "none" } }} />
             </Grid>
 
             <Grid
               size={{ xs: 6, md: 3 }}
               sx={{
-                display: { md: 'flex' },
-                flexDirection: { md: 'column' },
+                display: { md: "flex" },
+                flexDirection: { md: "column" },
               }}
             >
-              <SmallItem item={caseStudies[2]} isSquare sx={{ mt: { md: 'auto' } }} />
+              <SmallItem item={caseStudies[2]} isSquare sx={{ mt: { md: "auto" } }} />
             </Grid>
 
             <Grid size={{ xs: 6, md: 3 }}>
@@ -76,20 +76,20 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
             </Grid>
 
             <Grid size={{ xs: 6, md: 9 }}>
-              <LargeItem item={caseStudies[4]} sx={{ display: { xs: 'none', md: 'flex' } }} />
-              <SmallItem item={caseStudies[4]} isSquare sx={{ display: { md: 'none' } }} />
+              <LargeItem item={caseStudies[4]} sx={{ display: { xs: "none", md: "flex" } }} />
+              <SmallItem item={caseStudies[4]} isSquare sx={{ display: { md: "none" } }} />
             </Grid>
           </Grid>
 
-          <Grid sx={{ display: { xs: 'none', md: 'block' } }} size={{ xs: 6, md: 2 }}>
+          <Grid sx={{ display: { xs: "none", md: "block" } }} size={{ xs: 6, md: 2 }}>
             <SmallItem item={caseStudies[5]} />
           </Grid>
         </Grid>
 
-        <Box sx={{ textAlign: { xs: 'center', md: 'right' } }}>
+        <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
           <Button
             component={RouterLink}
-            href={paths.marketing.caseStudies}
+            href={paths.filiais.caseStudies}
             size="large"
             color="inherit"
             endIcon={<Iconify icon="solar:alt-arrow-right-outline" />}
@@ -111,15 +111,15 @@ type ItemProps = {
 };
 
 const transition = (theme: Theme) =>
-  theme.transitions.create(['transform'], {
+  theme.transitions.create(["transform"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.short,
   });
 
-function LargeItem({ item, sx }: Omit<ItemProps, 'isSquare'>) {
+function LargeItem({ item, sx }: Omit<ItemProps, "isSquare">) {
   const renderContent = () => (
-    <Box sx={{ display: 'flex', flexDirection: 'column', p: 3, pt: 5, width: 0.5 }}>
-      <Typography variant="overline" sx={{ color: 'primary.main' }}>
+    <Box sx={{ display: "flex", flexDirection: "column", p: 3, pt: 5, width: 0.5 }}>
+      <Typography variant="overline" sx={{ color: "primary.main" }}>
         {item.category}
       </Typography>
 
@@ -129,18 +129,18 @@ function LargeItem({ item, sx }: Omit<ItemProps, 'isSquare'>) {
 
       <Typography
         variant="body2"
-        sx={(theme) => ({ ...theme.mixins.maxLine({ line: 2 }), color: 'text.secondary' })}
+        sx={(theme) => ({ ...theme.mixins.maxLine({ line: 2 }), color: "text.secondary" })}
       >
         {item.description}
       </Typography>
 
       <Button
         component={RouterLink}
-        href={paths.marketing.caseStudy(item.id)}
+        href={paths.filiais.caseStudy(item.id)}
         size="small"
         color="inherit"
         endIcon={<Iconify width={16} icon="solar:alt-arrow-right-outline" sx={{ ml: -0.5 }} />}
-        sx={{ mt: 'auto', alignSelf: 'flex-end' }}
+        sx={{ mt: "auto", alignSelf: "flex-end" }}
       >
         Learn more
       </Button>
@@ -152,18 +152,18 @@ function LargeItem({ item, sx }: Omit<ItemProps, 'isSquare'>) {
       sx={[
         (theme) => ({
           p: 0.75,
-          display: 'flex',
+          display: "flex",
           borderRadius: 2,
-          bgcolor: 'background.paper',
+          bgcolor: "background.paper",
           boxShadow: theme.vars.customShadows.z24,
-          '&:hover': {
-            [`& .${imageClasses.root}`]: { transform: 'scale(1.2)' },
+          "&:hover": {
+            [`& .${imageClasses.root}`]: { transform: "scale(1.2)" },
           },
         }),
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
     >
-      <Box component="span" sx={{ overflow: 'hidden', borderRadius: 2, width: 0.5 }}>
+      <Box component="span" sx={{ overflow: "hidden", borderRadius: 2, width: 0.5 }}>
         <Image alt={item.title} src={item.coverUrl} ratio="3/4" sx={{ transition }} />
       </Box>
 
@@ -185,21 +185,21 @@ function SmallItem({ item, isSquare, sx }: ItemProps) {
         width: 1,
         height: 1,
         zIndex: 9,
-        display: 'flex',
-        textAlign: 'center',
-        position: 'absolute',
-        color: 'common.white',
-        flexDirection: 'column',
-        justifyContent: 'center',
+        display: "flex",
+        textAlign: "center",
+        position: "absolute",
+        color: "common.white",
+        flexDirection: "column",
+        justifyContent: "center",
       }}
     >
-      <Box component="span" sx={{ opacity: 0.48, typography: 'overline' }}>
+      <Box component="span" sx={{ opacity: 0.48, typography: "overline" }}>
         {item.category}
       </Box>
 
       <Link
         component={RouterLink}
-        href={paths.marketing.caseStudy(item.id)}
+        href={paths.filiais.caseStudy(item.id)}
         variant="h6"
         color="inherit"
         underline="none"
@@ -214,10 +214,10 @@ function SmallItem({ item, isSquare, sx }: ItemProps) {
       sx={[
         {
           borderRadius: 2,
-          overflow: 'hidden',
-          position: 'relative',
-          '&:hover': {
-            [`& .${imageClasses.root}`]: { transform: 'scale(1.2)' },
+          overflow: "hidden",
+          position: "relative",
+          "&:hover": {
+            [`& .${imageClasses.root}`]: { transform: "scale(1.2)" },
           },
         },
         ...(Array.isArray(sx) ? sx : [sx]),
@@ -228,7 +228,7 @@ function SmallItem({ item, isSquare, sx }: ItemProps) {
       <Image
         alt={item.title}
         src={item.coverUrl}
-        ratio={isSquare ? '1/1' : { xs: '1/1', md: '3/4' }}
+        ratio={isSquare ? "1/1" : { xs: "1/1", md: "3/4" }}
         sx={{ transition }}
         slotProps={{
           overlay: {

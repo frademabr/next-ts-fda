@@ -1,22 +1,22 @@
-import type { BoxProps } from '@mui/material/Box';
-import type { TextFieldProps } from '@mui/material/TextField';
+import type { BoxProps } from "@mui/material/Box";
+import type { TextFieldProps } from "@mui/material/TextField";
 
-import { varAlpha } from 'minimal-shared/utils';
+import { varAlpha } from "minimal-shared/utils";
 
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid2';
-import Button from '@mui/material/Button';
-import { styled } from '@mui/material/styles';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import MuiTextField from '@mui/material/TextField';
-import { inputBaseClasses } from '@mui/material/InputBase';
-import { inputLabelClasses } from '@mui/material/InputLabel';
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid2";
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import MuiTextField from "@mui/material/TextField";
+import { inputBaseClasses } from "@mui/material/InputBase";
+import { inputLabelClasses } from "@mui/material/InputLabel";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from "src/components/iconify";
 
 // ----------------------------------------------------------------------
 
@@ -26,10 +26,10 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
       sx={{
         mb: 2,
         gap: 1.5,
-        display: 'flex',
-        alignItems: 'center',
-        color: 'common.white',
-        justifyContent: { xs: 'center', md: 'flex-start' },
+        display: "flex",
+        alignItems: "center",
+        color: "common.white",
+        justifyContent: { xs: "center", md: "flex-start" },
       }}
     >
       <Iconify width={24} icon="carbon:email" />
@@ -44,10 +44,10 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
     <Box
       sx={{
         gap: 1.5,
-        display: 'flex',
-        alignItems: 'center',
-        color: 'common.white',
-        justifyContent: { xs: 'center', md: 'flex-start' },
+        display: "flex",
+        alignItems: "center",
+        color: "common.white",
+        justifyContent: { xs: "center", md: "flex-start" },
       }}
     >
       <Iconify width={24} icon="carbon:location" />
@@ -65,7 +65,7 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
         size="large"
         color="primary"
         variant="contained"
-        sx={{ mr: 'auto', ml: { xs: 'auto', md: 'unset' } }}
+        sx={{ mr: "auto", ml: { xs: "auto", md: "unset" } }}
       >
         Send request
       </Button>
@@ -78,7 +78,7 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
       sx={[
         (theme) => ({
           ...theme.mixins.bgGradient({
-            images: [`url(${CONFIG.assetsDir}/assets/images/marketing/get-free-seo.webp)`],
+            images: [`url(${CONFIG.assetsDir}/assets/images/filiais/get-free-seo.webp)`],
           }),
           py: { xs: 10, md: 15 },
         }),
@@ -87,8 +87,8 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
       {...other}
     >
       <Container>
-        <Grid container spacing={{ xs: 5, md: 3 }} sx={{ justifyContent: 'space-between' }}>
-          <Grid sx={{ textAlign: { xs: 'center', md: 'left' } }} size={{ xs: 12, md: 5 }}>
+        <Grid container spacing={{ xs: 5, md: 3 }} sx={{ justifyContent: "space-between" }}>
+          <Grid sx={{ textAlign: { xs: "center", md: "left" } }} size={{ xs: 12, md: 5 }}>
             <Typography
               variant="h1"
               component="h2"
@@ -97,7 +97,7 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
                   `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
                 ),
                 mb: { xs: 3, md: 5 },
-                display: 'inline-flex',
+                display: "inline-flex",
               })}
             >
               Get free
@@ -108,7 +108,7 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
             {renderAddress()}
           </Grid>
 
-          <Grid size={{ xs: 12, md: 5 }} sx={{ gap: 3, display: 'flex', flexDirection: 'column' }}>
+          <Grid size={{ xs: 12, md: 5 }} sx={{ gap: 3, display: "flex", flexDirection: "column" }}>
             {renderForm()}
           </Grid>
         </Grid>
@@ -122,7 +122,7 @@ export function MarketingLandingFreeSEO({ sx, ...other }: BoxProps) {
 const TextField = styled((props: TextFieldProps) => <MuiTextField fullWidth {...props} />)(
   ({ theme }) => ({
     [`& .${inputBaseClasses.root}`]: {
-      backgroundColor: varAlpha(theme.vars.palette.grey['500Channel'], 0.16),
+      backgroundColor: varAlpha(theme.vars.palette.grey["500Channel"], 0.16),
     },
     [`& .${inputBaseClasses.input}`]: { color: theme.vars.palette.common.white },
     [`& .${inputLabelClasses.root}.${inputLabelClasses.shrink}`]: {

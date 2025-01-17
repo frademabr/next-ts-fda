@@ -1,27 +1,27 @@
-import type { IPostProps } from 'src/types/blog';
-import type { BoxProps } from '@mui/material/Box';
+import type { IPostProps } from "src/types/blog";
+import type { BoxProps } from "@mui/material/Box";
 
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid2';
-import Avatar from '@mui/material/Avatar';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Grid from "@mui/material/Grid2";
+import Avatar from "@mui/material/Avatar";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { fDate } from 'src/utils/format-time';
+import { fDate } from "src/utils/format-time";
 
-import { Image } from 'src/components/image';
+import { Image } from "src/components/image";
 import {
   Carousel,
   useCarousel,
   CarouselDotButtons,
   CarouselArrowFloatButtons,
-} from 'src/components/carousel';
+} from "src/components/carousel";
 
-import { PostTime } from '../../blog/post-time';
+import { PostTime } from "../../blog/post-time";
 
 // ----------------------------------------------------------------------
 
@@ -36,25 +36,25 @@ export function MarketingFeaturedPosts({ posts, sx, ...other }: Props) {
     <Box
       component="section"
       sx={[
-        { pb: 10, position: 'relative', pt: { xs: 10, md: 15 } },
+        { pb: 10, position: "relative", pt: { xs: 10, md: 15 } },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
       {...other}
     >
       <Container>
-        <Box sx={{ position: 'relative' }}>
+        <Box sx={{ position: "relative" }}>
           <CarouselArrowFloatButtons
             {...carousel.arrows}
             options={carousel.options}
             sx={(theme) => ({
-              borderRadius: '50%',
-              bgcolor: 'primary.main',
-              color: 'primary.contrastText',
-              display: { xs: 'none', md: 'flex' },
-              ...theme.applyStyles('dark', { color: 'primary.contrastText' }),
+              borderRadius: "50%",
+              bgcolor: "primary.main",
+              color: "primary.contrastText",
+              display: { xs: "none", md: "flex" },
+              ...theme.applyStyles("dark", { color: "primary.contrastText" }),
             })}
           />
-          <Carousel carousel={carousel} sx={{ borderRadius: 2, bgcolor: 'background.default' }}>
+          <Carousel carousel={carousel} sx={{ borderRadius: 2, bgcolor: "background.default" }}>
             {posts.map((post) => (
               <PostItem key={post.id} post={post} />
             ))}
@@ -66,7 +66,7 @@ export function MarketingFeaturedPosts({ posts, sx, ...other }: Props) {
           scrollSnaps={carousel.dots.scrollSnaps}
           selectedIndex={carousel.dots.selectedIndex}
           onClickDot={carousel.dots.onClickDot}
-          sx={{ mt: 5, width: 1, color: 'primary.main', justifyContent: 'center' }}
+          sx={{ mt: 5, width: 1, color: "primary.main", justifyContent: "center" }}
         />
       </Container>
 
@@ -86,7 +86,7 @@ export function MarketingFeaturedPosts({ posts, sx, ...other }: Props) {
                   }),
                 },
               }}
-              sx={{ top: 0, width: 1, height: 1, zIndex: -1, position: 'absolute' }}
+              sx={{ top: 0, width: 1, height: 1, zIndex: -1, position: "absolute" }}
             />
           )
       )}
@@ -108,20 +108,20 @@ export function PostItem({ post }: PostItemProps) {
           component="img"
           alt={post.title}
           src={post.coverUrl}
-          sx={{ width: 1, objectFit: 'cover', aspectRatio: '4/3' }}
+          sx={{ width: 1, objectFit: "cover", aspectRatio: "4/3" }}
         />
       </Grid>
 
       <Grid
         size={{ xs: 12, md: 4 }}
-        sx={{ display: 'flex', flexDirection: 'column', p: { xs: 3, md: 5 } }}
+        sx={{ display: "flex", flexDirection: "column", p: { xs: 3, md: 5 } }}
       >
-        <Box sx={{ gap: 1, display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+        <Box sx={{ gap: 1, display: "flex", flexDirection: "column", flexGrow: 1 }}>
           <PostTime createdAt={fDate(post.createdAt)} duration={post.duration} />
 
           <Link
             component={RouterLink}
-            href={paths.marketing.post}
+            href={paths.filiais.post}
             color="inherit"
             variant="h4"
             sx={(theme) => ({ ...theme.mixins.maxLine({ line: 3 }) })}
@@ -133,14 +133,14 @@ export function PostItem({ post }: PostItemProps) {
             variant="body2"
             sx={(theme) => ({
               ...theme.mixins.maxLine({ line: 3, persistent: theme.typography.body2 }),
-              color: 'text.secondary',
+              color: "text.secondary",
             })}
           >
             {post.description}
           </Typography>
         </Box>
 
-        <Box sx={{ gap: 1.5, display: 'flex', alignItems: 'center', pt: 2, typography: 'body2' }}>
+        <Box sx={{ gap: 1.5, display: "flex", alignItems: "center", pt: 2, typography: "body2" }}>
           <Avatar src={post.author.avatarUrl} />
           {post.author.name}
         </Box>

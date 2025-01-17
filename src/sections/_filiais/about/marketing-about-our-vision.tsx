@@ -1,14 +1,14 @@
-import type { BoxProps } from '@mui/material/Box';
+import type { BoxProps } from "@mui/material/Box";
 
-import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
+import { Image } from "src/components/image";
+import { Iconify } from "src/components/iconify";
 
 // ----------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ export function MarketingAboutOurVision({ sx, ...other }: BoxProps) {
   return (
     <Box
       component="section"
-      sx={[{ position: 'relative', textAlign: 'center' }, ...(Array.isArray(sx) ? sx : [sx])]}
+      sx={[{ position: "relative", textAlign: "center" }, ...(Array.isArray(sx) ? sx : [sx])]}
       {...other}
     >
       <Container>
@@ -24,14 +24,14 @@ export function MarketingAboutOurVision({ sx, ...other }: BoxProps) {
           variant="h2"
           sx={(theme) => ({
             mb: 5,
-            mx: 'auto',
-            [theme.breakpoints.up('md')]: {
+            mx: "auto",
+            [theme.breakpoints.up("md")]: {
               top: 80,
               zIndex: 9,
-              left: '50%',
-              position: 'absolute',
-              color: 'common.white',
-              transform: 'translateX(-50%)',
+              left: "50%",
+              position: "absolute",
+              color: "common.white",
+              transform: "translateX(-50%)",
             },
           })}
         >
@@ -40,21 +40,21 @@ export function MarketingAboutOurVision({ sx, ...other }: BoxProps) {
 
         <Box
           sx={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
             borderRadius: 2,
-            overflow: 'hidden',
-            position: 'relative',
+            overflow: "hidden",
+            position: "relative",
           }}
         >
-          <Fab color="primary" sx={{ zIndex: 9, position: 'absolute' }}>
+          <Fab color="primary" sx={{ zIndex: 9, position: "absolute" }}>
             <Iconify width={22} icon="solar:play-outline" />
           </Fab>
 
           <Image
             alt="Hero"
-            src={`${CONFIG.assetsDir}/assets/images/marketing/marketing-large-2.webp`}
+            src={`${CONFIG.assetsDir}/assets/images/filiais/filiais-large-2.webp`}
             ratio="16/9"
             slotProps={{
               overlay: {
@@ -73,15 +73,15 @@ export function MarketingAboutOurVision({ sx, ...other }: BoxProps) {
           component="p"
           sx={(theme) => ({
             mt: 5,
-            mx: 'auto',
+            mx: "auto",
             maxWidth: 564,
-            [theme.breakpoints.up('md')]: {
+            [theme.breakpoints.up("md")]: {
               zIndex: 9,
               bottom: 80,
-              left: '50%',
+              left: "50%",
               opacity: 0.72,
-              position: 'absolute',
-              transform: 'translateX(-50%)',
+              position: "absolute",
+              transform: "translateX(-50%)",
               color: theme.vars.palette.common.white,
             },
           })}

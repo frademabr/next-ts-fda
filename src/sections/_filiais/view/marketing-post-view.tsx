@@ -1,41 +1,41 @@
-'use client';
+"use client";
 
-import { useState, useCallback } from 'react';
-import { usePopover } from 'minimal-shared/hooks';
+import { useState, useCallback } from "react";
+import { usePopover } from "minimal-shared/hooks";
 
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid2';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
-import Popover from '@mui/material/Popover';
-import Checkbox from '@mui/material/Checkbox';
-import MenuItem from '@mui/material/MenuItem';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Popover from "@mui/material/Popover";
+import Checkbox from "@mui/material/Checkbox";
+import MenuItem from "@mui/material/MenuItem";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
 
-import { paths } from 'src/routes/paths';
+import { paths } from "src/routes/paths";
 
-import { fDate } from 'src/utils/format-time';
+import { fDate } from "src/utils/format-time";
 
-import { _socials, _marketingPosts } from 'src/_mock';
-import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from 'src/assets/icons';
+import { _socials, _filiaisPosts } from "src/_mock";
+import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from "src/assets/icons";
 
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Iconify } from "src/components/iconify";
+import { Markdown } from "src/components/markdown";
+import { CustomBreadcrumbs } from "src/components/custom-breadcrumbs";
 
-import { PostTags } from '../../blog/post-tags';
-import { PostAuthor } from '../../blog/post-author';
-import { MarketingNewsletter } from '../marketing-newsletter';
-import { MarketingLatestPosts } from '../posts/marketing-latest-posts';
-import { MarketingLandingFreeSEO } from '../landing/marketing-landing-free-seo';
+import { PostTags } from "../../blog/post-tags";
+import { PostAuthor } from "../../blog/post-author";
+import { MarketingNewsletter } from "../marketing-newsletter";
+import { MarketingLatestPosts } from "../posts/marketing-latest-posts";
+import { MarketingLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
-const post = _marketingPosts[0];
-const latestPosts = _marketingPosts.slice(0, 4);
+const post = _filiaisPosts[0];
+const latestPosts = _filiaisPosts.slice(0, 4);
 
 export function MarketingPostView() {
   const openSocial = usePopover();
@@ -51,13 +51,13 @@ export function MarketingPostView() {
       component="img"
       alt={post.title}
       src={post.heroUrl}
-      sx={{ aspectRatio: '21/9', objectFit: 'cover' }}
+      sx={{ aspectRatio: "21/9", objectFit: "cover" }}
     />
   );
 
   const renderHead = () => (
-    <Box sx={{ textAlign: 'center', mt: { xs: 5, md: 10 } }}>
-      <Typography variant="body2" sx={{ color: 'text.disabled' }}>
+    <Box sx={{ textAlign: "center", mt: { xs: 5, md: 10 } }}>
+      <Typography variant="body2" sx={{ color: "text.disabled" }}>
         {post.duration}
       </Typography>
       <Typography component="h1" variant="h2" sx={{ my: 3 }}>
@@ -70,12 +70,12 @@ export function MarketingPostView() {
   );
 
   const renderSocials = () => (
-    <Box sx={{ gap: 1.5, display: 'flex', mt: 5 }}>
-      <Box component="span" sx={{ lineHeight: '30px', typography: 'subtitle2' }}>
+    <Box sx={{ gap: 1.5, display: "flex", mt: 5 }}>
+      <Box component="span" sx={{ lineHeight: "30px", typography: "subtitle2" }}>
         Share:
       </Box>
 
-      <Box sx={{ gap: 1, display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ gap: 1, display: "flex", alignItems: "center", flexWrap: "wrap" }}>
         {_socials.map((social) => (
           <Button
             key={social.value}
@@ -83,10 +83,10 @@ export function MarketingPostView() {
             variant="outlined"
             startIcon={
               <>
-                {social.value === 'twitter' && <TwitterIcon />}
-                {social.value === 'facebook' && <FacebookIcon />}
-                {social.value === 'instagram' && <InstagramIcon />}
-                {social.value === 'linkedin' && <LinkedinIcon />}
+                {social.value === "twitter" && <TwitterIcon />}
+                {social.value === "facebook" && <FacebookIcon />}
+                {social.value === "instagram" && <InstagramIcon />}
+                {social.value === "linkedin" && <LinkedinIcon />}
               </>
             }
           >
@@ -102,16 +102,16 @@ export function MarketingPostView() {
       open={openSocial.open}
       anchorEl={openSocial.anchorEl}
       onClose={openSocial.onClose}
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      transformOrigin={{ vertical: 'top', horizontal: 'center' }}
+      anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      transformOrigin={{ vertical: "top", horizontal: "center" }}
       slotProps={{ paper: { sx: { width: 220 } } }}
     >
       {_socials.map((social) => (
         <MenuItem key={social.value} onClick={() => openSocial.onClose()} sx={{ gap: 1 }}>
-          {social.value === 'twitter' && <TwitterIcon />}
-          {social.value === 'facebook' && <FacebookIcon />}
-          {social.value === 'instagram' && <InstagramIcon />}
-          {social.value === 'linkedin' && <LinkedinIcon />}
+          {social.value === "twitter" && <TwitterIcon />}
+          {social.value === "facebook" && <FacebookIcon />}
+          {social.value === "instagram" && <InstagramIcon />}
+          {social.value === "linkedin" && <LinkedinIcon />}
           Share via {social.label}
         </MenuItem>
       ))}
@@ -124,8 +124,8 @@ export function MarketingPostView() {
         (theme) => ({
           py: 3,
           my: 5,
-          display: 'flex',
-          alignItems: 'center',
+          display: "flex",
+          alignItems: "center",
           borderTop: `solid 1px ${theme.vars.palette.divider}`,
           borderBottom: `solid 1px ${theme.vars.palette.divider}`,
         }),
@@ -135,12 +135,12 @@ export function MarketingPostView() {
 
       <Box sx={{ flexGrow: 1 }}>
         <Typography variant="subtitle2">{post.author.name}</Typography>
-        <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: 'text.secondary' }}>
+        <Typography variant="caption" sx={{ mt: 0.5, display: "block", color: "text.secondary" }}>
           {fDate(post.createdAt)}
         </Typography>
       </Box>
 
-      <IconButton onClick={openSocial.onOpen} color={openSocial.open ? 'primary' : 'default'}>
+      <IconButton onClick={openSocial.onOpen} color={openSocial.open ? "primary" : "default"}>
         <Iconify icon="solar:share-outline" />
       </IconButton>
       <Checkbox
@@ -149,7 +149,7 @@ export function MarketingPostView() {
         onChange={handleChangeFavorite}
         icon={<Iconify icon="solar:heart-outline" />}
         checkedIcon={<Iconify icon="solar:heart-bold" />}
-        inputProps={{ id: 'favorite-checkbox', 'aria-label': 'Favorite checkbox' }}
+        inputProps={{ id: "favorite-checkbox", "aria-label": "Favorite checkbox" }}
       />
     </Box>
   );
@@ -162,8 +162,8 @@ export function MarketingPostView() {
         <CustomBreadcrumbs
           sx={{ my: 3 }}
           links={[
-            { name: 'Home', href: '/' },
-            { name: 'Blog', href: paths.marketing.posts },
+            { name: "Home", href: "/" },
+            { name: "Blog", href: paths.filiais.posts },
             { name: post.title },
           ]}
         />
@@ -172,7 +172,7 @@ export function MarketingPostView() {
       <Divider />
 
       <Container component="section">
-        <Grid container spacing={3} sx={{ justifyContent: { md: 'center' } }}>
+        <Grid container spacing={3} sx={{ justifyContent: { md: "center" } }}>
           <Grid size={{ xs: 12, md: 8 }}>
             {renderHead()}
             {renderToolbar()}

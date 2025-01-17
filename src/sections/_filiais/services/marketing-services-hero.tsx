@@ -1,41 +1,41 @@
-import type { BoxProps } from '@mui/material/Box';
+import type { BoxProps } from "@mui/material/Box";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import InputAdornment from '@mui/material/InputAdornment';
-import InputBase, { inputBaseClasses } from '@mui/material/InputBase';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import InputAdornment from "@mui/material/InputAdornment";
+import InputBase, { inputBaseClasses } from "@mui/material/InputBase";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from "src/components/iconify";
 
 // ----------------------------------------------------------------------
 
 export function MarketingServicesHero({ sx, ...other }: BoxProps) {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
-  const [websiteURL, setWebsiteURL] = useState('');
+  const [websiteURL, setWebsiteURL] = useState("");
 
   const renderForm = () => (
     <Box
       sx={{
-        mx: 'auto',
+        mx: "auto",
         maxWidth: 760,
-        display: 'flex',
+        display: "flex",
         gap: { xs: 2.5, md: 2 },
-        alignItems: { md: 'center' },
-        flexDirection: { xs: 'column', md: 'row' },
+        alignItems: { md: "center" },
+        flexDirection: { xs: "column", md: "row" },
 
         [`& .${inputBaseClasses.root}`]: {
           pl: 1.5,
           height: 48,
           borderRadius: 1,
-          color: 'grey.800',
-          bgcolor: 'common.white',
+          color: "grey.800",
+          bgcolor: "common.white",
         },
       }}
     >
@@ -45,11 +45,11 @@ export function MarketingServicesHero({ sx, ...other }: BoxProps) {
         onChange={(event) => setEmail(event.target.value)}
         startAdornment={
           <InputAdornment position="start">
-            <Iconify width={24} icon="carbon:email" sx={{ color: 'text.disabled' }} />
+            <Iconify width={24} icon="carbon:email" sx={{ color: "text.disabled" }} />
           </InputAdornment>
         }
         placeholder="Email"
-        inputProps={{ id: 'email-input' }}
+        inputProps={{ id: "email-input" }}
       />
       <InputBase
         fullWidth
@@ -57,11 +57,11 @@ export function MarketingServicesHero({ sx, ...other }: BoxProps) {
         onChange={(event) => setWebsiteURL(event.target.value)}
         startAdornment={
           <InputAdornment position="start">
-            <Iconify width={24} icon="carbon:license-global" sx={{ color: 'text.disabled' }} />
+            <Iconify width={24} icon="carbon:license-global" sx={{ color: "text.disabled" }} />
           </InputAdornment>
         }
         placeholder="Website URL"
-        inputProps={{ id: 'website-url-input' }}
+        inputProps={{ id: "website-url-input" }}
       />
       <Button color="primary" size="large" variant="contained" sx={{ flexShrink: 0 }}>
         Analyse
@@ -77,7 +77,7 @@ export function MarketingServicesHero({ sx, ...other }: BoxProps) {
           ...theme.mixins.bgGradient({
             images: [
               `linear-gradient(to bottom, transparent 0%, ${theme.vars.palette.common.black} 75%)`,
-              `url(${CONFIG.assetsDir}/assets/images/marketing/services-hero.webp)`,
+              `url(${CONFIG.assetsDir}/assets/images/filiais/services-hero.webp)`,
             ],
           }),
           py: { xs: 10, md: 20 },
@@ -87,7 +87,7 @@ export function MarketingServicesHero({ sx, ...other }: BoxProps) {
       {...other}
     >
       <Container>
-        <Box sx={{ mb: 5, mx: 'auto', maxWidth: 480, textAlign: 'center', color: 'common.white' }}>
+        <Box sx={{ mb: 5, mx: "auto", maxWidth: 480, textAlign: "center", color: "common.white" }}>
           <Typography
             variant="h1"
             sx={(theme) => ({
@@ -95,7 +95,7 @@ export function MarketingServicesHero({ sx, ...other }: BoxProps) {
                 `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
               ),
               mb: 3,
-              display: 'inline-flex',
+              display: "inline-flex",
             })}
           >
             Offline SEO

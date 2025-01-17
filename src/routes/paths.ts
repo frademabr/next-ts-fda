@@ -41,14 +41,14 @@ export const paths = {
   /**
    * E-learning
    */
-  servicos: {
-    root: "/servicos",
-    courses: "/servicos/courses",
-    course: "/servicos/courses/details",
-    posts: "/servicos/posts",
-    post: "/servicos/posts/details",
-    about: "/servicos/about",
-    contact: "/servicos/contact",
+  eLearning: {
+    root: "/eLearning",
+    courses: "/eLearning/courses",
+    course: "/eLearning/courses/details",
+    posts: "/eLearning/posts",
+    post: "/eLearning/posts/details",
+    about: "/eLearning/about",
+    contact: "/eLearning/contact",
   },
   /**
    * E-commerce

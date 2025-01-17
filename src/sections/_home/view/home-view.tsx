@@ -19,6 +19,7 @@ import { HomeAdvertisement } from "../home-advertisement";
 import { HomeFlexibleComponents } from "../home-flexible-components";
 import { MarketingServicesHowItWork } from "@/sections/_filiais/services/marketing-services-how-it-work";
 import { MarketingContact } from "@/sections/_filiais/contact/marketing-contact";
+import { EcommerceLandingHero } from "@/sections/_ecommerce/landing/ecommerce-landing-hero";
 
 // ----------------------------------------------------------------------
 
@@ -45,9 +46,9 @@ export function HomeView() {
 
       <HomeFlexibleComponents />
 
-      <MarketingContact />
+      <EcommerceLandingHero />
 
-      <HomeForDesigner />
+      <MarketingContact />
 
       <HomeFAQs />
       {/* Typebot no footer e footer geral no layouts */}

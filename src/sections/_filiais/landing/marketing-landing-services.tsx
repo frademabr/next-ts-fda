@@ -1,52 +1,52 @@
-import type { BoxProps } from '@mui/material/Box';
+import type { BoxProps } from "@mui/material/Box";
 
-import { varAlpha } from 'minimal-shared/utils';
+import { varAlpha } from "minimal-shared/utils";
 
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { Iconify } from 'src/components/iconify';
-import { SvgColor } from 'src/components/svg-color';
+import { Iconify } from "src/components/iconify";
+import { SvgColor } from "src/components/svg-color";
 
 // ----------------------------------------------------------------------
 
 const iconPath = (name: string) => `${CONFIG.assetsDir}/assets/icons/duotone/${name}`;
 
-const COLORS = ['primary', 'secondary', 'success', 'warning'] as const;
+const COLORS = ["primary", "secondary", "success", "warning"] as const;
 
 const SERVICES = [
   {
-    name: 'SEO',
-    icon: iconPath('ic-seo.svg'),
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "SEO",
+    icon: iconPath("ic-seo.svg"),
+    content: "Nunc nonummy metus. Donec elit libero",
+    path: paths.filiais.services,
   },
   {
-    name: 'Email marketing',
-    icon: iconPath('ic-marketing-mail.svg'),
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Email filiais",
+    icon: iconPath("ic-filiais-mail.svg"),
+    content: "Nunc nonummy metus. Donec elit libero",
+    path: paths.filiais.services,
   },
   {
-    name: 'Search engine oprimization',
-    icon: iconPath('ic-search-oprimization.svg'),
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Search engine oprimization",
+    icon: iconPath("ic-search-oprimization.svg"),
+    content: "Nunc nonummy metus. Donec elit libero",
+    path: paths.filiais.services,
   },
   {
-    name: 'Social marketing',
-    icon: iconPath('ic-marketing-bullhorn.svg'),
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Social filiais",
+    icon: iconPath("ic-filiais-bullhorn.svg"),
+    content: "Nunc nonummy metus. Donec elit libero",
+    path: paths.filiais.services,
   },
 ];
 
@@ -65,17 +65,17 @@ export function MarketingLandingServices({ sx, ...other }: BoxProps) {
           sx={{
             mb: 5,
             maxWidth: 480,
-            mx: { xs: 'auto', md: 'unset' },
-            textAlign: { xs: 'center', md: 'unset' },
+            mx: { xs: "auto", md: "unset" },
+            textAlign: { xs: "center", md: "unset" },
           }}
         >
-          <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+          <Typography variant="overline" sx={{ color: "text.disabled" }}>
             Our services
           </Typography>
 
           <Typography variant="h2">We provide</Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
+          <Typography sx={{ color: "text.secondary" }}>
             Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
           </Typography>
         </Stack>
@@ -83,12 +83,12 @@ export function MarketingLandingServices({ sx, ...other }: BoxProps) {
         <Box
           sx={{
             gap: 4,
-            display: 'grid',
-            alignItems: 'center',
+            display: "grid",
+            alignItems: "center",
             gridTemplateColumns: {
-              xs: 'repeat(1, 1fr)',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(4, 1fr)',
+              xs: "repeat(1, 1fr)",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(4, 1fr)",
             },
           }}
         >
@@ -121,16 +121,16 @@ function ServiceItem({ item, index }: ServiceItemProps) {
         px: 4,
         py: 5,
         borderRadius: 2,
-        textAlign: 'center',
-        bgcolor: 'transparent',
+        textAlign: "center",
+        bgcolor: "transparent",
         boxShadow: theme.vars.customShadows.card,
-        [theme.breakpoints.up('md')]: {
-          boxShadow: 'none',
+        [theme.breakpoints.up("md")]: {
+          boxShadow: "none",
           ...(index === 1 && { py: 8 }),
           ...(index === 2 && { py: 10 }),
           ...([2, 3].includes(index) && {
-            boxShadow: `-24px 24px 72px -8px ${varAlpha(theme.vars.palette.grey['500Channel'], 0.24)}`,
-            ...theme.applyStyles('dark', {
+            boxShadow: `-24px 24px 72px -8px ${varAlpha(theme.vars.palette.grey["500Channel"], 0.24)}`,
+            ...theme.applyStyles("dark", {
               boxShadow: `-24px 24px 72px -8px ${varAlpha(theme.vars.palette.common.blackChannel, 0.24)}`,
             }),
           }),
@@ -150,7 +150,7 @@ function ServiceItem({ item, index }: ServiceItemProps) {
         <Typography variant="h6" sx={{ mb: 1 }}>
           {item.name}
         </Typography>
-        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body2" sx={{ color: "text.secondary" }}>
           {item.content}
         </Typography>
       </Box>
@@ -159,10 +159,10 @@ function ServiceItem({ item, index }: ServiceItemProps) {
         component={RouterLink}
         href={item.path}
         color={
-          (index === 0 && 'primary') ||
-          (index === 1 && 'secondary') ||
-          (index === 2 && 'success') ||
-          'warning'
+          (index === 0 && "primary") ||
+          (index === 1 && "secondary") ||
+          (index === 2 && "success") ||
+          "warning"
         }
       >
         <Iconify icon="carbon:direction-straight-right" />

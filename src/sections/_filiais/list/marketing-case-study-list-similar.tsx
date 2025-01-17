@@ -1,17 +1,17 @@
-import type { BoxProps } from '@mui/material/Box';
-import type { ICaseStudyProps } from 'src/types/case-study';
+import type { BoxProps } from "@mui/material/Box";
+import type { ICaseStudyProps } from "src/types/case-study";
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from "src/components/iconify";
 
-import { MarketingCaseStudyItem } from './marketing-case-study-item';
+import { MarketingCaseStudyItem } from "./marketing-case-study-item";
 
 // ----------------------------------------------------------------------
 
@@ -27,14 +27,14 @@ export function MarketingCaseStudyListSimilar({ caseStudies, sx, ...other }: Pro
       {...other}
     >
       <Container>
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 5, md: 10 } }}>
+        <Box sx={{ display: "flex", alignItems: "center", mb: { xs: 5, md: 10 } }}>
           <Typography component="h6" variant="h3" sx={{ flexGrow: 1 }}>
             You might like
           </Typography>
 
           <Button
             component={RouterLink}
-            href={paths.marketing.caseStudies}
+            href={paths.filiais.caseStudies}
             color="inherit"
             endIcon={<Iconify icon="solar:alt-arrow-right-outline" />}
           >
@@ -45,11 +45,11 @@ export function MarketingCaseStudyListSimilar({ caseStudies, sx, ...other }: Pro
         <Box
           sx={{
             gap: 4,
-            display: 'grid',
+            display: "grid",
             gridTemplateColumns: {
-              xs: 'repeat(1, 1fr)',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(3, 1fr)',
+              xs: "repeat(1, 1fr)",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
             },
           }}
         >

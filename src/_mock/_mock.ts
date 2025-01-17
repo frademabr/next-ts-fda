@@ -1,6 +1,6 @@
-import { fSub } from 'src/utils/format-time';
+import { fSub } from "src/utils/format-time";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
 import {
   _id,
@@ -28,7 +28,7 @@ import {
   _descriptions,
   _productNames,
   _companyNames,
-} from './assets';
+} from "./assets";
 
 // ----------------------------------------------------------------------
 
@@ -78,8 +78,8 @@ export const _mock = {
       `${CONFIG.assetsDir}/assets/images/z-product/product-${index + 1}.webp`,
     portrait: (index: number) =>
       `${CONFIG.assetsDir}/assets/images/portrait/portrait-${index + 1}.webp`,
-    marketing: (index: number) =>
-      `${CONFIG.assetsDir}/assets/images/marketing/marketing-${index + 1}.webp`,
+    filiais: (index: number) =>
+      `${CONFIG.assetsDir}/assets/images/filiais/filiais-${index + 1}.webp`,
   },
   video: (index: number) =>
     [

@@ -1,19 +1,19 @@
-import type { BoxProps } from '@mui/material/Box';
+import type { BoxProps } from "@mui/material/Box";
 
-import { varAlpha } from 'minimal-shared/utils';
+import { varAlpha } from "minimal-shared/utils";
 
-import Box from '@mui/material/Box';
-import Fab from '@mui/material/Fab';
-import Grid from '@mui/material/Grid2';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
+import Grid from "@mui/material/Grid2";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { CONFIG } from 'src/global-config';
+import { CONFIG } from "src/global-config";
 
-import { Iconify } from 'src/components/iconify';
-import { MotionViewport } from 'src/components/animate';
+import { Iconify } from "src/components/iconify";
+import { MotionViewport } from "src/components/animate";
 
 // ----------------------------------------------------------------------
 
@@ -21,8 +21,8 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
   const renderContent = () => (
     <Stack
       sx={{
-        alignItems: { xs: 'center', md: 'flex-start' },
-        textAlign: { xs: 'center', md: 'left' },
+        alignItems: { xs: "center", md: "flex-start" },
+        textAlign: { xs: "center", md: "left" },
       }}
     >
       <Typography
@@ -33,14 +33,14 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
           ),
         })}
       >
-        Digital marketing
+        Digital filiais
       </Typography>
 
       <Typography variant="h1" sx={{ my: 3 }}>
         Boosts your website traffic
       </Typography>
 
-      <Typography sx={{ mb: 5, color: 'text.secondary', maxWidth: 420 }}>
+      <Typography sx={{ mb: 5, color: "text.secondary", maxWidth: 420 }}>
         Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis
         ante odio sit amet eros.
       </Typography>
@@ -48,17 +48,17 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
       <Box
         sx={{
           gap: 2.5,
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: { xs: 'center', md: 'unset' },
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: { xs: "center", md: "unset" },
         }}
       >
         <Button variant="contained" color="inherit" size="large">
           Try for free
         </Button>
 
-        <Box sx={{ gap: 1.5, display: 'flex', alignItems: 'center', typography: 'h6' }}>
+        <Box sx={{ gap: 1.5, display: "flex", alignItems: "center", typography: "h6" }}>
           <Fab size="medium">
             <Iconify width={22} icon="solar:play-outline" />
           </Fab>
@@ -72,7 +72,7 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
     <Box
       component="img"
       alt="Marketing market"
-      src={`${CONFIG.assetsDir}/assets/illustrations/illustration-marketing-market.svg`}
+      src={`${CONFIG.assetsDir}/assets/illustrations/illustration-filiais-market.svg`}
       sx={{ width: 720 }}
     />
   );
@@ -90,16 +90,16 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
           }),
 
           py: 10,
-          overflow: 'hidden',
-          position: 'relative',
+          overflow: "hidden",
+          position: "relative",
 
-          [theme.breakpoints.up('md')]: {
+          [theme.breakpoints.up("md")]: {
             py: 15,
             minHeight: 760,
-            height: '100vh',
+            height: "100vh",
             maxHeight: 1440,
-            display: 'flex',
-            alignItems: 'center',
+            display: "flex",
+            alignItems: "center",
           },
         }),
         ...(Array.isArray(sx) ? sx : [sx]),
@@ -107,10 +107,10 @@ export function MarketingLandingHero({ sx, ...other }: BoxProps) {
       {...other}
     >
       <Container component={MotionViewport}>
-        <Grid container sx={{ alignItems: 'center', justifyContent: 'space-between' }}>
+        <Grid container sx={{ alignItems: "center", justifyContent: "space-between" }}>
           <Grid size={{ xs: 12, md: 6, lg: 5 }}>{renderContent()}</Grid>
 
-          <Grid sx={{ display: { xs: 'none', md: 'block' } }} size={{ xs: 12, md: 6, lg: 6 }}>
+          <Grid sx={{ display: { xs: "none", md: "block" } }} size={{ xs: 12, md: 6, lg: 6 }}>
             {renderImage()}
           </Grid>
         </Grid>

@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid2';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { MarketingNewsletter } from '../marketing-newsletter';
-import { MarketingContactForm } from '../contact/marketing-contact-form';
-import { MarketingContactInfo } from '../contact/marketing-contact-info';
-import { MarketingLandingFreeSEO } from '../landing/marketing-landing-free-seo';
+import { MarketingNewsletter } from "../marketing-newsletter";
+import { MarketingContactForm } from "../contact/marketing-contact-form";
+import { MarketingContactInfo } from "../contact/marketing-contact-info";
+import { MarketingLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
@@ -20,8 +20,8 @@ export function MarketingContactView() {
           <Grid
             container
             spacing={{ xs: 5, md: 3 }}
-            direction={{ xs: 'column-reverse', md: 'row' }}
-            sx={{ justifyContent: { md: 'space-between' } }}
+            direction={{ xs: "column-reverse", md: "row" }}
+            sx={{ justifyContent: { md: "space-between" } }}
           >
             <Grid size={{ xs: 12, md: 6, lg: 5 }}>
               <MarketingContactInfo />

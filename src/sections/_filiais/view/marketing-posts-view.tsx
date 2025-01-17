@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import Grid from '@mui/material/Grid2';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import Grid from "@mui/material/Grid2";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
 
-import { _mock, _tags, _marketingPosts } from 'src/_mock';
+import { _mock, _tags, _filiaisPosts } from "src/_mock";
 
-import { Advertisement } from '../../advertisement';
-import { PostSidebar } from '../../blog/post-sidebar';
-import { MarketingPosts } from '../posts/marketing-posts';
-import { MarketingNewsletter } from '../marketing-newsletter';
-import { PostSearchMobile } from '../../blog/post-search-mobile';
-import { MarketingFeaturedPosts } from '../posts/marketing-featured-posts';
-import { MarketingLandingFreeSEO } from '../landing/marketing-landing-free-seo';
+import { Advertisement } from "../../advertisement";
+import { PostSidebar } from "../../blog/post-sidebar";
+import { MarketingPosts } from "../posts/marketing-posts";
+import { MarketingNewsletter } from "../marketing-newsletter";
+import { PostSearchMobile } from "../../blog/post-search-mobile";
+import { MarketingFeaturedPosts } from "../posts/marketing-featured-posts";
+import { MarketingLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
-const posts = _marketingPosts.slice(0, 8);
-const recentPosts = _marketingPosts.slice(-4);
-const featuredPosts = _marketingPosts.slice(0, 5);
+const posts = _filiaisPosts.slice(0, 8);
+const recentPosts = _filiaisPosts.slice(-4);
+const featuredPosts = _filiaisPosts.slice(0, 5);
 
 export function MarketingPostsView() {
   return (
@@ -37,11 +37,11 @@ export function MarketingPostsView() {
             <PostSidebar
               tags={_tags}
               categories={[
-                { label: 'Marketing', path: '' },
-                { label: 'Community', path: '' },
-                { label: 'Tutorials', path: '' },
-                { label: 'Business', path: '' },
-                { label: 'Management', path: '' },
+                { label: "Marketing", path: "" },
+                { label: "Community", path: "" },
+                { label: "Tutorials", path: "" },
+                { label: "Business", path: "" },
+                { label: "Management", path: "" },
               ]}
               recentPosts={recentPosts}
               slots={{
@@ -49,7 +49,7 @@ export function MarketingPostsView() {
                   <Advertisement
                     title="Advertisement"
                     description="Duis leo. Donec orci lectus, aliquam ut, faucibus non"
-                    imageUrl={_mock.image.marketing(9)}
+                    imageUrl={_mock.image.filiais(9)}
                     action={
                       <Button variant="contained" color="primary">
                         Go now
