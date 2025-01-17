@@ -40,6 +40,7 @@ import { _mock } from "src/_mock";
 import { Image } from "src/components/image";
 import { Iconify } from "src/components/iconify";
 import { varFade, MotionViewport } from "src/components/animate";
+import Link from "next/link";
 
 // ----------------------------------------------------------------------
 
@@ -95,7 +96,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       <m.div variants={variants}>
         <Button
           component={RouterLink}
-          href={paths.components}
+          href="https://wa.me/552122170600?text=I'm%20interested%20in%20your%20car%20for%20sale"
           color="inherit"
           size="large"
           variant="outlined"
