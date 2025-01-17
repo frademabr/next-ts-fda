@@ -75,7 +75,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderSummary = () => (
     <>
       <m.div variants={variants}>
-        <Typography className="text-green-600" variant="overline" sx={{ fontSize: "14px" }}>
+        <Typography className="text-green-500" variant="overline" sx={{ fontSize: "14px" }}>
           As melhores estratégias
         </Typography>
       </m.div>
@@ -94,17 +94,16 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </m.div>
 
       <m.div variants={variants}>
-        <Button
-          component={RouterLink}
-          href="https://wa.me/5521991026185?text=WhatsApp%20Fradema%20Consultoria%20Tributária"
-          target="_blank"
-          color="inherit"
-          size="large"
-          variant="outlined"
-          endIcon={<Iconify width={16} icon="solar:alt-arrow-right-outline" />}
-        >
-          WhatsApp
-        </Button>
+        <button className="bg-green-600 text-white text-pretty p-3 rounded-lg hover:bg-green-700">
+          <a
+            target="_blank"
+            href="https://wa.me/5521970346980?text=WhatsApp%20Fradema%20Consultoria%20Tributária"
+            rel="noreferrer"
+          >
+            WhatsApp
+          </a>
+          <Iconify width={16} icon="solar:alt-arrow-right-outline" />
+        </button>
       </m.div>
     </>
   );
