@@ -1,14 +1,14 @@
-import type { IconButtonProps } from '@mui/material/IconButton';
+import type { IconButtonProps } from "@mui/material/IconButton";
 
-import { useState, useCallback } from 'react';
-import { usePopover } from 'minimal-shared/hooks';
+import { useState, useCallback } from "react";
+import { usePopover } from "minimal-shared/hooks";
 
-import Popover from '@mui/material/Popover';
-import MenuList from '@mui/material/MenuList';
-import MenuItem from '@mui/material/MenuItem';
-import IconButton from '@mui/material/IconButton';
+import Popover from "@mui/material/Popover";
+import MenuList from "@mui/material/MenuList";
+import MenuItem from "@mui/material/MenuItem";
+import IconButton from "@mui/material/IconButton";
 
-import { FlagIcon } from 'src/components/flag-icon';
+import { FlagIcon } from "src/components/flag-icon";
 
 // ----------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProp
           p: 0,
           width: 40,
           height: 40,
-          ...(open && { bgcolor: 'action.selected' }),
+          ...(open && { bgcolor: "action.selected" }),
         },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
@@ -58,8 +58,8 @@ export function LanguagePopover({ data = [], sx, ...other }: LanguagePopoverProp
       open={open}
       anchorEl={anchorEl}
       onClose={onClose}
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      transformOrigin={{ vertical: 'top', horizontal: 'center' }}
+      anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      transformOrigin={{ vertical: "top", horizontal: "center" }}
     >
       <MenuList sx={{ width: 160, minHeight: 72 }}>
         {data?.map((option) => (
