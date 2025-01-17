@@ -65,7 +65,7 @@
     "lucide-react": "^0.471.1",
     "minimal-shared": "^1.0.5",
     "mui-one-time-password-input": "^3.0.2",
-    "next": "15.1.4",
+    "next": "15.1.5",
     "nprogress": "^0.2.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
@@ -82,7 +82,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "@next/eslint-plugin-next": "^15.1.4",
+    "@next/eslint-plugin-next": "15.1.5",
     "@svgr/webpack": "^8.1.0",
     "@types/node": "^22.10.3",
     "@types/nprogress": "^0.2.3",
@@ -92,7 +92,7 @@
     "@typescript-eslint/parser": "^8.19.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.18.0",
-    "eslint-config-next": "^15.1.4",
+    "eslint-config-next": "15.1.5",
     "eslint-import-resolver-typescript": "^3.7.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-perfectionist": "^4.4.0",
@@ -108,6 +108,10 @@
     "typescript-eslint": "^8.19.0"
   },
   "overrides": {
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3"
+  },
+  "resolutions": {
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3"
   }
