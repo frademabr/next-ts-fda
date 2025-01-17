@@ -1,5 +1,4 @@
 import globals from "globals";
-import js from "@eslint/js";
 import eslintJs from "@eslint/js";
 import eslintTs from "typescript-eslint";
 import reactPlugin from "eslint-plugin-react";
@@ -14,31 +13,11 @@ import unusedImportsPlugin from "eslint-plugin-unused-imports";
  * @rules common
  * from 'react', 'eslint-plugin-react-hooks'...
  */
-import { FlatCompat } from "@eslint/eslintrc";
-
-const compat = new FlatCompat({
-  // import.meta.dirname is available after Node.js v20.11.0
-  baseDirectory: import.meta.dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
-
-export const eslintConfig = [
-  ...compat.config({
-    extends: ["next/core-web-vitals", "next/typescript"],
-    rules: {
-      "perfectionist/sort-imports": "off",
-      "@typescript-eslint/no-unused-vars": "off",
-    },
-  }),
-];
-
 const commonRules = () => ({
   ...reactHooksPlugin.configs.recommended.rules,
   "func-names": 1,
   "no-bitwise": 2,
   "no-unused-vars": 0,
-  "prefer-const": 0,
   "object-shorthand": 1,
   "no-useless-rename": 1,
   "default-case-last": 2,
@@ -72,6 +51,7 @@ const commonRules = () => ({
 const importRules = () => ({
   ...importPlugin.configs.recommended.rules,
   "import/named": 0,
+  "import/prefer-const": 0,
   "import/export": 0,
   "import/default": 0,
   "import/namespace": 0,

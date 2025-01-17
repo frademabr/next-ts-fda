@@ -69,11 +69,11 @@ const softVariant: Record<string, ComponentsVariants<Theme>["MuiButton"]> = {
         [`&.${buttonClasses.disabled}`]: {
           backgroundColor: theme.vars.palette.action.disabledBackground,
         },
-        [`& .${loadingButtonClasses.loadingIndicatorStart}`]: { left: 14 },
-        [`& .${loadingButtonClasses.loadingIndicatorEnd}`]: { right: 14 },
+        [`& .${loadingButtonClasses.call}`]: { left: 14 },
+        [`& .${loadingButtonClasses.call}`]: { right: 14 },
         [`&.${buttonClasses.sizeSmall}`]: {
-          [`& .${loadingButtonClasses.loadingIndicatorStart}`]: { left: 10 },
-          [`& .${loadingButtonClasses.loadingIndicatorEnd}`]: { right: 10 },
+          [`& .${loadingButtonClasses.call}`]: { left: 10 },
+          [`& .${loadingButtonClasses.call}`]: { right: 10 },
         },
       }),
     },
