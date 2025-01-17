@@ -44,7 +44,7 @@ const CONTENT = `
 // ----------------------------------------------------------------------
 
 const getCategory = (index: number) => {
-  if ([1, 2].includes(index)) return _tags[1];
+  if ([1, 2].includes(index)) return _tags[1]; // change here 1-1 2-2 etc
   if ([3, 4].includes(index)) return _tags[2];
   if ([5, 6].includes(index)) return _tags[3];
   return _tags[0];

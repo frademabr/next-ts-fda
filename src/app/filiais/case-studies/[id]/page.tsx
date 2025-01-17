@@ -50,6 +50,6 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
   const data = await fetchCaseStudy(params?.id);
 
   return {
-    title: `${data?.title} | Marketing - ${CONFIG.appName}`,
+    title: `${data?.title} | Filial - ${CONFIG.appName}`,
   };
 }
