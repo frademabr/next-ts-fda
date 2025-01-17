@@ -51,7 +51,6 @@ export function HomeView() {
 
       <HomeFAQs />
       {/* Typebot no footer e footer geral no layouts */}
-      <HomeAdvertisement />
     </>
   );
 }
