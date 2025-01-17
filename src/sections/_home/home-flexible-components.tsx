@@ -74,7 +74,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderSummary = () => (
     <>
       <m.div variants={variants}>
-        <Typography className="text-green-600" variant="overline">
+        <Typography className="text-green-600" variant="overline" sx={{ fontSize: "14px" }}>
           As melhores estratégias
         </Typography>
       </m.div>

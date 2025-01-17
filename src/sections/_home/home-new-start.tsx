@@ -47,14 +47,13 @@ export function HomeNewStart({ sx, ...other }: BoxProps) {
           </m.div>
 
           <m.div className="mb-5" variants={variants}>
-            <Typography className="text-green-500" variant="overline">
+            <Typography className="text-green-500" variant="overline" sx={{ fontSize: "14px" }}>
               Soluções inteligentes e inovadoras voltadas para seu negócio
             </Typography>
           </m.div>
 
           <m.div variants={variants}>
             <Typography variant="h2">
-              Sobre
               <Box component="span">{` A EMPRESA `}</Box>
             </Typography>
           </m.div>
