@@ -20,7 +20,7 @@ import { Iconify } from "@/components/iconify";
 import { varFade, MotionViewport } from "@/components/animate";
 
 // import BlurryBlob from "src/components/animata/background/blurry-blob";
-import { MarketingContactInfo } from "../_marketing/contact/marketing-contact-info";
+import { MarketingContactInfo } from "../_filiais/contact/marketing-contact-info";
 
 import { Divider } from "@/components/catalyst-ui-kit/typescript/divider";
 

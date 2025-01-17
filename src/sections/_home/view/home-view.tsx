@@ -17,8 +17,8 @@ import { HomeNewStart } from "../home-new-start";
 import { HomeForDesigner } from "../home-for-designer";
 import { HomeAdvertisement } from "../home-advertisement";
 import { HomeFlexibleComponents } from "../home-flexible-components";
-import { MarketingServicesHowItWork } from "src/sections/_marketing/services/marketing-services-how-it-work";
-import { MarketingContact } from "@/sections/_marketing/contact/marketing-contact";
+import { MarketingServicesHowItWork } from "@/sections/_filiais/services/marketing-services-how-it-work";
+import { MarketingContact } from "@/sections/_filiais/contact/marketing-contact";
 
 // ----------------------------------------------------------------------
 
