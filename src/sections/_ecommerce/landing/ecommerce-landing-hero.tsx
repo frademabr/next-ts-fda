@@ -77,13 +77,13 @@ export function EcommerceLandingHero({ sx, ...other }: BoxProps) {
             >
               {/* <Image src={`...${CONFIG.assetsDir}/assets/images/home/headertop.jpeg`} /> */}
               <GlareCard className="flex flex-col items-start justify-center pb-6 py-8 px-16 overflow-hidden">
-                {/* <CarouselDotButtons
-                variant="rounded"
-                scrollSnaps={carousel.dots.scrollSnaps}
-                selectedIndex={carousel.dots.selectedIndex}
-                onClickDot={carousel.dots.onClickDot}
-                sx={{ color: 'info.main' }}
-              /> */}
+                <CarouselDotButtons
+                  variant="rounded"
+                  scrollSnaps={carousel.dots.scrollSnaps}
+                  selectedIndex={carousel.dots.selectedIndex}
+                  onClickDot={carousel.dots.onClickDot}
+                  sx={{ color: "info.main" }}
+                />
 
                 <Carousel className="h-full w-full absolute inset-0  mb-10" carousel={carousel}>
                   {_productsCarousel.map((product, index) => (
@@ -94,39 +94,39 @@ export function EcommerceLandingHero({ sx, ...other }: BoxProps) {
                     />
                   ))}
                 </Carousel>
-
-                <CarouselArrowBasicButtons
-                  {...carousel.arrows}
-                  options={carousel.options}
-                  slotProps={{
-                    prevBtn: {
-                      svgIcon: (
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m15 5l-6 7l6 7"
-                        />
-                      ),
-                    },
-                    nextBtn: {
-                      svgIcon: (
-                        <path
-                          fill="none"
-                          stroke="currentColor"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="m9 5l6 7l-6 7"
-                        />
-                      ),
-                    },
-                  }}
-                  sx={{ gap: 1, color: "info.main" }}
-                />
               </GlareCard>
+              {/* <CarouselArrowBasicButtons
+                className=""
+                {...carousel.arrows}
+                options={carousel.options}
+                slotProps={{
+                  prevBtn: {
+                    svgIcon: (
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="m15 5l-6 7l6 7"
+                      />
+                    ),
+                  },
+                  nextBtn: {
+                    svgIcon: (
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="m9 5l6 7l-6 7"
+                      />
+                    ),
+                  },
+                }}
+                sx={{ gap: 1, color: "info.main" }}
+              /> */}
             </Box>
           </Container>
         </Box>

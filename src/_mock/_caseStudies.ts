@@ -6,18 +6,25 @@ import { _tags } from "./assets";
 // ----------------------------------------------------------------------
 
 const TITLES = [
-  "Bank of America",
-  "Technology Nixon",
-  "Turn Key Smart",
-  "Digital Shose",
-  "Action Car",
-  "The Zone UI",
-  "Minimal UI",
-  "Network Firefox",
+  `Fradema - Rio de Janeiro`,
+  `Fradema - São Paulo`,
+  `Fradema - Campinas`,
+  `Fradema - Brasília`,
+  `Fradema - Salvador`,
+  `Fradema - Piraúba`,
+  `Fradema - Vitória`,
+  `Fradema - Belo Horizonte`,
+  `Fradema - Curitiba`,
+  `Fradema - Joinville`,
+  `Fradema - Recife`,
+  `Fradema - Manaus`,
+  `Fradema - Zona da Mata`,
+  `Fradema - Nova Iorque`,
+  `Fradema - Orlando`,
 ];
 
 const CONTENT = `
-<h4>Project brief</h4>
+<h4 classname="text-green-500">Filiais</h4>
 <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
 <h4>How we work</h4>

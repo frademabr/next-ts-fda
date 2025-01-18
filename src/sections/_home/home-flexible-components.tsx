@@ -37,10 +37,8 @@ import { RouterLink } from "src/routes/components";
 
 import { _mock } from "src/_mock";
 
-import { Image } from "src/components/image";
 import { Iconify } from "src/components/iconify";
 import { varFade, MotionViewport } from "src/components/animate";
-import Link from "next/link";
 
 // ----------------------------------------------------------------------
 
@@ -97,7 +95,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         <button className="bg-green-600 text-white text-pretty p-3 rounded-lg hover:bg-green-700">
           <a
             target="_blank"
-            href="https://wa.me/5521970346980?text=WhatsApp%20Fradema%20Consultoria%20Tributária"
+            href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
             rel="noreferrer"
           >
             WhatsApp

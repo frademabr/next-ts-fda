@@ -17,11 +17,11 @@ type Props = BoxProps & {
 };
 
 export function MarketingCaseStudyList({ caseStudies, sx, ...other }: Props) {
-  const [currentTab, setCurrentTab] = useState("All");
+  const [currentTab, setCurrentTab] = useState("Todas");
 
   const getCategories = caseStudies.map((project) => project.category);
 
-  const categories = ["All", ...Array.from(new Set(getCategories))];
+  const categories = ["Todas", ...Array.from(new Set(getCategories))];
 
   const dataFiltered = applyFilter({ inputData: caseStudies, query: currentTab });
 
@@ -80,7 +80,7 @@ type ApplyFilterProps = {
 };
 
 function applyFilter({ inputData, query }: ApplyFilterProps) {
-  if (query !== "All") {
+  if (query !== "Todas") {
     inputData = inputData.filter((project) => project.category === query);
   }
 

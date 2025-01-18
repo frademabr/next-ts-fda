@@ -48,12 +48,6 @@ export function MarketingCaseStudiesView({ caseStudies }: Props) {
       </Box>
 
       <MarketingTestimonial testimonials={_testimonials} />
-
-      <MarketingLatestPosts posts={latestPosts} />
-
-      <MarketingLandingFreeSEO />
-
-      <MarketingNewsletter />
     </>
   );
 }

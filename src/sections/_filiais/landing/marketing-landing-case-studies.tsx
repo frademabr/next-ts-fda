@@ -28,9 +28,9 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
   const renderTexts = () => (
     <Box sx={{ textAlign: { xs: "center", md: "unset" } }}>
       <Typography variant="overline" sx={{ mb: 3, display: "block", color: "text.disabled" }}>
-        Our work
+        Nossos Parceiros:
       </Typography>
-      <Typography variant="h2">Case studies</Typography>
+      <Typography variant="h2">Filiais</Typography>
     </Box>
   );
 
@@ -86,7 +86,7 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
           </Grid>
         </Grid>
 
-        <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
+        {/* <Box sx={{ textAlign: { xs: "center", md: "right" } }}>
           <Button
             component={RouterLink}
             href={paths.filiais.caseStudies}
@@ -96,7 +96,7 @@ export function MarketingLandingCaseStudies({ caseStudies, sx, ...other }: Props
           >
             View all
           </Button>
-        </Box>
+        </Box> */}
       </Container>
     </Box>
   );

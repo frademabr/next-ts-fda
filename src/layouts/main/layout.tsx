@@ -26,7 +26,7 @@ import { PurchaseButton } from "../components/purchase-button";
 import { SettingsButton } from "../components/settings-button";
 import { LanguagePopover } from "../components/language-popover";
 
-import type { FooterProps } from "./footer";
+// import type { FooterProps } from "./footer";
 import type { NavMainProps } from "./nav/types";
 import type { MainSectionProps } from "../core/main-section";
 import type { HeaderSectionProps } from "../core/header-section";
@@ -44,7 +44,7 @@ export type MainLayoutProps = LayoutBaseProps & {
       data?: NavMainProps["data"];
     };
     main?: MainSectionProps;
-    footer?: FooterProps;
+    // footer?: FooterProps;
   };
 };
 
@@ -122,7 +122,7 @@ export function MainLayout({
     );
   };
 
-  const renderFooter = () => (homePage ? <HomeFooter /> : <Footer layoutQuery={layoutQuery} />);
+  const renderFooter = () => <HomeFooter />;
 
   const renderMain = () => <MainSection {...slotProps?.main}>{children}</MainSection>;
 
