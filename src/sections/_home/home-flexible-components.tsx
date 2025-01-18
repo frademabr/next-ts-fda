@@ -98,9 +98,8 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
             href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
             rel="noreferrer"
           >
-            WhatsApp
+            <Iconify width={16} icon="logos:whatsapp-icon" /> WhatsApp
           </a>
-          <Iconify width={16} icon="solar:alt-arrow-right-outline" />
         </button>
       </m.div>
     </>
