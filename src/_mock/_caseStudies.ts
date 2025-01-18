@@ -23,37 +23,66 @@ const TITLES = [
   `Fradema - Orlando`,
 ];
 
-const CONTENT = `
-<h4 classname="text-green-500">Filiais</h4>
-<p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
+const CONTENT = [
+  `
+  <h4 class="text-green-500">A Filial, Rio de Janeiro</h4>
+  <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
-<h4>How we work</h4>
-<p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
-<ul>
-    <li>Medical Assistant</li>
-    <li>Web Designer</li>
-    <li>Dog Trainer</li>
-    <li>Nursing Assistant</li>
-    <li>President of Sales</li>
-</ul>
+  <h4 class="text-green-500">Parceiros</h4>
 
-<h4>Results</h4>
-<p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
-<ul>
-    <li>Medical Assistant</li>
-    <li>Web Designer</li>
-    <li>Dog Trainer</li>
-    <li>Nursing Assistant</li>
-    <li>President of Sales</li>
-</ul>
-`;
+  <ul>
+      <li>Medical Assistant</li>
+      <li>Web Designer</li>
+      <li>Dog Trainer</li>
+      <li>Nursing Assistant</li>
+      <li>President of Sales</li>
+  </ul>
+  `,
+  `<h4 class="text-green-500">A Filial, São Paulo</h4>
+  <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
+  <h4 class="text-green-500">Parceiros</h4>
+
+  <ul>
+      <li>Medical Assistant</li>
+      <li>Web Designer</li>
+      <li>Dog Trainer</li>
+      <li>Nursing Assistant</li>
+      <li>President of Sales</li>
+  </ul>
+  `,
+  `<h4 class="text-green-500">A Filial, Campinas</h4>
+  <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
+
+  <h4 class="text-green-500">Parceiros</h4>
+
+  <ul>
+      <li>Medical Assistant</li>
+      <li>Web Designer</li>
+      <li>Dog Trainer</li>
+      <li>Nursing Assistant</li>
+      <li>President of Sales</li>
+  </ul>
+  `,
+];
 // ----------------------------------------------------------------------
 
 const getCategory = (index: number) => {
-  if ([1, 2].includes(index)) return _tags[1]; // change here 1-1 2-2 etc
-  if ([3, 4].includes(index)) return _tags[2];
-  if ([5, 6].includes(index)) return _tags[3];
+  if ([1].includes(index)) return _tags[1];
+  if ([2].includes(index)) return _tags[2];
+  if ([3].includes(index)) return _tags[3];
+  if ([4].includes(index)) return _tags[4];
+  if ([5].includes(index)) return _tags[5];
+  if ([6].includes(index)) return _tags[6];
+  if ([7].includes(index)) return _tags[7];
+  if ([8].includes(index)) return _tags[8];
+  if ([9].includes(index)) return _tags[9];
+  if ([10].includes(index)) return _tags[10];
+  if ([11].includes(index)) return _tags[11];
+  if ([12].includes(index)) return _tags[12];
+  if ([13].includes(index)) return _tags[13];
+  if ([14].includes(index)) return _tags[14];
+  if ([15].includes(index)) return _tags[15];
   return _tags[0];
 };
 
@@ -61,13 +90,13 @@ const getGalleryImgs = () => Array.from({ length: 6 }, (_, index) => _mock.image
 
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
-  content: CONTENT,
+  content: CONTENT[index],
   title: TITLES[index],
   createdAt: _mock.time(index),
   website: "https://example.com/",
   description: _mock.description(index),
   coverUrl: _mock.image.filiais(index + 1),
-  heroUrl: `${CONFIG.assetsDir}/assets/images/filiais/filiais-large-1.webp`,
+  heroUrl: _mock.image.filiaisHero(index + 1),
   how_we_work:
     "Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi",
   results:

@@ -8,19 +8,14 @@ import Typography from "@mui/material/Typography";
 
 import { _testimonials, _filiaisPosts } from "src/_mock";
 
-import { MarketingNewsletter } from "../marketing-newsletter";
 import { MarketingTestimonial } from "../marketing-testimonial";
-import { MarketingLatestPosts } from "../posts/marketing-latest-posts";
 import { MarketingCaseStudyList } from "../list/marketing-case-study-list";
-import { MarketingLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 
 // ----------------------------------------------------------------------
 
 type Props = {
   caseStudies: ICaseStudyProps[];
 };
-
-const latestPosts = _filiaisPosts.slice(0, 4);
 
 export function MarketingCaseStudiesView({ caseStudies }: Props) {
   const renderTexts = () => (
@@ -30,7 +25,7 @@ export function MarketingCaseStudiesView({ caseStudies }: Props) {
         textAlign: { xs: "center", md: "left" },
       }}
     >
-      <Typography variant="h2"> Case studies</Typography>
+      <Typography variant="h2"> Filiais</Typography>
       <Typography sx={{ mt: 3, color: "text.secondary" }}>
         Nullam tincidunt adipiscing enim.
         <br /> Mauris sollicitudin fermentum libero.
