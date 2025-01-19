@@ -41,7 +41,7 @@ export function HomeView() {
 
       <HomeHero />
 
-      <HomeNewStart />
+      {/* <HomeNewStart /> */}
 
       <HomeFlexibleComponents />
 

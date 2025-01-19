@@ -37,7 +37,7 @@ export default function HomeHero() {
               <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
             </svg>
             <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9">
-              <p>
+              <p className="mt-10">
                 A Fradema Consultores Tributários está há 36 anos no mercado, possuindo vasta
                 experiência e qualificação para pensar nas melhores soluções em consultoria
                 tributária para o seu negócio. Com atuação desde 1988, a Fradema Consultores
@@ -47,8 +47,8 @@ export default function HomeHero() {
               </p>
             </blockquote>
             <figcaption className="mt-8 text-base">
-              <div className="font-semibold text-white">Judith Black</div>
-              <div className="mt-1 text-gray-400">CEO of Tuple</div>
+              <div className="font-semibold text-white">Dr. Francisco Arrighi</div>
+              <div className="mt-1 text-gray-400">CEO - Fradema</div>
             </figcaption>
           </figure>
         </div>
