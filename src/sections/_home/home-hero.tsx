@@ -38,7 +38,7 @@ export default function HomeHero() {
             </svg>
             <blockquote className="text-xl/8 font-semibold text-white sm:text-2xl/9">
               <p className="mt-10">
-                A Fradema Consultores Tributários está há 36 anos no mercado, possuindo vasta
+                A Fradema Consultores Tributários está há 37 anos no mercado, possuindo vasta
                 experiência e qualificação para pensar nas melhores soluções em consultoria
                 tributária para o seu negócio. Com atuação desde 1988, a Fradema Consultores
                 Tributários possui forte atuação em estratégias empresariais e procedimento
