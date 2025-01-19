@@ -73,7 +73,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderSummary = () => (
     <>
       <m.div variants={variants}>
-        <Typography className="text-green-500" variant="overline" sx={{ fontSize: "14px" }}>
+        <Typography className="text-blue-600" variant="overline" sx={{ fontSize: "14px" }}>
           As melhores estratégias
         </Typography>
       </m.div>
@@ -137,7 +137,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
         <CircularProgress
           size={64}
           thickness={3}
-          color="success"
+          color="primary"
           variant="determinate"
           aria-label="Progress"
           value={circularProgress}
@@ -204,7 +204,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Consultoria Tributária
           </Alert>
         </Tooltip>
@@ -217,7 +217,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Contabilidade
           </Alert>
         </Tooltip>
@@ -230,7 +230,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Auditoria fiscal e contábil
           </Alert>
         </Tooltip>
@@ -243,7 +243,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Blindagem Patrimonial
           </Alert>
         </Tooltip>
@@ -256,7 +256,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Recuperação de Empresas
           </Alert>
         </Tooltip>
@@ -269,7 +269,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Offshore no Exterior
           </Alert>
         </Tooltip>
@@ -282,7 +282,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Contratos Artísticos
           </Alert>
         </Tooltip>
@@ -295,7 +295,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
           placement="top"
           arrow
         >
-          <Alert severity="success" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
+          <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Marcas e Patentes
           </Alert>
         </Tooltip>

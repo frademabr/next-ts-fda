@@ -78,7 +78,7 @@ export function MarketingContact() {
         <div className="ml-20 w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
             <h1 className="text-4xl font-bold lg:text-5xl ml-3">
-              Fale com um de nossos <span className="text-green-500 mt-5">Consultores</span>
+              Fale com um de nossos <span className="text-blue-600 mt-5 ">Consultores</span>
             </h1>
             <div className="text-muted-foreground md:text-base lg:text-lg lg:leading-7 ml-3">
               In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum, dolor
@@ -136,7 +136,7 @@ export function MarketingContact() {
         <div className="flex w-full justify-center ml-10 lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-gray-800 px-6 py-10 shadow-md shadow-gray-400">
+              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-slate-800 px-6 py-10 shadow-md">
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
                     <label htmlFor="nome">Nome Completo</label>
@@ -266,7 +266,7 @@ export function MarketingContact() {
                   <div className="flex w-full flex-col justify-end space-y-3 pt-2">
                     <Button
                       onClick={handleSubmit(onSubmit)}
-                      className="bg-green-500 hover:bg-green-600 text-white mt-5"
+                      className="bg-blue-600 hover:bg-blue-700 text-white mt-5"
                       type="submit"
                     >
                       Enviar formulário
