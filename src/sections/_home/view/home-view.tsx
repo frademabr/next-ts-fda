@@ -18,6 +18,7 @@ import { HomeFlexibleComponents } from "../home-flexible-components";
 import { MarketingServicesHowItWork } from "@/sections/_filiais/services/marketing-services-how-it-work";
 import { MarketingContact } from "@/sections/_filiais/contact/marketing-contact";
 import { EcommerceLandingHero } from "@/sections/_ecommerce/landing/ecommerce-landing-hero";
+import HomeHero from "../home-hero";
 
 // ----------------------------------------------------------------------
 
@@ -37,6 +38,8 @@ export function HomeView() {
       <BackToTopButton isVisible={isVisible} onClick={onBackToTop} />
 
       <MarketingServicesHowItWork />
+
+      <HomeHero />
 
       <HomeNewStart />
 
