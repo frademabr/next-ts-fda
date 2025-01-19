@@ -77,13 +77,13 @@ export function EcommerceLandingHero({ sx, ...other }: BoxProps) {
             >
               {/* <Image src={`...${CONFIG.assetsDir}/assets/images/home/headertop.jpeg`} /> */}
               <GlareCard className="flex flex-col items-start justify-center pb-6 py-8 px-16 overflow-hidden">
-                <CarouselDotButtons
+                {/* <CarouselDotButtons
                   variant="rounded"
                   scrollSnaps={carousel.dots.scrollSnaps}
                   selectedIndex={carousel.dots.selectedIndex}
                   onClickDot={carousel.dots.onClickDot}
                   sx={{ color: "info.main" }}
-                />
+                /> */}
 
                 <Carousel className="h-full w-full absolute inset-0  mb-10" carousel={carousel}>
                   {_productsCarousel.map((product, index) => (
