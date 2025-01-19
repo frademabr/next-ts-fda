@@ -16,6 +16,7 @@ import { Inter } from "next/font/google";
 import { ProgressBar } from "src/components/progress-bar";
 import { MotionLazy } from "src/components/animate/motion-lazy";
 import { SettingsDrawer, defaultSettings, SettingsProvider } from "src/components/settings";
+import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants";
 
 // ----------------------------------------------------------------------
 
@@ -28,6 +29,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  title: {
+    template: `%s | Fradema Consultoria Tributária`,
+    default: APP_NAME,
+  },
+  description: APP_DESCRIPTION,
+  metadataBase: new URL(SERVER_URL),
   icons: [
     {
       rel: "icon",

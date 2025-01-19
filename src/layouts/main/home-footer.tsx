@@ -24,7 +24,7 @@ export function HomeFooter({
   ...other
 }: Props) {
   const renderSocials = () => (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", marginTop: "10px", marginLeft: "10px" }}>
       {_socials.map((social) => (
         <IconButton key={social.label}>
           {/* {social.value === 'twitter' && <TwitterIcon />} */}
@@ -34,6 +34,7 @@ export function HomeFooter({
         </IconButton>
       ))}
     </Box>
+    // BOTAR LINKS DOS SOCIALS DENTRO DOS COMPONENTES ICONS ACIMA
   );
 
   return (
