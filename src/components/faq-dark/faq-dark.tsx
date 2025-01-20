@@ -27,7 +27,7 @@ const faqs = [
     question:
       "A partir de que idade, a criança é obrigada à tirar CPF para abater no imposto de renda?",
     answer:
-      "De acordo com a Instrução Normativa RFB nº 1.760, de 2017, que trata do Cadastro de Pessoas Físicas (CPF). Os contribuintes que desejarem incluir seus dependentes na declaração do Imposto de Renda de 2018 deverão registrá-los no CPF caso tenham 8 anos ou mais. A obrigatoriedade valia somente para dependentes com 12 anos ou mais. A redução da idade visa evitar a retenção em malha fiscal do contribuinte declarante, possibilitando maior celeridade na restituição do crédito tributário. A partir do exercício de 2019, estarão obrigadas a se inscrever no CPF as pessoas físicas que constem como dependentes para fins de Imposto sobre a Renda da Pessoa Física, independentemente da idade.",
+      "De acordo com a Instrução Normativa RFB nº 1.760, de 2017, que trata do Cadastro de Pessoas Físicas (CPF), os contribuintes que desejarem incluir seus dependentes na declaração do Imposto de Renda de 2018 deverão registrá-los no CPF caso tenham 8 anos ou mais. A obrigatoriedade valia somente para dependentes com 12 anos ou mais. A redução da idade visa evitar a retenção em malha fiscal do contribuinte declarante, possibilitando maior celeridade na restituição do crédito tributário. A partir do exercício de 2019, estarão obrigadas a se inscrever no CPF as pessoas físicas que constem como dependentes para fins de Imposto sobre a Renda da Pessoa Física, independentemente da idade.",
   },
 ];
 
