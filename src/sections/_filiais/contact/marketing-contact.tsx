@@ -23,6 +23,8 @@ import { Divider } from "@/components/catalyst-ui-kit/typescript/divider";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { MarketingContactSchema } from "lib/schema";
 
+import SuccessAlert from "@/components/success-alert/success-alert";
+
 //-----------------------------------------------------------------------------------------
 export type IFormInput = z.infer<typeof MarketingContactSchema>;
 
@@ -54,6 +56,7 @@ export function MarketingContact() {
 
   const onSubmit = (data: IFormInput) => {
     console.log(data);
+    alert(SuccessAlert());
   };
 
   // const onSubmit = handleSubmit(async (data) => {
