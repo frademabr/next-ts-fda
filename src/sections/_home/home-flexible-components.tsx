@@ -198,12 +198,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
   const renderRow4 = () => (
     <>
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-        porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Consultoria Tributária
           </Alert>
@@ -211,12 +206,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Contabilidade
           </Alert>
@@ -224,12 +214,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Auditoria fiscal e contábil
           </Alert>
@@ -237,12 +222,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Blindagem Patrimonial
           </Alert>
@@ -250,12 +230,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Recuperação de Empresas
           </Alert>
@@ -263,12 +238,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Offshore no Exterior
           </Alert>
@@ -276,12 +246,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Contratos Artísticos
           </Alert>
@@ -289,12 +254,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </div>
 
       <div className="mb-10">
-        <Tooltip
-          title="Descrição breve de Consultoria Tributária e eu falo o que eu quiser aqui,
-  porque eu faço o que eu queroan..."
-          placement="top"
-          arrow
-        >
+        <Tooltip title="Descrição breve aqui do serviço." placement="top" arrow>
           <Alert severity="info" sx={{ width: 1, minWidth: 250, maxWidth: 0.44 }}>
             Marcas e Patentes
           </Alert>
