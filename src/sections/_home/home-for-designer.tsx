@@ -1,107 +1,79 @@
-import type { Variants } from 'framer-motion';
-import type { BoxProps } from '@mui/material/Box';
+import type { Variants } from "framer-motion";
+import type { BoxProps } from "@mui/material/Box";
 
-import { m } from 'framer-motion';
-import { varAlpha } from 'minimal-shared/utils';
+import { m } from "framer-motion";
+import { varAlpha } from "minimal-shared/utils";
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
+import { paths } from "src/routes/paths";
 
-import { CONFIG } from 'src/global-config';
-
-import { Iconify } from 'src/components/iconify';
-import { varFade, AnimateBorder, MotionViewport } from 'src/components/animate';
+import { CONFIG } from "src/global-config";
 
 // ----------------------------------------------------------------------
 
-const variants: Variants = varFade('inUp', { distance: 24 });
-
 export function HomeForDesigner({ sx, ...other }: BoxProps) {
   return (
-    <Box
-      component="section"
-      sx={[
-        (theme) => ({
-          ...theme.mixins.bgGradient({
-            images: [
-              `radial-gradient(50% 160% at 50% 50%, ${varAlpha(theme.vars.palette.common.blackChannel, 0.4)}, ${theme.vars.palette.common.black})`,
-              `url(${CONFIG.assetsDir}/assets/images/home/for-designer.webp)`,
-            ],
-          }),
-          display: 'flex',
-          textAlign: 'center',
-          bgcolor: 'grey.700',
-          color: 'common.white',
-          justifyContent: 'center',
-          py: { xs: 10, md: 15 },
-        }),
-        ...(Array.isArray(sx) ? sx : [sx]),
-      ]}
-      {...other}
-    >
-      <MotionViewport>
-        <m.div variants={variants}>
-          <Typography variant="overline" sx={{ opacity: 0.48 }}>
-            Professional Kit
-          </Typography>
-        </m.div>
-
-        <m.div variants={variants}>
-          <Typography
-            variant="h2"
-            sx={(theme) => ({
-              ...theme.mixins.textGradient(
-                `90deg, ${theme.vars.palette.primary.main} 20%, ${theme.vars.palette.secondary.main} 100%`
-              ),
-              mt: 2,
-              mb: 5,
-            })}
-          >
-            For designer
-          </Typography>
-        </m.div>
-
-        <m.div variants={variants}>{renderActionButton()}</m.div>
-      </MotionViewport>
-    </Box>
+    <div className="mx-auto mt-32 max-w-7xl sm:mt-40 sm:px-6 lg:px-8">
+      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Conheça nossos parceiros
+        </h2>
+        <p className="mx-auto mt-6 max-w-xl text-lg/8 text-gray-300">
+          Aliquip reprehenderit incididunt amet quis fugiat ut velit. Sit occaecat labore proident
+          cillum in nisi adipisicing officia excepteur tempor deserunt.
+        </p>
+        <div className="mx-auto mt-20 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:max-w-4xl lg:grid-cols-5">
+          <img
+            alt="Transistor"
+            src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-white.svg"
+            width={158}
+            height={48}
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+          />
+          <img
+            alt="Reform"
+            src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-white.svg"
+            width={158}
+            height={48}
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+          />
+          <img
+            alt="Tuple"
+            src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-white.svg"
+            width={158}
+            height={48}
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+          />
+          <img
+            alt="SavvyCal"
+            src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-white.svg"
+            width={158}
+            height={48}
+            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+          />
+          <img
+            alt="Statamic"
+            src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-white.svg"
+            width={158}
+            height={48}
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+          />
+        </div>
+        <div aria-hidden="true" className="absolute -top-24 right-0 -z-10 transform-gpu blur-3xl">
+          <div
+            style={{
+              clipPath:
+                "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
+            }}
+            className="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 
 // ----------------------------------------------------------------------
-
-const renderActionButton = () => (
-  <AnimateBorder
-    sx={(theme) => ({
-      borderRadius: 1.25,
-      position: 'relative',
-      display: 'inline-flex',
-      bgcolor: varAlpha(theme.vars.palette.common.blackChannel, 0.4),
-    })}
-    duration={12}
-    slotProps={{
-      outlineColor: (theme) =>
-        `linear-gradient(135deg, ${varAlpha(theme.vars.palette.primary.mainChannel, 0.04)}, ${varAlpha(theme.vars.palette.warning.mainChannel, 0.04)})`,
-      primaryBorder: {
-        size: 50,
-        width: '1.5px',
-        sx: (theme) => ({ color: theme.vars.palette.primary.main }),
-      },
-      secondaryBorder: { sx: (theme) => ({ color: theme.vars.palette.warning.main }) },
-    }}
-  >
-    <Button
-      size="large"
-      variant="text"
-      target="_blank"
-      rel="noopener"
-      href={paths.figmaUrl}
-      endIcon={<Iconify icon="eva:arrow-ios-forward-fill" />}
-      sx={{ px: 2, borderRadius: 'inherit' }}
-    >
-      Checkout workspace
-    </Button>
-  </AnimateBorder>
-);
