@@ -20,6 +20,7 @@ import { MarketingContact } from "@/sections/_filiais/contact/marketing-contact"
 import { EcommerceLandingHero } from "@/sections/_ecommerce/landing/ecommerce-landing-hero";
 import HomeHero from "../home-hero";
 import { HomeForDesigner } from "../home-for-designer";
+import FaqDark from "@/components/faq-dark/faq-dark";
 
 // ----------------------------------------------------------------------
 
@@ -50,7 +51,9 @@ export function HomeView() {
 
       <MarketingContact />
 
-      <HomeFAQs />
+      <FaqDark />
+
+      {/* <HomeFAQs /> */}
 
       <HomeForDesigner />
       {/* Typebot no footer e footer geral no layouts */}
