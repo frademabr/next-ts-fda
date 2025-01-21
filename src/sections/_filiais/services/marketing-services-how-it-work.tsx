@@ -25,10 +25,10 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
         <Box
           component="section"
           className="rellax-header rellax-header-sky"
-          sx={{ marginTop: "40px", paddingBottom: "-60px" }}
+          sx={{ marginTop: "50px", paddingBottom: "-60px" }}
         >
           <div
-            className="bg-bottom bg-cover -mb-80"
+            className="bg-bottom bg-cover shadow-2xl -mb-80"
             style={{
               backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
 
