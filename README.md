@@ -4,6 +4,6 @@
 
 ## Installation
 
-## Read MUI, Shadcn, TailwindCSS documentation ( by Arinelli Dev ). @NPM Package Manager Recommended.
+## Read MUI, Shadcn, TailwindCSS documentation ( by Arinelli Dev ). @PNPM Package Manager Recommended.
 
 **Developed by Arinelli Dev @ Fradema Jan, 2025**
