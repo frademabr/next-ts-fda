@@ -71,27 +71,30 @@ export function MarketingContact() {
 
   return (
     <section className="relative py-12">
-      <Divider soft className="mb-20 bg-gray-800 px-7" />
+      <Divider soft className="flex justify-center w-10/12 mb-20 ml-40 align-middle bg-gray-800" />
       {/* Background gradients */}
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]" />
       {/* Background pattern */}
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.5)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_10%,transparent_50%)]" />
-      <div className="container ml-20 grid w-full grid-cols-1 gap-x-32 overflow-hidden lg:grid-cols-2">
-        <div className="ml-20 w-full pb-10 md:space-y-10 md:pb-0">
+      <div className="container grid w-full grid-cols-1 ml-20 overflow-hidden gap-x-32 lg:grid-cols-2">
+        <div className="w-full pb-10 ml-20 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
-            <h1 className="text-4xl font-bold lg:text-5xl ml-3">
-              Fale com um de nossos <span className="text-blue-600 mt-5 ">Consultores</span>
+            <h1 className="ml-3 text-4xl font-bold lg:text-5xl">
+              Fale com um de nossos{" "}
+              <div className="mt-5 text-blue-600 ">
+                <h1>Consultores</h1>
+              </div>
             </h1>
-            <div className="text-muted-foreground md:text-base lg:text-lg lg:leading-7 ml-3">
+            <div className="ml-3 text-muted-foreground md:text-base lg:text-lg lg:leading-7">
               In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum, dolor
               commodo pulvinar bibendum.
             </div>
           </div>
           <div className="hidden md:block">
-            <div className="space-y-16 pb-20 lg:pb-0">
+            <div className="pb-20 space-y-16 lg:pb-0">
               <div className="space-y-6">
-                <div className="mt-16 ml-3 flex overflow-hidden">
+                <div className="flex mt-16 ml-3 overflow-hidden">
                   <Avatar className="size-11">
                     <AvatarImage src="https://shadcnblocks.com/images/block/avatar-1.webp" />
                     <AvatarFallback>SB</AvatarFallback>
@@ -105,23 +108,23 @@ export function MarketingContact() {
                     <AvatarFallback>JS</AvatarFallback>
                   </Avatar>
                 </div>
-                <div className="space-y-4 ml-10">
-                  <p className="text-sm font-semibold ml-3">O que esperar:</p>
+                <div className="ml-10 space-y-4">
+                  <p className="ml-3 text-sm font-semibold">O que esperar:</p>
                   <div className="flex items-center space-x-2.5">
-                    <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Consultores altamente qualificados</p>
+                    <Check className="size-6 shrink-0 text-muted-foreground" />
+                    <p className="text-md">Consultores altamente qualificados</p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Estratégias para melhorar seu negócio</p>
+                    <Check className="size-6 shrink-0 text-muted-foreground" />
+                    <p className="text-md">Estratégias para melhorar seu negócio</p>
                   </div>
                   <div className="flex items-center space-x-2.5">
-                    <Check className="size-5 shrink-0 text-muted-foreground" />
-                    <p className="text-sm">Respostas para todos os seus casos de uso</p>
+                    <Check className="size-6 shrink-0 text-muted-foreground" />
+                    <p className="text-md">Respostas para todos os seus casos de uso</p>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center space-x-12 ml-3">
+              <div className="flex items-center ml-3 space-x-12">
                 {/* <img
                   src="https://shadcnblocks.com/images/block/logos/astro.svg"
                   alt="placeholder"
@@ -139,13 +142,13 @@ export function MarketingContact() {
         <div className="flex w-full justify-center ml-10 lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className="mb-6 w-full space-y-6 rounded-xl border-border bg-slate-800 px-6 py-10 shadow-md">
+              <div className="w-full px-6 py-10 mb-6 space-y-6 shadow-md rounded-xl border-border bg-slate-800">
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
                     <label htmlFor="nome">Nome Completo</label>
                   </div>
                   <Input
-                    className="text-slate-700 border-gray-500 opacity-75"
+                    className="border-gray-500 opacity-75 text-slate-700"
                     {...register("nome")}
                     id="nome"
                     name="nome"
@@ -153,7 +156,7 @@ export function MarketingContact() {
                   />
                 </div>
                 {errors?.nome?.message && (
-                  <p className="text-orange-600 mb-4 text-sm">{errors.nome.message}</p>
+                  <p className="mb-4 text-sm text-orange-600">{errors.nome.message}</p>
                 )}
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
@@ -161,7 +164,7 @@ export function MarketingContact() {
                     <span className="text-muted-foreground">(Opcional)</span>
                   </div>
                   <Input
-                    className="text-slate-700 border-gray-500 opacity-75"
+                    className="border-gray-500 opacity-75 text-slate-700"
                     {...register("empresa")}
                     id="empresa"
                     name="empresa"
@@ -174,7 +177,7 @@ export function MarketingContact() {
                     <label htmlFor="cel">Celular</label>
                   </div>
                   <Input
-                    className="text-slate-700 border-gray-500 opacity-75"
+                    className="border-gray-500 opacity-75 text-slate-700"
                     {...register("cel")}
                     type="number"
                     id="cel"
@@ -183,7 +186,7 @@ export function MarketingContact() {
                   />
                 </div>
                 {errors?.cel?.message && (
-                  <p className="text-orange-600 mb-2 text-sm">{errors.cel.message}</p>
+                  <p className="mb-2 text-sm text-orange-600">{errors.cel.message}</p>
                 )}
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
@@ -192,7 +195,7 @@ export function MarketingContact() {
                       {/* <span className="text-muted-foreground"></span> */}
                     </div>
                     <Input
-                      className="text-slate-700 border-gray-500 opacity-75"
+                      className="border-gray-500 opacity-75 text-slate-700"
                       {...register("email")}
                       id="email"
                       name="email"
@@ -201,7 +204,7 @@ export function MarketingContact() {
                     />
                   </div>
                   {errors?.email?.message && (
-                    <p className="text-orange-600 mb-4 text-sm">{errors.email.message}</p>
+                    <p className="mb-4 text-sm text-orange-600">{errors.email.message}</p>
                   )}
                   <div>
                     <div className="mb-2.5 text-sm font-medium">
@@ -209,7 +212,7 @@ export function MarketingContact() {
                     </div>
                     <Select {...register("filiais")}>
                       <SelectTrigger
-                        className="text-slate-700 border-gray-500 opacity-75"
+                        className="border-gray-500 opacity-75 text-slate-700"
                         id="filiais"
                         name="filiais"
                       >
@@ -222,7 +225,7 @@ export function MarketingContact() {
                         <SelectItem value="campinas">Fradema - Campinas</SelectItem>
                       </SelectContent>
                       {/* {errors?.filiais?.message && (
-                        <p className="text-orange-600 mb-4 text-sm">{errors.filiais.message}</p>
+                        <p className="mb-4 text-sm text-orange-600">{errors.filiais.message}</p>
                       )} */}
                     </Select>
                   </div>
@@ -252,7 +255,7 @@ export function MarketingContact() {
                     </div>
                     <Select>
                       <SelectTrigger
-                        className="text-slate-700 border-gray-500 opacity-75"
+                        className="border-gray-500 opacity-75 text-slate-700"
                         id="outros"
                         name="outros"
                       >
@@ -266,10 +269,10 @@ export function MarketingContact() {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div className="flex w-full flex-col justify-end space-y-3 pt-2">
+                  <div className="flex flex-col justify-end w-full pt-2 space-y-3">
                     <Button
                       onClick={handleSubmit(onSubmit)}
-                      className="bg-blue-600 hover:bg-blue-700 text-white mt-5"
+                      className="mt-5 text-white bg-blue-600 text-md hover:bg-blue-700"
                       type="submit"
                     >
                       Enviar formulário

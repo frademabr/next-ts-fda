@@ -79,7 +79,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </m.div>
 
       <m.div variants={variants}>
-        <Typography variant="h2" sx={{ my: 3 }}>
+        <Typography variant="h1" sx={{ my: 3 }}>
           Serviços Prestados
         </Typography>
       </m.div>
@@ -92,7 +92,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </m.div>
 
       <m.div variants={variants}>
-        <button className="bg-green-600 text-white text-pretty p-3 rounded-lg hover:bg-green-700">
+        <button className="p-3 text-white bg-green-600 rounded-lg text-pretty hover:bg-green-700">
           <a
             target="_blank"
             href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
