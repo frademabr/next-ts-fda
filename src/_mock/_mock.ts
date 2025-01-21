@@ -28,6 +28,7 @@ import {
   _descriptions,
   _productNames,
   _companyNames,
+  _whats,
 } from "./assets";
 
 // ----------------------------------------------------------------------
@@ -55,6 +56,7 @@ export const _mock = {
   lastName: (index: number) => _lastNames[index],
   fullName: (index: number) => _fullNames[index],
   companyName: (index: number) => _companyNames[index],
+  whats: (index: number) => _whats[index],
   // Number
   number: {
     percent: (index: number) => _percents[index],
@@ -81,7 +83,7 @@ export const _mock = {
     filiais: (index: number) =>
       `${CONFIG.assetsDir}/assets/images/filiais/filiais-${index + 1}.jpg`,
     filiaisHero: (index: number) =>
-      `${CONFIG.assetsDir}/assets/images/marketing-hero/marketing-hero-${index + 1}.webp`,
+      `${CONFIG.assetsDir}/assets/images/filiais-hero/filiais-hero-${index + 1}.jpg`,
   },
 
   video: (index: number) =>

@@ -1,9 +1,8 @@
+import { Iconify } from "src/components/iconify";
+
 // ----------------------------------------------------------------------
 
-export const _id = Array.from(
-  { length: 40 },
-  (_, index) => `e99f09a7-dd88-49d5-b1c8-1daf80c2d7b${index + 1}`
-);
+export const _id = Array.from({ length: 40 }, (_, index) => `unidade${index + 1}`);
 
 // ----------------------------------------------------------------------
 
@@ -67,6 +66,12 @@ export const _nativeM = [
 export const _nativeL = [
   9911, 1947, 9124, 6984, 8488, 2034, 3364, 8401, 8996, 5271, 8478, 1139, 8061, 3035, 6733, 3952,
   2405, 3127, 6843, 4672, 6995, 6053, 5192, 9686,
+];
+
+export const _whats = [
+  `https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting
+    `,
+  "www.google.com.br",
 ];
 
 export const _fullAddress = [

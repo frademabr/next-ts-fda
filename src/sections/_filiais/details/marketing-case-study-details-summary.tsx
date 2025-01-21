@@ -9,8 +9,9 @@ import IconButton from "@mui/material/IconButton";
 
 import { fDate } from "src/utils/format-time";
 
-import { _socials } from "src/_mock";
+import { _socials, _whats } from "src/_mock";
 import { FacebookIcon, LinkedinIcon, InstagramIcon } from "src/assets/icons";
+import { Iconify } from "src/components/iconify";
 
 // ----------------------------------------------------------------------
 
@@ -38,6 +39,16 @@ export function MarketingCaseStudyDetailsSummary({
     </Box>
   );
 
+  const renderWhats = () => {
+    <Box sx={{ display: "flex" }}>
+      {_whats.map((what) => (
+        <Iconify width={16} icon="logos:whatsapp-icon">
+          {what}
+        </Iconify>
+      ))}
+    </Box>;
+  };
+
   const renderDivider = () => <Divider sx={{ my: 3, borderStyle: "dashed" }} />;
 
   const renderItem = (label: string, value?: string | React.ReactNode) => (
@@ -64,7 +75,7 @@ export function MarketingCaseStudyDetailsSummary({
       {...other}
     >
       <Typography variant="overline" sx={{ mb: 2, color: "text.disabled" }}>
-        summary
+        Contatos
       </Typography>
 
       <Typography variant="h6" sx={{ mb: 2 }}>
@@ -75,12 +86,9 @@ export function MarketingCaseStudyDetailsSummary({
 
       {renderDivider()}
 
-      {renderItem(
-        "Website",
-        <Link variant="body2" color="inherit">
-          {website}
-        </Link>
-      )}
+      <a href={website}>{renderItem("website", website)}</a>
+
+      {/* {renderWhats()} */}
 
       {renderItem("Category", category)}
 

@@ -1,9 +1,11 @@
 import { CONFIG } from "src/global-config";
 
 import { _mock } from "./_mock";
-import { _tags } from "./assets";
+import { _tags, _whats } from "./assets";
 
 // ----------------------------------------------------------------------
+
+const WEBSITES = [`www.google.com.br`, `<h4 class="text-green-500">A Filial, Rio de Janeiro</h4>`];
 
 const TITLES = [
   `Fradema - Rio de Janeiro`,
@@ -42,6 +44,16 @@ const CONTENT = [
   <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
   <h4 class="text-green-500">Parceiros</h4>
+
+  <h6>Hello</h6>
+
+   <a
+              target="_blank"
+              href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
+              rel="noreferrer"
+            >
+              <Iconify width={16} icon="logos:whatsapp-icon" /> WhatsApp
+            </a>
 
   <ul>
       <li>Medical Assistant</li>
@@ -88,12 +100,14 @@ const getCategory = (index: number) => {
 
 const getGalleryImgs = () => Array.from({ length: 6 }, (_, index) => _mock.image.filiais(index));
 
+// const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index));
+
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
   content: CONTENT[index],
   title: TITLES[index],
   createdAt: _mock.time(index),
-  website: "https://example.com/",
+  website: _mock.whats(index),
   description: _mock.description(index),
   coverUrl: _mock.image.filiais(index + 1),
   heroUrl: _mock.image.filiaisHero(index + 1),
