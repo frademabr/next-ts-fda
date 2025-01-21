@@ -69,9 +69,9 @@ export const _nativeL = [
 ];
 
 export const _whats = [
-  `https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting
+  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
     `,
-  "www.google.com.br",
+  "https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20São Paulo",
 ];
 
 export const _fullAddress = [

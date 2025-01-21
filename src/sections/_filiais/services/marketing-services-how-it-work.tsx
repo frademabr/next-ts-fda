@@ -13,35 +13,38 @@ import { m } from "framer-motion";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <div className="relative w-full md:max-w-full">
-      <div className="md:max-h-full">
-        <Box
-          // component=""
-          sx={{ marginTop: "60px" }}
-        >
-          <div
-            className="bg-bottom bg-cover -mb-80"
-            style={{
-              backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
+    <Box
+      // component=""
+      sx={{
+        marginTop: "60px",
+        display: "absolute",
+        alignItems: "center",
+        position: "relative",
+        typography: "caption",
+        justifyContent: "center",
+      }}
+    >
+      <div
+        className="bg-bottom bg-cover -mb-80"
+        style={{
+          backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
 
-              height: "600px",
-            }}
-          />
+          height: "600px",
+        }}
+      />
 
-          <m.div className="-mb-60 ">
-            <h1 className="ml-5 tracking-tighter text-center text-pretty h1-seo">FRADEMA</h1>
-          </m.div>
-          <m.div className="mb-5">
-            <div
-              className="bg-cover "
-              style={{
-                backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/nyblue.png)`,
-                height: "666px",
-              }}
-            />
-          </m.div>
-        </Box>
-      </div>
-    </div>
+      <m.div className="-mb-60">
+        <h1 className="ml-5 overflow-visible tracking-tighter text-center text-pretty h1-seo sm:text-wrap">
+          FRADEMA
+        </h1>
+      </m.div>
+      <m.div
+        className="bg-cover"
+        style={{
+          backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/nyblue.png)`,
+          height: "666px",
+        }}
+      />
+    </Box>
   );
 }

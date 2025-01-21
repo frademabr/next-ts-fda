@@ -86,13 +86,23 @@ export function MarketingCaseStudyDetailsSummary({
 
       {renderDivider()}
 
-      <a href={website}>{renderItem("website", website)}</a>
+      <a target="_blank" rel="noreferrer" href={website}>
+        <Iconify
+          className="rounded-md hover:shadow-lg hover:shadow-white"
+          width={28}
+          icon="logos:whatsapp-icon"
+        >
+          {renderItem("WhatsApp", website)}
+        </Iconify>
+        <Typography variant="body2"> WhatsApp</Typography>
+        <Typography variant="body2"> Seg à Quin de 9h-18h, Sex de 9h-17h</Typography>
+      </a>
 
       {/* {renderWhats()} */}
 
-      {renderItem("Category", category)}
+      {/* {renderItem("Category", category)} */}
 
-      {renderItem("Date", fDate(createdAt))}
+      {/* {renderItem("Date", fDate(createdAt))} */}
 
       {renderDivider()}
 

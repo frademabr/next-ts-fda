@@ -5,7 +5,7 @@ import { _tags, _whats } from "./assets";
 
 // ----------------------------------------------------------------------
 
-const WEBSITES = [`www.google.com.br`, `<h4 class="text-green-500">A Filial, Rio de Janeiro</h4>`];
+// const WEBSITES = [`www.google.com.br`, `<h4 class="text-green-500">A Filial, Rio de Janeiro</h4>`];
 
 const TITLES = [
   `Fradema - Rio de Janeiro`,
@@ -20,7 +20,7 @@ const TITLES = [
   `Fradema - Joinville`,
   `Fradema - Recife`,
   `Fradema - Manaus`,
-  `Fradema - Zona da Mata`,
+  `Fradema - Ribeirão Preto`,
   `Fradema - Nova Iorque`,
   `Fradema - Orlando`,
 ];

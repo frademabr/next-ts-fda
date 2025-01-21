@@ -5,32 +5,17 @@ import type { Theme, SxProps } from "@mui/material/styles";
 import { m } from "framer-motion";
 import { useState, useEffect } from "react";
 
-import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import Chip from "@mui/material/Chip";
+
 import Grid from "@mui/material/Grid2";
 import Alert from "@mui/material/Alert";
-import Radio from "@mui/material/Radio";
-import Badge from "@mui/material/Badge";
-import Slider from "@mui/material/Slider";
-import Switch from "@mui/material/Switch";
-import Rating from "@mui/material/Rating";
-import Button from "@mui/material/Button";
-import Avatar from "@mui/material/Avatar";
+
 import Tooltip from "@mui/material/Tooltip";
-import Checkbox from "@mui/material/Checkbox";
-import TextField from "@mui/material/TextField";
+
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import CardHeader from "@mui/material/CardHeader";
-import AvatarGroup from "@mui/material/AvatarGroup";
-import ToggleButton from "@mui/material/ToggleButton";
-import Tabs, { tabsClasses } from "@mui/material/Tabs";
-import FormControlLabel from "@mui/material/FormControlLabel";
+
 import CircularProgress from "@mui/material/CircularProgress";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 import { paths } from "src/routes/paths";
 import { RouterLink } from "src/routes/components";

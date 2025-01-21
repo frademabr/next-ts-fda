@@ -12,8 +12,6 @@ import { _pricingHome } from "src/_mock";
 
 import { ScrollProgress, useScrollProgress } from "src/components/animate/scroll-progress";
 
-import { HomeFAQs } from "../home-faqs";
-import { HomeNewStart } from "../home-new-start";
 import { HomeFlexibleComponents } from "../home-flexible-components";
 import { MarketingServicesHowItWork } from "@/sections/_filiais/services/marketing-services-how-it-work";
 import { MarketingContact } from "@/sections/_filiais/contact/marketing-contact";
@@ -27,7 +25,7 @@ import FaqDark from "@/components/faq-dark/faq-dark";
 export function HomeView() {
   const pageProgress = useScrollProgress();
 
-  const { onBackToTop, isVisible } = useBackToTop("90%");
+  // const { onBackToTop, isVisible } = useBackToTop("90%");
 
   return (
     <>
@@ -37,7 +35,7 @@ export function HomeView() {
         sx={{ position: "fixed" }}
       />
 
-      <BackToTopButton isVisible={isVisible} onClick={onBackToTop} />
+      {/* <BackToTopButton isVisible={isVisible} onClick={onBackToTop} /> */}
 
       <MarketingServicesHowItWork />
 
