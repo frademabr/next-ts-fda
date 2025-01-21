@@ -13,6 +13,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 
 import { CONFIG } from "src/global-config";
+import { m } from "framer-motion";
 
 // ----------------------------------------------------------------------
 
@@ -20,15 +21,14 @@ import { CONFIG } from "src/global-config";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <div>
-      <div className="page-header clear-filter">
+    <div className="md:max-lg:flex">
+      <div className="">
         <Box
-          component="section"
-          className="rellax-header rellax-header-sky"
+          // component=""
           sx={{ marginTop: "50px", paddingBottom: "-60px" }}
         >
           <div
-            className="bg-bottom bg-cover shadow-2xl -mb-80"
+            className="bg-bottom bg-cover shadow-2xl md:shrink-0 -mb-80"
             style={{
               backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
 
@@ -36,12 +36,12 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
             }}
           />
 
-          <div className="-mb-60">
-            <h1 className="ml-5 h1-seo">FRADEMA</h1>
-          </div>
+          <m.div className="-mb-60">
+            <h1 className="ml-5 tracking-tighter h1-seo">FRADEMA</h1>
+          </m.div>
           <div className="mt-5">
             <div
-              className="bg-bottom bg-cover "
+              className="bg-bottom bg-cover md:shrink-0"
               style={{
                 backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/nyblue.png)`,
                 height: "666px",

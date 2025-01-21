@@ -71,22 +71,22 @@ export function MarketingContact() {
 
   return (
     <section className="relative py-12">
-      <Divider soft className="flex justify-center w-10/12 mb-20 ml-40 align-middle bg-gray-800" />
+      <Divider soft className="flex justify-center mb-20 align-middle bg-gray-800" />
       {/* Background gradients */}
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_15%_at_40%_55%,hsl(var(--accent))_0%,transparent_100%)] lg:bg-[radial-gradient(ellipse_12%_20%_at_60%_45%,hsl(var(--accent))_0%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]" />
       {/* Background pattern */}
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.5)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_10%,transparent_50%)]" />
       <div className="container grid w-full grid-cols-1 ml-20 overflow-hidden gap-x-32 lg:grid-cols-2">
-        <div className="w-full pb-10 ml-20 md:space-y-10 md:pb-0">
+        <div className="w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
-            <h1 className="ml-3 text-4xl font-bold lg:text-5xl">
+            <h1 className="text-4xl font-bold lg:text-5xl">
               Fale com um de nossos{" "}
               <div className="mt-5 text-blue-600 ">
                 <h1>Consultores</h1>
               </div>
             </h1>
-            <div className="ml-3 text-muted-foreground md:text-base lg:text-lg lg:leading-7">
+            <div className="text-muted-foreground md:text-base lg:text-lg lg:leading-7">
               In non libero bibendum odio pellentesque ullamcorper. Aenean condimentum, dolor
               commodo pulvinar bibendum.
             </div>
@@ -139,7 +139,7 @@ export function MarketingContact() {
             </div>
           </div>
         </div>
-        <div className="flex w-full justify-center ml-10 lg:mt-2.5">
+        <div className="flex w-full justify-center lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="w-full px-6 py-10 mb-6 space-y-6 shadow-md rounded-xl border-border bg-slate-800">

@@ -18,7 +18,7 @@ export default function HomeHero() {
             <img
               alt="Advogado"
               src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="absolute inset-0 object-cover bg-gray-800 shadow-2xl size-full rounded-2xl"
+              className="absolute inset-0 object-cover bg-gray-800 shadow-2xl md:scroll-pt-20 size-full rounded-2xl"
             />
           </div>
         </div>

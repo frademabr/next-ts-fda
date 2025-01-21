@@ -54,11 +54,7 @@ const rowStyles: SxProps<Theme> = {
 const variants: Variants = varFade("inUp", { distance: 24 });
 
 export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
-  const [tab, setTab] = useState("angular");
-  const [rating, setRating] = useState<number | null>(5);
-  const [toggleButton, setToggleButton] = useState("search");
   const [circularProgress, setCircularProgress] = useState(0);
-  const [categorySelect, setCategorySelect] = useState("clothes");
 
   useEffect(() => {
     const timer = setInterval(() => {
