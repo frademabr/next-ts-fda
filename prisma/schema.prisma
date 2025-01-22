@@ -16,13 +16,14 @@ datasource db {
 }
 
 model Post {
-  id    Int     @id @default(autoincrement())
+  id    String     @id @default(cuid())
   createdAt DateTime @default(now())
+  updateAt DateTime @updatedAt
   nome  String
   email String  @unique
   cel   String @unique
   empresa String
-  filiais String[]
-  outros String[]
+  filiais String
+  outros String
 
 }
