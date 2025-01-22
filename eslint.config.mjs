@@ -32,7 +32,7 @@ const commonRules = () => ({
   "react/display-name": 0,
   "react/no-children-prop": 0,
   "react/jsx-boolean-value": 2,
-  "react/self-closing-comp": 2,
+  "react/self-closing-comp": 1,
   "react/react-in-jsx-scope": 0,
   "react/jsx-no-useless-fragment": [1, { allowExpressions: true }],
   "react/jsx-curly-brace-presence": [2, { props: "never", children: "never" }],

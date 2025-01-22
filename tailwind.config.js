@@ -22,4 +22,5 @@ module.exports = {
     preflight: true,
   },
   plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-motion")],
 };

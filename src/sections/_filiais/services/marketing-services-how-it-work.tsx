@@ -7,6 +7,12 @@ import Box from "@mui/material/Box";
 import { CONFIG } from "src/global-config";
 import { m } from "framer-motion";
 
+import skynight from "public/assets/images/home/skynight.jpg";
+import nyblue from "public/assets/images/home/nyblue.png";
+
+import Image from "next/image";
+import { Container } from "@mui/material";
+
 // ----------------------------------------------------------------------
 
 // ----------------------------------------------------------------------
@@ -16,35 +22,24 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
     <Box
       // component=""
       sx={{
-        marginTop: "60px",
-        display: "absolute",
+        marginTop: "-460px",
+        // display: "absolute",
         alignItems: "center",
-        position: "relative",
+        // position: "relative",
         typography: "caption",
         justifyContent: "center",
       }}
     >
-      <div
-        className="bg-bottom bg-cover -mb-80"
-        style={{
-          backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/skynight.jpg)`,
-
-          height: "600px",
-        }}
-      />
-
-      <m.div className="-mb-60">
-        <h1 className="ml-5 overflow-visible tracking-tighter text-center text-pretty h1-seo sm:text-wrap">
+      <m.div className="w-full">
+        <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
+        <h1 className="ml-5 tracking-tighter text-center motion-preset-blur-down-lg -mt-60 text-9xl text-pretty h1-seo">
           FRADEMA
         </h1>
       </m.div>
-      <m.div
-        className="bg-cover"
-        style={{
-          backgroundImage: `url(${CONFIG.assetsDir}/assets/images/home/nyblue.png)`,
-          height: "666px",
-        }}
-      />
+
+      <m.div className="w-full -mt-60">
+        <Image className="mt-20" src={nyblue} alt="hero_image2" width={1600} loading="lazy" />
+      </m.div>
     </Box>
   );
 }
