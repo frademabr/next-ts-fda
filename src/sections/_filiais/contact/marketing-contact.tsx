@@ -24,6 +24,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { MarketingContactSchema } from "lib/schema";
 
 import SuccessAlert from "@/components/success-alert/success-alert";
+import { Form } from "@/components/hook-form";
+import LoadingButton from "@mui/lab/LoadingButton";
 
 //-----------------------------------------------------------------------------------------
 export type IFormInput = z.infer<typeof MarketingContactSchema>;
@@ -48,11 +50,10 @@ export function MarketingContact() {
 
   const {
     register,
+    reset,
     handleSubmit,
-    formState: { errors },
-  } = useForm<IFormInput>({
-    resolver: zodResolver(MarketingContactSchema),
-  });
+    formState: { isSubmitting, errors },
+  } = methods;
 
   const onSubmit = (data: IFormInput) => {
     console.log(data);
@@ -63,7 +64,7 @@ export function MarketingContact() {
   //   try {
   //     await new Promise((resolve) => setTimeout(resolve, 500));
   //     reset();
-  //     console.info("DATA", data);
+  //     console.log("DATA", data);
   //   } catch (error) {
   //     console.error(error);
   //   }
@@ -142,6 +143,7 @@ export function MarketingContact() {
         <div className="flex w-full justify-center lg:mt-2.5">
           <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
+              {/* <Form methods={methods} onSubmit={onSubmit}> */}
               <div className="w-full px-6 py-10 mb-6 space-y-6 shadow-md rounded-xl border-border bg-slate-800">
                 <div>
                   <div className="mb-2.5 text-sm font-medium">
