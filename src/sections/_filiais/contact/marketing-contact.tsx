@@ -141,7 +141,7 @@ export function MarketingContact() {
           </div>
         </div>
         <div className="flex w-full justify-center lg:mt-2.5">
-          <div className="relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
+          <div className="-ml-10 relative flex w-full min-w-[20rem] max-w-[30rem] flex-col items-center overflow-visible md:min-w-[24rem]">
             <form onSubmit={handleSubmit(onSubmit)}>
               {/* <Form methods={methods} onSubmit={onSubmit}> */}
               <div className="w-full px-6 py-10 mb-6 space-y-6 shadow-md rounded-xl border-border bg-slate-800">

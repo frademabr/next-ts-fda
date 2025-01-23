@@ -20,15 +20,15 @@ import { Container } from "@mui/material";
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
     <div className="-mt-80">
-      <m.div className="w-full sm:mt-20">
+      <m.div className="w-full sm:mt-40">
         <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
-        <h1 className="mb-40 tracking-tighter text-center lg:text-9xl sm:text-7xl motion-preset-blur-up-lg motion-duration-2000 -mt-60 text-pretty h1-seo">
+        <h1 className="tracking-tighter text-center -mt-60 md:text-7xl md:-mb-60 sm:text-5xl sm:-mb-20 text-pretty h1-seo">
           FRADEMA
         </h1>
       </m.div>
 
-      <m.div className="w-full -mt-60">
-        <Image className="mt-20" src={nyblue} alt="hero_image2" width={1600} loading="lazy" />
+      <m.div className="w-full -mt-80 sm:-mt-0">
+        <Image className="" src={nyblue} alt="hero_image2" width={1600} loading="lazy" />
       </m.div>
     </div>
   );
