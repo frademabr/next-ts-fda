@@ -1,21 +1,21 @@
-import type { IPostProps } from 'src/types/blog';
-import type { BoxProps } from '@mui/material/Box';
-import type { PaperProps } from '@mui/material/Paper';
+import type { IPostProps } from "src/types/blog";
+import type { BoxProps } from "@mui/material/Box";
+import type { PaperProps } from "@mui/material/Paper";
 
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import Paper from '@mui/material/Paper';
-import Avatar from '@mui/material/Avatar';
-import Divider from '@mui/material/Divider';
-import Typography from '@mui/material/Typography';
-import Pagination, { paginationClasses } from '@mui/material/Pagination';
+import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
+import Pagination, { paginationClasses } from "@mui/material/Pagination";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { fDate } from 'src/utils/format-time';
+import { fDate } from "src/utils/format-time";
 
-import { Image } from 'src/components/image';
+import { Image } from "src/components/image";
 
 // ----------------------------------------------------------------------
 
@@ -29,10 +29,10 @@ export function ElearningPosts({ posts, sx, ...other }: Props) {
       <Box
         sx={[
           {
-            display: 'grid',
+            display: "grid",
             columnGap: 4,
             rowGap: { xs: 4, md: 5 },
-            gridTemplateColumns: { xs: 'repeat(1, 1fr)', sm: 'repeat(2, 1fr)' },
+            gridTemplateColumns: { xs: "repeat(1, 1fr)", sm: "repeat(2, 1fr)" },
           },
           ...(Array.isArray(sx) ? sx : [sx]),
         ]}
@@ -45,7 +45,7 @@ export function ElearningPosts({ posts, sx, ...other }: Props) {
 
       <Pagination
         count={10}
-        sx={{ py: 10, [`& .${paginationClasses.ul}`]: { justifyContent: 'center' } }}
+        sx={{ py: 10, [`& .${paginationClasses.ul}`]: { justifyContent: "center" } }}
       />
     </>
   );
@@ -62,27 +62,27 @@ export function PostItem({ post, sx, ...other }: PostItemProps) {
     <Paper
       variant="outlined"
       sx={[
-        { borderRadius: 2, overflow: 'hidden', bgcolor: 'transparent' },
+        { borderRadius: 2, overflow: "hidden", bgcolor: "transparent" },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
       {...other}
     >
       <Image src={post.coverUrl} alt={post.title} ratio="1/1" />
-      <Box sx={{ display: 'flex', gap: 3, p: 3 }}>
-        <Box sx={{ textAlign: 'center' }}>
+      <Box sx={{ display: "flex", gap: 3, p: 3 }}>
+        <Box sx={{ textAlign: "center" }}>
           <Typography variant="subtitle2" component="span">
-            {fDate(post.createdAt, 'MMM')}
+            {fDate(post.createdAt, "MMM")}
           </Typography>
           <Divider sx={{ mt: 1, mb: 0.5 }} />
           <Typography variant="h3" component="span">
-            {fDate(post.createdAt, 'DD')}
+            {fDate(post.createdAt, "DD")}
           </Typography>
         </Box>
 
-        <Box sx={{ gap: 1, display: 'flex', flexDirection: 'column', flex: '1 1 auto' }}>
+        <Box sx={{ gap: 1, display: "flex", flexDirection: "column", flex: "1 1 auto" }}>
           <Link
             component={RouterLink}
-            href={paths.eLearning.post}
+            href={paths.elearning.post}
             color="inherit"
             variant="h6"
             sx={(theme) => ({
@@ -96,20 +96,20 @@ export function PostItem({ post, sx, ...other }: PostItemProps) {
             variant="body2"
             sx={(theme) => ({
               ...theme.mixins.maxLine({ line: 2, persistent: theme.typography.body2 }),
-              color: 'text.secondary',
+              color: "text.secondary",
             })}
           >
             {post.description}
           </Typography>
 
-          <Box sx={{ gap: 1.5, display: 'flex', alignItems: 'center', pt: 1.5 }}>
+          <Box sx={{ gap: 1.5, display: "flex", alignItems: "center", pt: 1.5 }}>
             <Avatar src={post.author.avatarUrl} />
-            <Box sx={{ gap: 0.5, display: 'flex', flexDirection: 'column' }}>
-              <Box component="span" sx={{ typography: 'body2' }}>
+            <Box sx={{ gap: 0.5, display: "flex", flexDirection: "column" }}>
+              <Box component="span" sx={{ typography: "body2" }}>
                 {post.author.name}
               </Box>
 
-              <Typography variant="caption" sx={{ color: 'text.disabled' }}>
+              <Typography variant="caption" sx={{ color: "text.disabled" }}>
                 {post.duration}
               </Typography>
             </Box>

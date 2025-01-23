@@ -1,6 +1,6 @@
 import { CONFIG } from "src/global-config";
 
-import { ElearningPostsView } from "@/sections/_servicos/view/elearning-posts-view";
+import { ElearningPostsView } from "@/sections/_elearning/view/elearning-posts-view";
 
 // ----------------------------------------------------------------------
 

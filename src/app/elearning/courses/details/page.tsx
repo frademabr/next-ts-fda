@@ -1,7 +1,7 @@
 import { _courses } from "src/_mock";
 import { CONFIG } from "src/global-config";
 
-import { ElearningCourseView } from "@/sections/_servicos/view/elearning-course-view";
+import { ElearningCourseView } from "@/sections/_elearning/view/elearning-course-view";
 
 // ----------------------------------------------------------------------
 

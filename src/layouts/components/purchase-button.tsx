@@ -49,10 +49,11 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
       }}
     >
       <Button
-        variant="text"
+        className="bg-green-600 hover:bg-green-700"
+        // variant="text"
         target="_blank"
         rel="noopener"
-        href="/"
+        href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
         {...slotProps?.button}
         sx={[
           { px: 2, borderRadius: "inherit" },
@@ -61,7 +62,7 @@ export function PurchaseButton({ slotProps, sx }: PurchaseButtonProps) {
             : [slotProps?.button?.sx]),
         ]}
       >
-        Contato
+        WhatsApp
       </Button>
     </AnimateBorder>
   );

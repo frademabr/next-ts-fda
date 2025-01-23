@@ -53,16 +53,16 @@ export const pageLinks = [
     ],
   },
   {
-    subheader: "Serviços",
-    coverUrl: imagePath("servicos.webp"),
+    subheader: "elearning",
+    coverUrl: imagePath("elearning.webp"),
     items: [
-      { title: "Landing", path: paths.eLearning.root },
-      { title: "Courses", path: paths.eLearning.courses },
-      { title: "Course", path: paths.eLearning.course },
-      { title: "Posts", path: paths.eLearning.posts },
-      { title: "Post", path: paths.eLearning.post },
-      { title: "About", path: paths.eLearning.about },
-      { title: "Contact", path: paths.eLearning.contact },
+      { title: "Landing", path: paths.elearning.root },
+      { title: "Courses", path: paths.elearning.courses },
+      { title: "Course", path: paths.elearning.course },
+      { title: "Posts", path: paths.elearning.posts },
+      { title: "Post", path: paths.elearning.post },
+      { title: "About", path: paths.elearning.about },
+      { title: "Contact", path: paths.elearning.contact },
     ],
   },
   {
@@ -111,8 +111,8 @@ export const pageLinks = [
 export const navData = [
   { title: "Home", path: "/" },
   { title: "Filiais", path: paths.filiais.caseStudies },
-  // { title: "Serviços", path: paths.pages, children: pageLinks },
-  { title: "Serviços", path: paths.eLearning.courses },
+  { title: "Pages", path: paths.pages, children: pageLinks },
+  { title: "elearning", path: paths.elearning.about },
   { title: "Sobre Nós", path: "#" },
   { title: "Blog", path: "#" },
 ];

@@ -48,12 +48,12 @@ const FAQs = [
         disposto no artigo 16º do CTN, imposto “é o tributo cuja obrigação tem por fato gerador uma
         situação independente de qualquer atividade estatal específica, relativa ao contribuinte”.
         Dentre os principais impostos do Brasil, podemos citar: Imposto s/Circulação de Mercadorias
-        e Serviços (ICMS), Imposto sobre a Propriedade de Veículos Automotores (IPVA), Imposto sobre
-        a Propriedade Predial e Territorial Urbana (IPTU), Imposto sobre a Renda e Proventos de
-        Qualquer Natureza (IR – pessoa física e jurídica), Imposto sobre Operações de Crédito (IOF),
-        Imposto sobre Serviços de Qualquer Natureza (ISS). Já de acordo com o artigo 77º do CTN,
-        taxa é um tributo “que tem como fato gerador o exercício regulador do poder de polícia, ou a
-        utilização efetiva e potencial, de serviço público específico e divisível”. – Taxa de
+        e elearning (ICMS), Imposto sobre a Propriedade de Veículos Automotores (IPVA), Imposto
+        sobre a Propriedade Predial e Territorial Urbana (IPTU), Imposto sobre a Renda e Proventos
+        de Qualquer Natureza (IR – pessoa física e jurídica), Imposto sobre Operações de Crédito
+        (IOF), Imposto sobre elearning de Qualquer Natureza (ISS). Já de acordo com o artigo 77º do
+        CTN, taxa é um tributo “que tem como fato gerador o exercício regulador do poder de polícia,
+        ou a utilização efetiva e potencial, de serviço público específico e divisível”. – Taxa de
         Emissão de Documentos (níveis municipais, estaduais e federais), Taxa de Licenciamento Anual
         de Veículo, Taxas do Registro do Comércio (Juntas Comerciais), Taxa cobrada para registro do
         Contrato Social de uma empresa.

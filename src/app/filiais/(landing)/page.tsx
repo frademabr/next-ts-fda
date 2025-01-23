@@ -4,7 +4,7 @@ import { MarketingLandingView } from "@/sections/_filiais/view/marketing-landing
 
 // ----------------------------------------------------------------------
 
-export const metadata = { title: `Home | Marketing - ${CONFIG.appName}` };
+export const metadata = { title: `Filiais Fradema - ${CONFIG.appName}` };
 
 export default function Page() {
   return <MarketingLandingView />;

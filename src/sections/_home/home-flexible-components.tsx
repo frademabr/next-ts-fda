@@ -61,7 +61,7 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
 
       <m.div variants={variants}>
         <Typography variant="h1" sx={{ my: 3 }}>
-          Serviços Prestados
+          elearning Prestados
         </Typography>
       </m.div>
 

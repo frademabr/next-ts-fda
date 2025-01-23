@@ -1,6 +1,6 @@
 import { CONFIG } from "src/global-config";
 
-import { ElearningLandingView } from "@/sections/_servicos/view/elearning-landing-view";
+import { ElearningLandingView } from "@/sections/_elearning/view/elearning-landing-view";
 
 // ----------------------------------------------------------------------
 

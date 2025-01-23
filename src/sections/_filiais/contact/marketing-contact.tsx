@@ -82,8 +82,8 @@ export function MarketingContact() {
         <div className="w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
             <h1 className="text-4xl font-bold lg:text-5xl">
-              Fale com um de nossos{" "}
-              <div className="mt-5 text-blue-600 ">
+              Fale com um de nossos
+              <div className="text-blue-600 ">
                 <h1>Consultores</h1>
               </div>
             </h1>
