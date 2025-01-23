@@ -1,6 +1,6 @@
 import type { LinkProps } from "@mui/material/Link";
 
-import { forwardRef } from "react";
+import { forwardRef, lazy } from "react";
 import { mergeClasses } from "minimal-shared/utils";
 
 import Link from "@mui/material/Link";
@@ -10,6 +10,11 @@ import { RouterLink } from "src/routes/components";
 
 import { logoClasses } from "./classes";
 import { CONFIG } from "src/global-config";
+import Image from "next/image";
+
+import whiteLogo from "public/assets/images/home/logo-fradema-branco.png";
+
+import shortLogo from "public/assets/images/home/logo-fradema-single.png";
 
 // ----------------------------------------------------------------------
 
@@ -23,9 +28,16 @@ export const Logo = forwardRef<HTMLAnchorElement, LogoProps>((props, ref) => {
 
   const theme = useTheme();
 
-  const singleLogo = <img src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-single.png`} />;
+  const singleLogo = <Image src={shortLogo} alt="short_logo" loading="lazy" />;
 
-  const fullLogo = <img src={`${CONFIG.assetsDir}/assets/images/home/logo-fradema-branco.png`} />;
+  const fullLogo = (
+    <Image
+      className="sm:flex sm:justify-end sm:ml-20"
+      src={whiteLogo}
+      alt="white_logo"
+      loading="lazy"
+    />
+  );
 
   return (
     <LogoRoot

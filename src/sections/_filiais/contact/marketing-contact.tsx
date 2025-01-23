@@ -78,7 +78,7 @@ export function MarketingContact() {
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(ellipse_35%_20%_at_70%_75%,hsl(var(--accent))_0%,transparent_80%)] lg:bg-[radial-gradient(ellipse_15%_30%_at_70%_65%,hsl(var(--accent))_0%,transparent_80%)]" />
       {/* Background pattern */}
       <div className="pointer-events-none absolute inset-x-0 -bottom-20 -top-20 bg-[radial-gradient(hsl(var(--accent-foreground)/0.5)_1px,transparent_1px)] [background-size:8px_8px] [mask-image:radial-gradient(ellipse_60%_60%_at_65%_50%,#000_10%,transparent_50%)]" />
-      <div className="container grid w-full grid-cols-1 ml-20 overflow-hidden gap-x-32 lg:grid-cols-2">
+      <div className="container grid w-full grid-cols-1 overflow-hidden md:ml-20 sm:text-left gap-x-32 lg:grid-cols-2">
         <div className="w-full pb-10 md:space-y-10 md:pb-0">
           <div className="space-y-4 md:max-w-[40rem]">
             <h1 className="text-4xl font-bold lg:text-5xl">

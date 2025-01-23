@@ -8,6 +8,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      "5xl": "10rem",
+      "7xl": "14rem",
+      "9xl": "16rem",
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }

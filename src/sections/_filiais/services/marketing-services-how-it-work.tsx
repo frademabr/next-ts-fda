@@ -19,20 +19,10 @@ import { Container } from "@mui/material";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <Box
-      // component=""
-      sx={{
-        marginTop: "-460px",
-        // display: "absolute",
-        alignItems: "center",
-        // position: "relative",
-        typography: "caption",
-        justifyContent: "center",
-      }}
-    >
-      <m.div className="w-full">
+    <div className="-mt-80">
+      <m.div className="w-full sm:mt-20">
         <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
-        <h1 className="ml-5 tracking-tighter text-center motion-preset-blur-up-lg motion-duration-2000 -mt-60 text-9xl text-pretty h1-seo">
+        <h1 className="mb-40 tracking-tighter text-center lg:text-9xl sm:text-7xl motion-preset-blur-up-lg motion-duration-2000 -mt-60 text-pretty h1-seo">
           FRADEMA
         </h1>
       </m.div>
@@ -40,6 +30,6 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
       <m.div className="w-full -mt-60">
         <Image className="mt-20" src={nyblue} alt="hero_image2" width={1600} loading="lazy" />
       </m.div>
-    </Box>
+    </div>
   );
 }
