@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import './styles.css';
+import "./styles.css";
 
-import NProgress from 'nprogress';
-import { Suspense, useEffect } from 'react';
+import NProgress from "nprogress";
+import { Suspense, useEffect } from "react";
 
-import { useRouter, usePathname, useSearchParams } from 'src/routes/hooks';
+import { useRouter, usePathname, useSearchParams } from "src/routes/hooks";
 
 // ----------------------------------------------------------------------
 
@@ -28,17 +28,17 @@ const handleAnchorClick = (event: MouseEvent) => {
  * Handles DOM mutations to add click event listeners to anchor elements.
  */
 const handleMutation = () => {
-  const anchorElements: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('a[href]');
+  const anchorElements: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a[href]");
 
   const filteredAnchors = Array.from(anchorElements).filter((element) => {
-    const rel = element.getAttribute('rel');
-    const href = element.getAttribute('href');
-    const target = element.getAttribute('target');
+    const rel = element.getAttribute("rel");
+    const href = element.getAttribute("href");
+    const target = element.getAttribute("target");
 
-    return href?.startsWith('/') && target !== '_blank' && rel !== 'noopener';
+    return href?.startsWith("/") && target !== "_blank" && rel !== "noopener";
   });
 
-  filteredAnchors.forEach((anchor) => anchor.addEventListener('click', handleAnchorClick));
+  filteredAnchors.forEach((anchor) => anchor.addEventListener("click", handleAnchorClick));
 };
 
 export function ProgressBar() {
@@ -59,8 +59,8 @@ export function ProgressBar() {
     // Cleanup function to remove event listeners and observer
     return () => {
       mutationObserver.disconnect();
-      const anchorElements: NodeListOf<HTMLAnchorElement> = document.querySelectorAll('a[href]');
-      anchorElements.forEach((anchor) => anchor.removeEventListener('click', handleAnchorClick));
+      const anchorElements: NodeListOf<HTMLAnchorElement> = document.querySelectorAll("a[href]");
+      anchorElements.forEach((anchor) => anchor.removeEventListener("click", handleAnchorClick));
     };
   }, []);
 

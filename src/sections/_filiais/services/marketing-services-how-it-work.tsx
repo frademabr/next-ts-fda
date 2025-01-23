@@ -32,7 +32,7 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
     >
       <m.div className="w-full">
         <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
-        <h1 className="ml-5 tracking-tighter text-center motion-preset-blur-down-lg -mt-60 text-9xl text-pretty h1-seo">
+        <h1 className="ml-5 tracking-tighter text-center motion-preset-blur-up-lg motion-duration-2000 -mt-60 text-9xl text-pretty h1-seo">
           FRADEMA
         </h1>
       </m.div>

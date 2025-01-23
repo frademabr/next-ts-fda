@@ -29,17 +29,17 @@ export function MarketingCaseStudyListSimilar({ caseStudies, sx, ...other }: Pro
       <Container>
         <Box sx={{ display: "flex", alignItems: "center", mb: { xs: 5, md: 10 } }}>
           <Typography component="h6" variant="h3" sx={{ flexGrow: 1 }}>
-            You might like
+            Veja também
           </Typography>
 
-          <Button
+          {/* <Button
             component={RouterLink}
             href={paths.filiais.caseStudies}
             color="inherit"
             endIcon={<Iconify icon="solar:alt-arrow-right-outline" />}
           >
             View all
-          </Button>
+          </Button> */}
         </Box>
 
         <Box
