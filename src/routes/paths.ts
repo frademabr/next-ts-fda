@@ -1,11 +1,21 @@
 export const paths = {
   /**
-   * Marketing
+   * Serviços
+   */
+
+  servicos: {
+    root: "/servicos",
+    consultoriaTributaria: "/servicos/consultoria-tributaria",
+    blindagemPatrimonial: "/servicos/blindagem-patrimonial",
+  },
+
+  /**
+   * Filiais
    */
   filiais: {
     root: "/filiais",
     services: "/filiais/services",
-    caseStudies: "/filiais/case-studies",
+    caseStudies: "/filiais/unidades",
     caseStudy: (id: string) => `/filiais/case-studies/${id}`,
     posts: "/filiais/posts",
     post: "/filiais/posts/details",

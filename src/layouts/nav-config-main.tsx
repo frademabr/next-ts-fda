@@ -11,12 +11,20 @@ const imagePath = (name: string) => `${CONFIG.assetsDir}/assets/images/menu/${na
 
 export const pageLinks = [
   {
+    subheader: "Serviços",
+    items: [
+      { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
+      { title: "Blindagem Patrimonial", path: paths.servicos },
+    ],
+  },
+
+  {
     subheader: "Filiais",
     coverUrl: imagePath("filiais.webp"),
     items: [
       { title: "Landing", path: paths.filiais.root },
       { title: "Services", path: paths.filiais.services },
-      { title: "Case studies", path: paths.filiais.caseStudies },
+      { title: "Unidades", path: paths.filiais.caseStudies },
       { title: "Case study", path: paths.filiais.caseStudy(_caseStudies[0].id) },
       { title: "Posts", path: paths.filiais.posts },
       { title: "Post", path: paths.filiais.post },
@@ -113,6 +121,10 @@ export const navData = [
   { title: "Filiais", path: paths.filiais.caseStudies },
   { title: "Pages", path: paths.pages, children: pageLinks },
   { title: "elearning", path: paths.elearning.about },
-  { title: "Sobre Nós", path: "#" },
+  {
+    title: "Serviços",
+    path: paths.servicos.consultoriaTributaria,
+  },
+  // { title: "Sobre Nós", path: "#" },
   { title: "Blog", path: "#" },
 ];
