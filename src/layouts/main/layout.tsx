@@ -98,15 +98,13 @@ export function MainLayout({
         <Box sx={{ gap: 1, display: "flex", alignItems: "center" }}>
           {/** @slot Searchbar */}
           {/* <Searchbar /> */}
-
           {/** @slot Language popover */}
           {/* <LanguagePopover data={langs} /> */}
-
           {/** @slot Settings button */}
           {/* <SettingsButton /> */}
-
           {/* * @slot Purchase button */}
-          <PurchaseButton sx={{ display: { xs: "none", [layoutQuery]: "inline-flex" } }} />
+          <PurchaseButton />
+          {/* sx={{ display: { xs: "none", [layoutQuery]: "inline-flex" } }} */}
         </Box>
       ),
     };

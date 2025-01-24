@@ -37,7 +37,7 @@ export default function HomeHero() {
               <use x={86} href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" />
             </svg>
             <blockquote className="font-semibold text-white text-xl/8 sm:text-2xl/9">
-              <p className="mt-10">
+              <p className="mt-10 text-3xl">
                 A Fradema Consultores Tributários, possui vasta experiência e qualificação para
                 pensar nas melhores soluções em consultoria tributária para o seu negócio. Com
                 atuação desde 1988, a Empresa tem fortes estratégias empresariais e procedimentos

@@ -73,13 +73,14 @@ export function HomeFlexibleComponents({ sx, ...other }: BoxProps) {
       </m.div>
 
       <m.div variants={variants}>
-        <button className="p-3 text-white bg-green-600 rounded-lg motion-preset-pulse-sm text-pretty hover:bg-green-700">
+        <button className="p-2 text-white bg-green-500 rounded-lg motion-preset-pulse-sm text-pretty hover:bg-green-600">
           <a
             target="_blank"
             href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
             rel="noreferrer"
           >
-            <Iconify width={16} icon="logos:whatsapp-icon" /> WhatsApp
+            <Iconify className="mr-2" width={18} icon="logos:whatsapp-icon" />
+            WhatsApp
           </a>
         </button>
       </m.div>
