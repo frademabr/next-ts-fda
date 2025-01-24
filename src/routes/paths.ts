@@ -6,7 +6,7 @@ export const paths = {
   // subservicos: {},
 
   servicos: {
-    root: "/servicos",
+    root: "/servicos/lista",
     consultoriaTributaria: "/servicos/consultoria-tributaria",
     blindagemPatrimonial: "/servicos/blindagem-patrimonial",
   },

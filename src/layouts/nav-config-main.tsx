@@ -131,7 +131,7 @@ export const navData = [
   // { title: "elearning", path: paths.elearning.about },
   {
     title: "Serviços",
-    path: paths.servicos.blindagemPatrimonial,
+    path: paths.servicos.root,
   },
   // { title: "Sobre Nós", path: "#" },
   { title: "Blog", path: "#" },

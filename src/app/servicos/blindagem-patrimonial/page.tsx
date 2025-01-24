@@ -4,7 +4,7 @@ import BlindagemPatrimonial from "@/sections/_servicos/blindagem-patrimonial/bli
 
 // ----------------------------------------------------------------------
 
-export const metadata = { title: `Fradema Serviços Consultoria Tributária - ${CONFIG.appName}` };
+export const metadata = { title: `Fradema Serviços Blindagem Patrimonial - ${CONFIG.appName}` };
 
 export default function Page() {
   return <BlindagemPatrimonial />;
