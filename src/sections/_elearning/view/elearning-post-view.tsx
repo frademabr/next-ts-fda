@@ -1,38 +1,38 @@
-'use client';
+"use client";
 
-import { useState, useCallback } from 'react';
-import { usePopover } from 'minimal-shared/hooks';
+import { useState, useCallback } from "react";
+import { usePopover } from "minimal-shared/hooks";
 
-import Fab from '@mui/material/Fab';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid2';
-import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-import Divider from '@mui/material/Divider';
-import Popover from '@mui/material/Popover';
-import MenuItem from '@mui/material/MenuItem';
-import Checkbox from '@mui/material/Checkbox';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import Fab from "@mui/material/Fab";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid2";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import Popover from "@mui/material/Popover";
+import MenuItem from "@mui/material/MenuItem";
+import Checkbox from "@mui/material/Checkbox";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
 
-import { paths } from 'src/routes/paths';
+import { paths } from "src/routes/paths";
 
-import { fDate } from 'src/utils/format-time';
+import { fDate } from "src/utils/format-time";
 
-import { _socials, _coursePosts } from 'src/_mock';
-import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from 'src/assets/icons';
+import { _socials, _coursePosts } from "src/_mock";
+import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from "src/assets/icons";
 
-import { Image } from 'src/components/image';
-import { Iconify } from 'src/components/iconify';
-import { Markdown } from 'src/components/markdown';
-import { CustomBreadcrumbs } from 'src/components/custom-breadcrumbs';
+import { Image } from "src/components/image";
+import { Iconify } from "src/components/iconify";
+import { Markdown } from "src/components/markdown";
+import { CustomBreadcrumbs } from "src/components/custom-breadcrumbs";
 
-import { PostTags } from '../../blog/post-tags';
-import { PostAuthor } from '../../blog/post-author';
-import { ElearningNewsletter } from '../elearning-newsletter';
-import { PrevNextButton } from '../../blog/post-prev-and-next';
-import { ElearningLatestPosts } from '../posts/elearning-latest-posts';
+import { PostTags } from "../../blog/post-tags";
+import { PostAuthor } from "../../blog/post-author";
+import { ElearningNewsletter } from "../elearning-newsletter";
+import { PrevNextButton } from "../../blog/post-prev-and-next";
+import { ElearningLatestPosts } from "../posts/elearning-latest-posts";
 
 // ----------------------------------------------------------------------
 
@@ -51,8 +51,8 @@ export function ElearningPostView() {
   }, []);
 
   const renderHead = () => (
-    <Box sx={{ textAlign: 'center', mt: { xs: 5, md: 10 } }}>
-      <Typography variant="body2" sx={{ color: 'text.disabled' }}>
+    <Box sx={{ textAlign: "center", mt: { xs: 5, md: 10 } }}>
+      <Typography variant="body2" sx={{ color: "text.disabled" }}>
         {post.duration}
       </Typography>
 
@@ -67,12 +67,12 @@ export function ElearningPostView() {
   );
 
   const renderSocials = () => (
-    <Box sx={{ gap: 1.5, display: 'flex', mt: 5 }}>
-      <Box component="span" sx={{ lineHeight: '30px', typography: 'subtitle2' }}>
+    <Box sx={{ gap: 1.5, display: "flex", mt: 5 }}>
+      <Box component="span" sx={{ lineHeight: "30px", typography: "subtitle2" }}>
         Share:
       </Box>
 
-      <Box sx={{ gap: 1, display: 'flex', alignItems: 'center', flexWrap: 'wrap' }}>
+      <Box sx={{ gap: 1, display: "flex", alignItems: "center", flexWrap: "wrap" }}>
         {_socials.map((social) => (
           <Button
             key={social.value}
@@ -80,10 +80,10 @@ export function ElearningPostView() {
             variant="outlined"
             startIcon={
               <>
-                {social.value === 'twitter' && <TwitterIcon />}
-                {social.value === 'facebook' && <FacebookIcon />}
-                {social.value === 'instagram' && <InstagramIcon />}
-                {social.value === 'linkedin' && <LinkedinIcon />}
+                {social.value === "twitter" && <TwitterIcon />}
+                {social.value === "facebook" && <FacebookIcon />}
+                {social.value === "instagram" && <InstagramIcon />}
+                {social.value === "linkedin" && <LinkedinIcon />}
               </>
             }
           >
@@ -99,16 +99,16 @@ export function ElearningPostView() {
       open={openSocial.open}
       anchorEl={openSocial.anchorEl}
       onClose={openSocial.onClose}
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      transformOrigin={{ vertical: 'top', horizontal: 'center' }}
+      anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      transformOrigin={{ vertical: "top", horizontal: "center" }}
       slotProps={{ paper: { sx: { width: 220 } } }}
     >
       {_socials.map((social) => (
         <MenuItem key={social.value} onClick={() => openSocial.onClose()} sx={{ gap: 1 }}>
-          {social.value === 'twitter' && <TwitterIcon />}
-          {social.value === 'facebook' && <FacebookIcon />}
-          {social.value === 'instagram' && <InstagramIcon />}
-          {social.value === 'linkedin' && <LinkedinIcon />}
+          {social.value === "twitter" && <TwitterIcon />}
+          {social.value === "facebook" && <FacebookIcon />}
+          {social.value === "instagram" && <InstagramIcon />}
+          {social.value === "linkedin" && <LinkedinIcon />}
           Share via {social.label}
         </MenuItem>
       ))}
@@ -121,8 +121,8 @@ export function ElearningPostView() {
         (theme) => ({
           py: 3,
           my: 5,
-          display: 'flex',
-          alignItems: 'center',
+          display: "flex",
+          alignItems: "center",
           borderTop: `solid 1px ${theme.vars.palette.divider}`,
           borderBottom: `solid 1px ${theme.vars.palette.divider}`,
         }),
@@ -132,12 +132,12 @@ export function ElearningPostView() {
 
       <Box sx={{ flexGrow: 1 }}>
         <Typography variant="subtitle2">{post.author.name}</Typography>
-        <Typography variant="caption" sx={{ mt: 0.5, display: 'block', color: 'text.secondary' }}>
+        <Typography variant="caption" sx={{ mt: 0.5, display: "block", color: "text.secondary" }}>
           {fDate(post.createdAt)}
         </Typography>
       </Box>
 
-      <IconButton onClick={openSocial.onOpen} color={openSocial.open ? 'primary' : 'default'}>
+      <IconButton onClick={openSocial.onOpen} color={openSocial.open ? "primary" : "default"}>
         <Iconify icon="solar:share-outline" />
       </IconButton>
       <Checkbox
@@ -146,7 +146,7 @@ export function ElearningPostView() {
         onChange={handleChangeFavorite}
         icon={<Iconify icon="solar:heart-outline" />}
         checkedIcon={<Iconify icon="solar:heart-bold" />}
-        inputProps={{ id: 'favorite-checkbox', 'aria-label': 'Favorite checkbox' }}
+        inputProps={{ id: "favorite-checkbox", "aria-label": "Favorite checkbox" }}
       />
     </Box>
   );
@@ -154,20 +154,20 @@ export function ElearningPostView() {
   const renderVideo = () => (
     <Box
       sx={{
-        display: 'flex',
-        alignItems: 'center',
-        position: 'relative',
-        justifyContent: 'center',
+        display: "flex",
+        alignItems: "center",
+        position: "relative",
+        justifyContent: "center",
       }}
     >
-      <Fab color="primary" sx={{ zIndex: 9, position: 'absolute' }}>
+      <Fab color="primary" sx={{ zIndex: 9, position: "absolute" }}>
         <Iconify width={22} icon="solar:play-outline" />
       </Fab>
 
       <Image
         alt="Post banner"
         src={post.heroUrl}
-        ratio={{ xs: '16/9', md: '21/9' }}
+        ratio={{ xs: "16/9", md: "21/9" }}
         sx={{ borderRadius: 2 }}
         slotProps={{
           overlay: {
@@ -185,8 +185,8 @@ export function ElearningPostView() {
       sx={{
         gap: 5,
         py: 10,
-        display: 'grid',
-        gridTemplateColumns: { xs: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)' },
+        display: "grid",
+        gridTemplateColumns: { xs: "repeat(1, 1fr)", md: "repeat(2, 1fr)" },
       }}
     >
       <PrevNextButton title={prevPost?.title} coverUrl={prevPost?.coverUrl} href="#" />
@@ -201,8 +201,8 @@ export function ElearningPostView() {
       <Container>
         <CustomBreadcrumbs
           links={[
-            { name: 'Home', href: '/' },
-            { name: 'Blog', href: paths.eLearning.posts },
+            { name: "Home", href: "/" },
+            { name: "Blog", href: paths.elearning.posts },
             { name: post.title },
           ]}
           sx={{ my: { xs: 3, md: 5 } }}
@@ -210,7 +210,7 @@ export function ElearningPostView() {
 
         {renderVideo()}
 
-        <Grid container spacing={3} sx={{ justifyContent: { md: 'center' } }}>
+        <Grid container spacing={3} sx={{ justifyContent: { md: "center" } }}>
           <Grid size={{ xs: 12, md: 8 }}>
             {renderHead()}
 

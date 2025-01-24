@@ -3,10 +3,13 @@ export const paths = {
    * Serviços
    */
 
-  servicos: {
-    root: "/servicos",
+  subservicos: {
     consultoriaTributaria: "/servicos/consultoria-tributaria",
     blindagemPatrimonial: "/servicos/blindagem-patrimonial",
+  },
+
+  servicos: {
+    root: "/servicos",
   },
 
   /**
@@ -119,9 +122,9 @@ export const paths = {
   teste: "/teste",
   components: "/components",
   pages: "/pages",
-  docs: "https://zone-docs.vercel.app",
-  license: "https://material-ui.com/store/license/#i-standard-license",
-  minimalStore: "https://material-ui.com/store/items/minimal-dashboard",
-  zoneStore: "https://mui.com/store/items/zone-landing-page/",
-  figmaUrl: "https://www.figma.com/design/NnFigTvU16Mk9lsLZR7bzR/%5BPreview%5D-Zone_Web.v3.0.0",
+  docs: "#",
+  license: "#",
+  minimalStore: "#",
+  zoneStore: "#",
+  figmaUrl: "#",
 };

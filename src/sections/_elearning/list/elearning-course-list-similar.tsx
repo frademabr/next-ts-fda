@@ -1,17 +1,17 @@
-import type { BoxProps } from '@mui/material/Box';
-import type { ICourseProps } from 'src/types/course';
+import type { BoxProps } from "@mui/material/Box";
+import type { ICourseProps } from "src/types/course";
 
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from "src/components/iconify";
 
-import { ElearningCourseItem } from './elearning-course-item';
+import { ElearningCourseItem } from "./elearning-course-item";
 
 // ----------------------------------------------------------------------
 
@@ -24,20 +24,20 @@ export function ElearningCourseListSimilar({ courses, sx, ...other }: Props) {
     <Box
       component="section"
       sx={[
-        { py: { xs: 10, md: 15 }, bgcolor: 'background.neutral' },
+        { py: { xs: 10, md: 15 }, bgcolor: "background.neutral" },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
       {...other}
     >
       <Container>
-        <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 5, md: 10 } }}>
+        <Box sx={{ display: "flex", alignItems: "center", mb: { xs: 5, md: 10 } }}>
           <Typography component="h6" variant="h3" sx={{ flexGrow: 1 }}>
             Similar courses
           </Typography>
 
           <Button
             component={RouterLink}
-            href={paths.eLearning.courses}
+            href={paths.elearning.courses}
             color="inherit"
             endIcon={<Iconify icon="solar:alt-arrow-right-outline" />}
           >
@@ -48,11 +48,11 @@ export function ElearningCourseListSimilar({ courses, sx, ...other }: Props) {
         <Box
           sx={{
             gap: 4,
-            display: 'grid',
+            display: "grid",
             gridTemplateColumns: {
-              xs: 'repeat(1, 1fr)',
-              sm: 'repeat(2, 1fr)',
-              md: 'repeat(3, 1fr)',
+              xs: "repeat(1, 1fr)",
+              sm: "repeat(2, 1fr)",
+              md: "repeat(3, 1fr)",
             },
           }}
         >

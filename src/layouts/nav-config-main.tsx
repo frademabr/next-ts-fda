@@ -9,13 +9,20 @@ import path from "path";
 
 const imagePath = (name: string) => `${CONFIG.assetsDir}/assets/images/menu/${name}`;
 
+export const subservicos = [
+  {
+    subheader: "Sub Serviços",
+    items: [
+      { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
+      { title: "Blindagem Patrimonial", path: paths.servicos.blindagemPatrimonial },
+    ],
+  },
+];
+
 export const pageLinks = [
   {
     subheader: "Serviços",
-    items: [
-      { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
-      { title: "Blindagem Patrimonial", path: paths.servicos },
-    ],
+    items: [{ title: "Landing", path: paths.servicos.root }],
   },
 
   {
@@ -120,10 +127,11 @@ export const navData = [
   { title: "Home", path: "/" },
   { title: "Filiais", path: paths.filiais.caseStudies },
   { title: "Pages", path: paths.pages, children: pageLinks },
-  { title: "elearning", path: paths.elearning.about },
+  // { title: "elearning", path: paths.elearning.about },
   {
     title: "Serviços",
-    path: paths.servicos.consultoriaTributaria,
+    path: paths.servicos,
+    children: paths.subservicos,
   },
   // { title: "Sobre Nós", path: "#" },
   { title: "Blog", path: "#" },
