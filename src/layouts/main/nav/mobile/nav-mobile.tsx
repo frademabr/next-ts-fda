@@ -1,18 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
+import Box from "@mui/material/Box";
+import Drawer from "@mui/material/Drawer";
 
-import { usePathname } from 'src/routes/hooks';
+import { usePathname } from "src/routes/hooks";
 
-import { Logo } from 'src/components/logo';
-import { Scrollbar } from 'src/components/scrollbar';
+import { Logo } from "src/components/logo";
+import { Scrollbar } from "src/components/scrollbar";
 
-import { Nav, NavUl } from '../components';
-import { NavList } from './nav-mobile-list';
-import { PurchaseButton } from '../../../components/purchase-button';
+import { Nav, NavUl } from "../components";
+import { NavList } from "./nav-mobile-list";
+import { PurchaseButton } from "../../../components/purchase-button";
 
-import type { NavMainProps } from '../types';
+import type { NavMainProps } from "../types";
 
 // ----------------------------------------------------------------------
 
@@ -42,9 +42,9 @@ export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
       PaperProps={{
         sx: [
           {
-            display: 'flex',
-            flexDirection: 'column',
-            width: 'var(--layout-nav-mobile-width)',
+            display: "flex",
+            flexDirection: "column",
+            width: "var(--layout-nav-mobile-width)",
           },
           ...(Array.isArray(sx) ? sx : [sx]),
         ],
@@ -56,7 +56,7 @@ export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
             pt: 3,
             pb: 2,
             pl: 2.5,
-            display: 'flex',
+            display: "flex",
           }}
         >
           <Logo />
@@ -67,9 +67,9 @@ export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
         <Nav
           sx={{
             pb: 3,
-            display: 'flex',
-            flex: '1 1 auto',
-            flexDirection: 'column',
+            display: "flex",
+            flex: "1 1 auto",
+            flexDirection: "column",
           }}
         >
           <NavUl>
@@ -81,17 +81,9 @@ export function NavMobile({ data, open, onClose, slots, sx }: NavMobileProps) {
       </Scrollbar>
 
       {slots?.bottomArea ?? (
-        <Box sx={{ py: 3, px: 2.5 }}>
-          <PurchaseButton
-            sx={{ width: 1 }}
-            slotProps={{
-              button: {
-                fullWidth: true,
-                size: 'large',
-              },
-            }}
-          />
-        </Box>
+        <div>
+          <PurchaseButton />
+        </div>
       )}
     </Drawer>
   );

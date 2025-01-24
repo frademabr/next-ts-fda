@@ -27,7 +27,6 @@ export const pageLinks = [
 
   {
     subheader: "Filiais",
-    coverUrl: imagePath("filiais.webp"),
     items: [
       { title: "Landing", path: paths.filiais.root },
       { title: "Services", path: paths.filiais.services },

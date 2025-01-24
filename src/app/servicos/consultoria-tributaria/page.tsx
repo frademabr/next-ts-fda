@@ -1,6 +1,6 @@
 import { CONFIG } from "src/global-config";
 
-import ConsultoriaTributaria from "@/sections/_servicos/consultoria-tributaria/consultoria-tributaria";
+import ConsultoriaTributaria from "@/sections/_subservicos/consultoria-tributaria/consultoria-tributaria";
 
 // ----------------------------------------------------------------------
 
