@@ -56,7 +56,6 @@ export default async function RootLayout({ children }: Props) {
           modeStorageKey={themeConfig.modeStorageKey}
           attribute={themeConfig.cssVariables.colorSchemeSelector}
         />
-
         <SettingsProvider defaultSettings={defaultSettings}>
           <LocalizationProvider>
             <AppRouterCacheProvider options={{ key: "css" }}>

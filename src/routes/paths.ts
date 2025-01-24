@@ -3,13 +3,12 @@ export const paths = {
    * Serviços
    */
 
-  subservicos: {
-    consultoriaTributaria: "/servicos/consultoria-tributaria",
-    blindagemPatrimonial: "/servicos/blindagem-patrimonial",
-  },
+  // subservicos: {},
 
   servicos: {
     root: "/servicos",
+    consultoriaTributaria: "/servicos/consultoria-tributaria",
+    blindagemPatrimonial: "/servicos/blindagem-patrimonial",
   },
 
   /**

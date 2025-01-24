@@ -23,8 +23,8 @@ const commonRules = () => ({
   "default-case-last": 2,
   "consistent-return": 2,
   "no-constant-condition": 1,
-  "default-case": [2, { commentPattern: "^no default$" }],
-  "lines-around-directive": [2, { before: "always", after: "always" }],
+  "default-case": [1, { commentPattern: "^no default$" }],
+  "lines-around-directive": [1, { before: "always", after: "always" }],
   "arrow-body-style": [2, "as-needed", { requireReturnForObjectLiteral: false }],
   // react
   "react/jsx-key": 0,
