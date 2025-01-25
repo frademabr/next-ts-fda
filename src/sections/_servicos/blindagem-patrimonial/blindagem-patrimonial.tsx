@@ -102,66 +102,19 @@ export default function BlindagemPatrimonial({ sx, ...other }: BoxProps) {
           <ul role="list" className="">
             <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
               <li className="py-4 hover:text-blue-700 hover:underline">
-                <a href="#">Parcelamento de dívida ativa</a>
+                <a href="#">Proteção Patrimonial</a>
               </li>
               <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Parcelamento de passivo tributário</a>
+                <a href="#">Sucessão Patrimonial</a>
               </li>
               <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Administração do passivo tributário</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a className="ml-2" href="#">
-                  Auto de infração fiscal
-                </a>
-              </li>
-            </div>
-          </ul>
-
-          <ul role="list" className="">
-            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
-              <li className="py-4 hover:text-blue-700 hover:underline">
-                <a href="#">CND Certidão negativa de débito</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Debêntures como garantia</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Defesa de execução fiscal</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a className="" href="#">
-                  Integralização capital social
-                </a>
-              </li>
-            </div>
-          </ul>
-
-          <ul role="list" className="">
-            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
-              <li className="py-4 hover:text-blue-700 hover:underline">
-                <a href="#">Paex parcelamento excepcional</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Planejamento tributário</a>
-              </li>
-              <li className="hover:text-blue-700 hover:underline">
-                <a href="#">Refis parcelamento de débito tributário</a>
+                <a href="#">Holding Patrimonial</a>
               </li>
               <li className="hover:text-blue-700 hover:underline">
                 <a className="ml-2" href="#">
-                  Repatriação de ativos
+                  Planejamento Sucessório
                 </a>
               </li>
-            </div>
-          </ul>
-
-          <ul role="list" className="">
-            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
-              <li className="justify-center py-4 align-middle hover:text-blue-700 hover:underline">
-                <a href="#">Substituição tributária</a>
-              </li>
-              <Divider className="opacity-85" soft />
             </div>
           </ul>
 
