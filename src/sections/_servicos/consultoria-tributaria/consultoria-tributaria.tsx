@@ -96,6 +96,24 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
             permite, sempre dentro da lei, encontrar um caminho para gastar menos em impostos e
             reorganizar as finanças do negócio.
           </Typography>
+          <br />
+          <Box component="span" sx={{ textAlign: "right", typography: "h4" }}>
+            Serviços Tributários
+            <br />
+          </Box>
+          <br />
+          <ul role="list" className="divide-y divide-white/5">
+            <div className="flex items-center font-bold opacity-75 gap-x-3 ">
+              <li className="py-2 hover:text-blue-700 hover:underline">
+                <a href="#">Parcelamento de dívida ativa</a>
+              </li>
+              <li>
+                <a>Parcelamento de passivo tributário</a>
+              </li>
+              <li>Administração do passivo tributário</li>
+              <li>Auto de infração fiscal</li>
+            </div>
+          </ul>
 
           {/* <InputBase
             fullWidth
