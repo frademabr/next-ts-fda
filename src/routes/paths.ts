@@ -19,7 +19,7 @@ export const paths = {
     root: "/filiais",
     services: "/filiais/services",
     caseStudies: "/filiais/unidades",
-    caseStudy: (id: string) => `/filiais/case-studies/${id}`,
+    caseStudy: (id: string) => `/filiais/unidades/${id}`,
     posts: "/filiais/posts",
     post: "/filiais/posts/details",
     about: "/filiais/about",

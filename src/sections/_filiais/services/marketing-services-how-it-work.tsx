@@ -19,7 +19,7 @@ import { Container } from "@mui/material";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <div className="-mt-80">
+    <div className="-mt-96">
       <m.div className="w-full sm:mt-40">
         <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
         <h1 className="tracking-tighter text-center -mt-60 md:text-7xl md:-mb-60 sm:text-5xl sm:-mb-20 text-pretty h1-seo">
