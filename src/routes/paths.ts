@@ -4,12 +4,12 @@ export const paths = {
    */
 
   subservicos: {
-    consultoriaTributaria: "/subservicos/consultoria-tributaria",
-    blindagemPatrimonial: "/subservicos/blindagem-patrimonial",
+    root: "/subservicos",
   },
 
   servicos: {
-    root: "/servicos/lista",
+    consultoriaTributaria: "/servicos/consultoria-tributaria",
+    blindagemPatrimonial: "/servicos/blindagem-patrimonial",
   },
 
   /**
