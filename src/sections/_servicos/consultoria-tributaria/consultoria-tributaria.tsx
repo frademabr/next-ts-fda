@@ -12,6 +12,7 @@ import Typography from "@mui/material/Typography";
 import InputAdornment from "@mui/material/InputAdornment";
 
 import { CONFIG } from "src/global-config";
+import { Divider } from "@/components/catalyst-ui-kit/typescript/divider";
 
 // ----------------------------------------------------------------------
 
@@ -56,7 +57,7 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
       <Container>
         <Box sx={{ mx: "auto", maxWidth: 700, textAlign: "center", color: "common.white" }}>
           <Box sx={{ gap: 2, display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Box component="span" sx={{ textAlign: "right", typography: "h4" }}>
+            <Box component="span" sx={{ textAlign: "right", typography: "h2" }}>
               Consultoria Tributária
               <br />
             </Box>
@@ -102,16 +103,69 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
             <br />
           </Box>
           <br />
-          <ul role="list" className="divide-y divide-white/5">
-            <div className="flex items-center font-bold opacity-75 gap-x-3 ">
-              <li className="py-2 hover:text-blue-700 hover:underline">
+          <ul role="list" className="">
+            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
+              <li className="py-4 hover:text-blue-700 hover:underline">
                 <a href="#">Parcelamento de dívida ativa</a>
               </li>
-              <li>
-                <a>Parcelamento de passivo tributário</a>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Parcelamento de passivo tributário</a>
               </li>
-              <li>Administração do passivo tributário</li>
-              <li>Auto de infração fiscal</li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Administração do passivo tributário</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a className="ml-2" href="#">
+                  Auto de infração fiscal
+                </a>
+              </li>
+            </div>
+          </ul>
+
+          <ul role="list" className="">
+            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
+              <li className="py-4 hover:text-blue-700 hover:underline">
+                <a href="#">CND Certidão negativa de débito</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Debêntures como garantia</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Defesa de execução fiscal</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a className="" href="#">
+                  Integralização capital social
+                </a>
+              </li>
+            </div>
+          </ul>
+
+          <ul role="list" className="">
+            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
+              <li className="py-4 hover:text-blue-700 hover:underline">
+                <a href="#">Paex parcelamento excepcional</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Planejamento tributário</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a href="#">Refis parcelamento de débito tributário</a>
+              </li>
+              <li className="hover:text-blue-700 hover:underline">
+                <a className="ml-2" href="#">
+                  Repatriação de ativos
+                </a>
+              </li>
+            </div>
+          </ul>
+
+          <ul role="list" className="">
+            <div className="flex items-center font-bold divide-x divide-white opacity-75 gap-x-3 ">
+              <li className="justify-center py-4 align-middle hover:text-blue-700 hover:underline">
+                <a href="#">Substituição tributária</a>
+              </li>
+              <Divider className="opacity-85" soft />
             </div>
           </ul>
 
