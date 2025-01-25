@@ -1,6 +1,6 @@
 import { CONFIG } from "src/global-config";
 
-import BlindagemPatrimonial from "@/sections/_subservicos/blindagem-patrimonial/blindagem-patrimonial";
+import BlindagemPatrimonial from "@/sections/_servicos/blindagem-patrimonial/blindagem-patrimonial";
 
 // ----------------------------------------------------------------------
 

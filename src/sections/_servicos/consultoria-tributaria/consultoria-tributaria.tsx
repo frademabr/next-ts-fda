@@ -54,14 +54,14 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
       </Box>
 
       <Container>
-        <Box sx={{ mx: "auto", maxWidth: 480, textAlign: "center", color: "common.white" }}>
+        <Box sx={{ mx: "auto", maxWidth: 700, textAlign: "center", color: "common.white" }}>
           <Box sx={{ gap: 2, display: "flex", alignItems: "center", justifyContent: "center" }}>
             <Box component="span" sx={{ textAlign: "right", typography: "h4" }}>
-              Register now for get
-              <br /> discount every courses
+              Consultoria Tributária
+              <br />
             </Box>
 
-            <Box
+            {/* <Box
               component="span"
               sx={(theme) => ({
                 ...theme.mixins.textGradient(
@@ -71,15 +71,33 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
               })}
             >
               20%
-            </Box>
+            </Box> */}
           </Box>
 
           <Typography sx={{ mt: 3, mb: 5, opacity: 0.64 }}>
-            Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Sed magna purus,
-            fermentum eu
+            A Consultoria Tributária analisa em detalhes os dados financeiros e contábeis da empresa
+            para conhecer profundamente a realidade do negócio e formular estratégias que permitam
+            pagar menos impostos. O levantamento feito durante a consultoria tributária permitirá
+            que a empresa tenha uma vida financeira mais saudável e projete um futuro mais próspero.
+          </Typography>
+          <br />
+          <Box component="span" sx={{ textAlign: "right", typography: "h4" }}>
+            Como funciona a Consultoria Tributária?
+            <br />
+          </Box>
+          <Typography sx={{ mt: 3, mb: 5, opacity: 0.64 }}>
+            Os especialistas em Consultoria Tributária da Fradema, avaliam se a empresa está no
+            regime tributário mais adequado, de acordo com fatores como ramo de atuação, faturamento
+            e quantidade de funcionários. Muitas vezes, o reenquadramento em outro regime já reduz
+            significativamente a carga de impostos. Com a Consultoria Tributária, ajudamos a empresa
+            a economizar e, também, abrimos um caminho para que os recursos disponíveis sejam
+            remanejados para fins mais importantes, como o desenvolvimento de produtos e serviços,
+            contratação de novos talentos e planos de expansão. A Consultoria Tributária, em resumo,
+            permite, sempre dentro da lei, encontrar um caminho para gastar menos em impostos e
+            reorganizar as finanças do negócio.
           </Typography>
 
-          <InputBase
+          {/* <InputBase
             fullWidth
             placeholder="Enter your email"
             endAdornment={
@@ -91,7 +109,7 @@ export default function ConsultoriaTributaria({ sx, ...other }: BoxProps) {
             }
             inputProps={{ id: "email-input" }}
             sx={{ pr: 0.5, pl: 1.5, height: 56, borderRadius: 1, bgcolor: "common.white" }}
-          />
+          /> */}
         </Box>
       </Container>
     </Box>
