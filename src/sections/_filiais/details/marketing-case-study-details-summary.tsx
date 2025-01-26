@@ -15,6 +15,7 @@ import { Iconify } from "src/components/iconify";
 import type { Variants } from "framer-motion";
 import { m } from "framer-motion";
 import { varFade } from "@/components/animate";
+import { Button } from "@/components/catalyst-ui-kit/typescript/button";
 
 // ----------------------------------------------------------------------
 
@@ -89,18 +90,15 @@ export function MarketingCaseStudyDetailsSummary({
 
       {renderDivider()}
 
-      <Box sx={{ display: "flex" }}>
-        {_whats.map((what) => (
-          <a key={what} target="_blank" rel="noreferrer" href={what}>
+      <m.div variants={variants}>
+        <button className="p-2 text-white bg-green-500 rounded-lg text-pretty hover:bg-green-600">
+          <a target="_blank" href={website} rel="noreferrer">
+            <Iconify className="mr-2" width={18} icon="logos:whatsapp-icon" />
             WhatsApp
           </a>
-          // <Iconify key={what} width={16} icon="logos:whatsapp-icon">
-
-          // </Iconify>
-        ))}
-      </Box>
-
-      <a href={website}>TEST</a>
+        </button>
+        <Typography variant="body2"> Fale com esta Filial agora!</Typography>
+      </m.div>
 
       {renderDivider()}
 

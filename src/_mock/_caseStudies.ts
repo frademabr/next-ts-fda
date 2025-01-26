@@ -110,23 +110,30 @@ const getCategory = (index: number) => {
   return _tags[0];
 };
 
-const getW = (index: number) => {
+const getWhats = (index: number) => {
   if ([1].includes(index)) return _whats[1];
   if ([2].includes(index)) return _whats[2];
   if ([3].includes(index)) return _whats[3];
+  if ([4].includes(index)) return _whats[4];
+  if ([5].includes(index)) return _whats[5];
+  if ([6].includes(index)) return _whats[6];
+  if ([7].includes(index)) return _whats[7];
+  if ([8].includes(index)) return _whats[8];
+  if ([9].includes(index)) return _whats[9];
+  if ([10].includes(index)) return _whats[10];
   return _whats[0];
 };
 
 const getGalleryImgs = () => Array.from({ length: 6 }, (_, index) => _mock.image.filiais(index));
 
-const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index));
+// const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index));
 
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
   content: CONTENT[index],
   title: TITLES[index],
   createdAt: _mock.time(index),
-  website: getW(index),
+  website: getWhats(index),
   // whats: WHATS[index],
   description: _mock.description(index),
   coverUrl: _mock.image.filiais(index + 1),
