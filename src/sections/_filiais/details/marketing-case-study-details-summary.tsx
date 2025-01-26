@@ -84,26 +84,6 @@ export function MarketingCaseStudyDetailsSummary({
 
       <Typography variant="body2">{description}</Typography>
 
-      {renderDivider()}
-      <div>
-        <a target="_blank" rel="noreferrer" href={website}>
-          <Typography className="mb-3" variant="body2">
-            <Iconify
-              className="rounded-md hover:shadow-lg hover:shadow-white"
-              width={28}
-              icon="logos:whatsapp-icon"
-            >
-              {renderItem("WhatsApp", website)}
-            </Iconify>{" "}
-            WhatsApp
-          </Typography>
-        </a>
-        <Typography className="mt-2" variant="body2">
-          {" "}
-          Clique e fale com esta Filial agora!
-        </Typography>
-      </div>
-
       {/* {renderWhats()} */}
 
       {/* {renderItem("Category", category)} */}

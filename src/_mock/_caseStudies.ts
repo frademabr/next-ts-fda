@@ -34,6 +34,8 @@ A cidade do Rio de Janeiro, fundada em 1565, tem uma rica história como a antig
 A matriz da Fradema reflete a essência da cidade: conectada ao lado do aeroporto Santos Drumond trazendo dinamismo. Nossas instalações no Centro são preparadas para atender clientes de todos os portes com excelência e confiança, continuando a tradição de anos de sucesso no mercado tributário.
 </p>
 
+
+
   <h4 class="text-green-500">Informações</h4>
 
   <ul>
@@ -42,32 +44,31 @@ A matriz da Fradema reflete a essência da cidade: conectada ao lado do aeroport
       <li>contato@fradema.com.br</li>
       <li>Seg à Qui das 9h às 18h | Sex das 9h às 17h</li>
   </ul>
+
+
   `,
+
   `<h4 class="text-green-500">A Filial, São Paulo</h4>
   <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
-  <h4 class="text-green-500">Parceiros</h4>
-
-  <h6>Hello</h6>
-
-   <a
-              target="_blank"
-              href="https://wa.me/5521970346980?text=Welcome%20to%20Fradema%20Tax Consulting"
-              rel="noreferrer"
-            >
-              <Iconify width={16} icon="logos:whatsapp-icon" /> WhatsApp
-            </a>
+  <h4 class="text-green-500">Informações</h4>
 
   <ul>
-      <li>Medical Assistant</li>
-      <li>Web Designer</li>
-      <li>Dog Trainer</li>
-      <li>Nursing Assistant</li>
-      <li>President of Sales</li>
+      <li>Rua Iraúna, 405 – Moema, São Paulo - SP</li>
+      <li>Telefone: (11) 5041-8787</li>
+      <li>frademasp@fradema.com.br</li>
+      <li>Seg à Qui das 9h às 18h | Sex das 9h às 17h</li>
   </ul>
+
+
   `,
+
   `<h4 class="text-green-500">A Filial, Campinas</h4>
-  <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
+  <p>A filial da Fradema Consultores Tributários em Campinas está estrategicamente localizada em uma casa na Av. Andrade Neves, 1851, um ponto de fácil acesso e referência na cidade, no estado de São Paulo. Situada em uma das avenidas mais conhecidas, a localização é prática tanto para clientes quanto para parceiros da região.
+Campinas, conhecida como a “Princesa do Oeste”, é uma cidade que concentra um dos principais polos econômicos e tecnológicos do Brasil. Fundada em 1774, possui uma rica história marcada pelo desenvolvimento agrícola e, posteriormente, pela industrialização. Hoje, com aproximadamente 1,2 milhão de habitantes, Campinas é reconhecida por sua inovação e por ser sede de importantes universidades, como a UNICAMP, um dos maiores centros de pesquisa do país.
+Nas imediações da nossa filial, destacam-se importantes pontos de referência, como o Parque Portugal (conhecido como Lagoa do Taquaral), um dos espaços mais frequentados para lazer e atividades ao ar livre, e o Estádio Moisés Lucarelli, palco de grandes eventos esportivos.
+A unidade de Campinas que foi inaugurada em 2017 é um ponto estratégico, já que é uma cidade que combina dinamismo econômico com uma excelente infraestrutura urbana, oferta de lazer e serviços, tornando-se uma das melhores cidades para viver e investir. Desta forma, a FRADEMA visa atender às necessidades de empresas e empreendedores da região com a qualidade e confiança.
+</p>
 
   <h4 class="text-green-500">Parceiros</h4>
 
@@ -78,8 +79,17 @@ A matriz da Fradema reflete a essência da cidade: conectada ao lado do aeroport
       <li>Nursing Assistant</li>
       <li>President of Sales</li>
   </ul>
+
   `,
 ];
+
+// const WHATS = [
+//   `<h1><a href="https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
+//     ,>WhatsApp</a></h1>`,
+//   `https://wa.me/552191367-7551?text=Bem-vindo(a)%20à%20Fradema%20São Paulo`,
+//   `https://wa.me/551999196-0007?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
+//     `,
+// ];
 // ----------------------------------------------------------------------
 
 const getCategory = (index: number) => {
@@ -103,7 +113,7 @@ const getCategory = (index: number) => {
 
 const getGalleryImgs = () => Array.from({ length: 6 }, (_, index) => _mock.image.filiais(index));
 
-// const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index));
+// const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index + 1));
 
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
@@ -111,6 +121,7 @@ export const _caseStudies = TITLES.map((_, index) => ({
   title: TITLES[index],
   createdAt: _mock.time(index),
   website: _mock.whats(index),
+  // whats: WHATS[index],
   description: _mock.description(index),
   coverUrl: _mock.image.filiais(index + 1),
   heroUrl: _mock.image.filiaisHero(index + 1),
