@@ -15,6 +15,7 @@ export const servicos = [
     items: [
       { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
       { title: "Blindagem Patrimonial", path: paths.servicos.blindagemPatrimonial },
+      { title: "Auditoria Fiscal", path: paths.servicos.auditoriaFiscal },
     ],
   },
 ];
@@ -125,7 +126,7 @@ export const pageLinks = [
 export const navData = [
   { title: "Home", path: "/" },
   { title: "Filiais", path: paths.filiais.caseStudies },
-  { title: "Pages", path: paths.pages, children: pageLinks },
+  // { title: "Pages", path: paths.pages, children: pageLinks },
   // { title: "elearning", path: paths.elearning.about },
   {
     title: "Serviços",

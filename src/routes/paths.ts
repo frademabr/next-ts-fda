@@ -10,6 +10,7 @@ export const paths = {
   servicos: {
     consultoriaTributaria: "/servicos/consultoria-tributaria",
     blindagemPatrimonial: "/servicos/blindagem-patrimonial",
+    auditoriaFiscal: "/servicos/auditoria-fiscal",
   },
 
   /**
