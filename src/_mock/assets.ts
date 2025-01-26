@@ -69,11 +69,9 @@ export const _nativeL = [
 ];
 
 export const _whats = [
-  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
-    `,
-  `https://wa.me/552191367-7551?text=Bem-vindo(a)%20à%20Fradema%20São Paulo`,
-  `https://wa.me/551999196-0007?text=Bem-vindo(a)%20à%20Fradema%20Campinas,
-    `,
+  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro`,
+  `https://wa.me/5511913677551?text=Bem-vindo(a)%20à%20Fradema%20São Paulo`,
+  `https://wa.me/5519991960007?text=Bem-vindo(a)%20à%20Fradema%20Campinas`,
 ];
 
 export const _fullAddress = [

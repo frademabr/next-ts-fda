@@ -1,6 +1,6 @@
-import type { DatePickerFormat } from 'src/utils/format-time';
+import type { DatePickerFormat } from "src/utils/format-time";
 
-import type { ISocialLinks } from './socials';
+import type { ISocialLinks } from "./socials";
 
 // ----------------------------------------------------------------------
 

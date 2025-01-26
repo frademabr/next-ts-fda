@@ -12,6 +12,9 @@ import { fDate } from "src/utils/format-time";
 import { _socials, _whats } from "src/_mock";
 import { FacebookIcon, LinkedinIcon, InstagramIcon } from "src/assets/icons";
 import { Iconify } from "src/components/iconify";
+import type { Variants } from "framer-motion";
+import { m } from "framer-motion";
+import { varFade } from "@/components/animate";
 
 // ----------------------------------------------------------------------
 
@@ -39,11 +42,13 @@ export function MarketingCaseStudyDetailsSummary({
     </Box>
   );
 
+  const variants: Variants = varFade("inUp", { distance: 24 });
+
   const renderWhats = () => {
     <Box sx={{ display: "flex" }}>
       {_whats.map((what) => (
-        <Iconify width={16} icon="logos:whatsapp-icon">
-          {what}
+        <Iconify key={what} width={16} icon="logos:whatsapp-icon">
+          <a href={what}>WhatsApp</a>
         </Iconify>
       ))}
     </Box>;
@@ -77,18 +82,25 @@ export function MarketingCaseStudyDetailsSummary({
       <Typography variant="overline" sx={{ mb: 2, color: "text.disabled" }}>
         Contatos
       </Typography>
-
       <Typography variant="h6" sx={{ mb: 2 }}>
         {title}
       </Typography>
-
       <Typography variant="body2">{description}</Typography>
 
-      {/* {renderWhats()} */}
+      {renderDivider()}
 
-      {/* {renderItem("Category", category)} */}
+      <Box sx={{ display: "flex" }}>
+        {_whats.map((what) => (
+          <a key={what} target="_blank" rel="noreferrer" href={what}>
+            WhatsApp
+          </a>
+          // <Iconify key={what} width={16} icon="logos:whatsapp-icon">
 
-      {/* {renderItem("Date", fDate(createdAt))} */}
+          // </Iconify>
+        ))}
+      </Box>
+
+      <a href={website}>TEST</a>
 
       {renderDivider()}
 

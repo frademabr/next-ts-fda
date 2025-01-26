@@ -73,11 +73,10 @@ A unidade de Campinas que foi inaugurada em 2017 é um ponto estratégico, já q
   <h4 class="text-green-500">Parceiros</h4>
 
   <ul>
-      <li>Medical Assistant</li>
-      <li>Web Designer</li>
-      <li>Dog Trainer</li>
-      <li>Nursing Assistant</li>
-      <li>President of Sales</li>
+      <li>Av Andrade Neves 1851 – Jardim Chapadão, Campinas - SP</li>
+      <li>Telefone: (19) 3743-4200</li>
+      <li>frademacampi@fradema.com.br</li>
+      <li>Seg à Qui das 9h às 18h | Sex das 9h às 17h</li>
   </ul>
 
   `,
@@ -111,16 +110,23 @@ const getCategory = (index: number) => {
   return _tags[0];
 };
 
+const getW = (index: number) => {
+  if ([1].includes(index)) return _whats[1];
+  if ([2].includes(index)) return _whats[2];
+  if ([3].includes(index)) return _whats[3];
+  return _whats[0];
+};
+
 const getGalleryImgs = () => Array.from({ length: 6 }, (_, index) => _mock.image.filiais(index));
 
-// const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index + 1));
+const getWebsite = () => Array.from({ length: 15 }, (_, index) => _mock.whats(index));
 
 export const _caseStudies = TITLES.map((_, index) => ({
   id: _mock.id(index),
   content: CONTENT[index],
   title: TITLES[index],
   createdAt: _mock.time(index),
-  website: _mock.whats(index),
+  website: getW(index),
   // whats: WHATS[index],
   description: _mock.description(index),
   coverUrl: _mock.image.filiais(index + 1),
