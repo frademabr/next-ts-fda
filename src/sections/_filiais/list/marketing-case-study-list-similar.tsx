@@ -32,14 +32,14 @@ export function MarketingCaseStudyListSimilar({ caseStudies, sx, ...other }: Pro
             Veja também
           </Typography>
 
-          {/* <Button
+          <Button
             component={RouterLink}
             href={paths.filiais.caseStudies}
             color="inherit"
             endIcon={<Iconify icon="solar:alt-arrow-right-outline" />}
           >
-            View all
-          </Button> */}
+            Voltar para Filiais
+          </Button>
         </Box>
 
         <Box

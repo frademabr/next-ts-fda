@@ -86,9 +86,5 @@ export const _mock = {
       `${CONFIG.assetsDir}/assets/images/filiais-hero/filiais-hero-${index + 1}.jpg`,
   },
 
-  video: (index: number) =>
-    [
-      `${CONFIG.assetsDir}/assets/video/video-1.mp4`,
-      `${CONFIG.assetsDir}/assets/video/video-2.mp4`,
-    ][index],
+  video: (index: number) => [][index],
 };

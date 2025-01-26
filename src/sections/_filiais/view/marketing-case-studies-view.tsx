@@ -27,8 +27,8 @@ export function MarketingCaseStudiesView({ caseStudies }: Props) {
     >
       <Typography variant="h2"> Filiais</Typography>
       <Typography sx={{ mt: 3, color: "text.secondary" }}>
-        Nullam tincidunt adipiscing enim.
-        <br /> Mauris sollicitudin fermentum libero.
+        15 Filiais, 13 no território nacional e 2 no exterior
+        <br />
       </Typography>
     </Box>
   );

@@ -376,13 +376,9 @@ export const _productNames = [
   `Fradema - Joinville`,
   `Fradema - Recife`,
   `Fradema - Manaus`,
-  `Fradema - Zona da Mata`,
+  `Fradema - Ribeirão Preto`,
   `Fradema - New York`,
   `Fradema - Orlando`,
-  `Breathable Tennis Shoes`,
-  `Elegant Evening Pumps`,
-  `Modern Skate Shoes`,
-  `Comfortable Walking Shoes`,
 ];
 
 // ----------------------------------------------------------------------
@@ -487,7 +483,7 @@ export const _tags = [
   `Fradema - Joinville`,
   `Fradema - Recife`,
   `Fradema - Manaus`,
-  `Fradema - Zona da Mata`,
+  `Fradema - Ribeirão Preto`,
   `Fradema - New York`,
   `Fradema - Orlando`,
 ];

@@ -6,7 +6,6 @@ import { useState, useCallback } from "react";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
-import Pagination, { paginationClasses } from "@mui/material/Pagination";
 
 import { MarketingCaseStudyItem } from "./marketing-case-study-item";
 
@@ -64,10 +63,10 @@ export function MarketingCaseStudyList({ caseStudies, sx, ...other }: Props) {
         ))}
       </Box>
 
-      <Pagination
+      {/* <Pagination
         count={10}
         sx={{ pb: 10, [`& .${paginationClasses.ul}`]: { justifyContent: "center" } }}
-      />
+      /> */}
     </>
   );
 }

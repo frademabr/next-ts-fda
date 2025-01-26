@@ -14,9 +14,7 @@ import { _testimonials } from "src/_mock";
 import { Markdown } from "src/components/markdown";
 import { CustomBreadcrumbs } from "src/components/custom-breadcrumbs";
 
-import { MarketingNewsletter } from "../marketing-newsletter";
 import { MarketingTestimonial } from "../marketing-testimonial";
-import { MarketingLandingFreeSEO } from "../landing/marketing-landing-free-seo";
 import { MarketingCaseStudyListSimilar } from "../list/marketing-case-study-list-similar";
 import { MarketingCaseStudyDetailsGallery } from "../details/marketing-case-study-details-gallery";
 import { MarketingCaseStudyDetailsSummary } from "../details/marketing-case-study-details-summary";
@@ -37,12 +35,12 @@ export function MarketingCaseStudyView({ caseStudy, relatedCaseStudies, sx, ...o
         {...other}
       >
         <Container>
-          <Box
+          {/* <Box
             component="img"
             alt={caseStudy?.title}
             src={caseStudy?.heroUrl}
             sx={{ width: 1, borderRadius: 2, objectFit: "cover", aspectRatio: "16/9" }}
-          />
+          /> */}
 
           <CustomBreadcrumbs
             sx={{ my: 5 }}

@@ -28,16 +28,19 @@ const TITLES = [
 const CONTENT = [
   `
   <h4 class="text-green-500">A Filial, Rio de Janeiro</h4>
-  <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
+  <p>Localizada no coração da cidade maravilhosa, a matriz da Fradema Consultores está situada na Rua México, 41 – 14º Andar, no Centro do Rio de Janeiro. Este endereço estratégico, localizado em frente ao Consulado Americano, reflete o espírito vibrante e histórico do bairro, que é conhecido como o principal polo financeiro e cultural da cidade com bancos, Justiça Federal, Câmara Municipal do Rio de Janeiro e Tribunal de Justiça do Estado.
+O Centro do Rio de Janeiro abriga ícones atualizações e históricos, como o Teatro Municipal, a Biblioteca Nacional, e o Museu de Arte Moderna (MAM), a poucos minutos de nossa localização. Além disso, chegamos à Cinelândia, um ponto de fácil acesso por transporte público, incluindo metrô e ônibus, o que facilita a chegada de clientes e parceiros.
+A cidade do Rio de Janeiro, fundada em 1565, tem uma rica história como a antiga capital do Brasil e um dos maiores símbolos da cultura brasileira. Com uma mistura única de modernidade e tradição, o Rio é reconhecido mundialmente por suas praias, como Copacabana e Ipanema, além do Pão de Açúcar e do Cristo Redentor, uma das sete maravilhas do mundo moderno.
+A matriz da Fradema reflete a essência da cidade: conectada ao lado do aeroporto Santos Drumond trazendo dinamismo. Nossas instalações no Centro são preparadas para atender clientes de todos os portes com excelência e confiança, continuando a tradição de anos de sucesso no mercado tributário.
+</p>
 
-  <h4 class="text-green-500">Parceiros</h4>
+  <h4 class="text-green-500">Informações</h4>
 
   <ul>
-      <li>Medical Assistant</li>
-      <li>Web Designer</li>
-      <li>Dog Trainer</li>
-      <li>Nursing Assistant</li>
-      <li>President of Sales</li>
+      <li>Rua México 41, Cinelândia, Centro Rio de Janeiro - RJ</li>
+      <li>Telefone: (21) 2217-0600</li>
+      <li>contato@fradema.com.br</li>
+      <li>Seg à Qui das 9h às 18h | Sex das 9h às 17h</li>
   </ul>
   `,
   `<h4 class="text-green-500">A Filial, São Paulo</h4>
