@@ -80,15 +80,26 @@ A unidade de Campinas que foi inaugurada em 2017 é um ponto estratégico, já q
   </ul>
 
   `,
+  `
+  <h4 class="text-green-500">A Filial, Brasília</h4>
+  <p>A filial da Fradema Consultores Tributários em Brasília está localizada na SHIS QL 06, conjunto 08, casa 11, no Lago Sul, uma das regiões mais nobres e privilegiadas da capital federal. A posição estratégica 10 minutos do Aeroporto Internacional de Brasília, facilita o acesso para clientes e parceiros de todo o Brasil, além de estar inserido em uma área tranquila e cercada de comodidades.
+Brasília, inaugurada em 1960, é um marco moderno e urbanístico mundial, sendo a única cidade moderna reconhecida como Patrimônio Cultural da Humanidade pela UNESCO. Planejada por Lúcio Costa e com edificações icônicas projetadas por Oscar Niemeyer, a capital do Brasil se destaca como um centro político, administrativo e cultural de relevância global. Com uma população de aproximadamente 3 milhões de habitantes em sua região metropolitana, Brasília combina funcionalidade e beleza em um ambiente inovador.
+O Lago Sul, onde nossa filial está situada, é conhecido por suas amplas áreas verdes, residências de alto padrão e proximidade com o Lago Paranoá, um dos cartões-postais da cidade. Nas imediações, encontramos locais de referência como o Pontão do Lago Sul, um espaço popular para gastronomia, lazer e esportes, além de estar a poucos minutos do centro político da capital.
+A presença da Fradema Consultores desde 2003 na capital federal simboliza a continuidade de 36 anos de excelência e inovação em soluções tributárias, reafirmando nosso compromisso com o desenvolvimento dos negócios locais e nacionais.
+</p>
+
+<ul>
+      <li>SHIS QL 06, Conjunto 08 - Casa 11 – Lago Sul</li>
+      <li>Telefone: (61) 3263-7672</li>
+      <li>frademadf@fradema.com.br</li>
+      <li>Seg à Qui das 9h às 18h | Sex das 9h às 17h</li>
+  </ul>
+
+
+
+  `,
 ];
 
-// const WHATS = [
-//   `<h1><a href="https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
-//     ,>WhatsApp</a></h1>`,
-//   `https://wa.me/552191367-7551?text=Bem-vindo(a)%20à%20Fradema%20São Paulo`,
-//   `https://wa.me/551999196-0007?text=Bem-vindo(a)%20à%20Fradema%20Rio de Janeiro,
-//     `,
-// ];
 // ----------------------------------------------------------------------
 
 const getCategory = (index: number) => {
@@ -120,7 +131,11 @@ const getWhats = (index: number) => {
   if ([7].includes(index)) return _whats[7];
   if ([8].includes(index)) return _whats[8];
   if ([9].includes(index)) return _whats[9];
-  if ([10].includes(index)) return _whats[10];
+  if ([11].includes(index)) return _whats[11];
+  if ([12].includes(index)) return _whats[12];
+  if ([13].includes(index)) return _whats[13];
+  if ([14].includes(index)) return _whats[14];
+  if ([15].includes(index)) return _whats[15];
   return _whats[0];
 };
 

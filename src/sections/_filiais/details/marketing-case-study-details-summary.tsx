@@ -57,14 +57,14 @@ export function MarketingCaseStudyDetailsSummary({
 
   const renderDivider = () => <Divider sx={{ my: 3, borderStyle: "dashed" }} />;
 
-  const renderItem = (label: string, value?: string | React.ReactNode) => (
-    <Box sx={{ "&:not(:first-of-type)": { mt: 2 } }}>
-      <Typography variant="overline" sx={{ mb: 1, display: "block", color: "text.disabled" }}>
-        {label}
-      </Typography>
-      {typeof value === "string" ? <Typography variant="body2">{value}</Typography> : value}
-    </Box>
-  );
+  // const renderItem = (label: string, value?: string | React.ReactNode) => (
+  //   <Box sx={{ "&:not(:first-of-type)": { mt: 2 } }}>
+  //     <Typography variant="overline" sx={{ mb: 1, display: "block", color: "text.disabled" }}>
+  //       {label}
+  //     </Typography>
+  //     {typeof value === "string" ? <Typography variant="body2">{value}</Typography> : value}
+  //   </Box>
+  // );
 
   return (
     <Box
