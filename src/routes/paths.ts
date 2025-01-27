@@ -13,6 +13,8 @@ export const paths = {
     auditoriaFiscal: "/servicos/auditoria-fiscal",
     recuperacaoEmpresas: "/servicos/recuperacao-empresas",
     contabilidade: "/servicos/contabilidade",
+    offshoreExterior: "/servicos/offshore-exterior",
+    marcasPatentes: "/servicos/marcas-patentes",
   },
 
   /**

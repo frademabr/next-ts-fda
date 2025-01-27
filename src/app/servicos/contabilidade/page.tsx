@@ -4,7 +4,7 @@ import Contabilidade from "@/sections/_servicos/contabilidade/contabilidade";
 
 // ----------------------------------------------------------------------
 
-export const metadata = { title: `Fradema Serviços Consultoria Tributária - ${CONFIG.appName}` };
+export const metadata = { title: `Fradema Serviços Contabilidade - ${CONFIG.appName}` };
 
 export default function Page() {
   return <Contabilidade />;

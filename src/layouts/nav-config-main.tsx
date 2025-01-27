@@ -15,9 +15,11 @@ export const servicos = [
     items: [
       { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
       { title: "Blindagem Patrimonial", path: paths.servicos.blindagemPatrimonial },
-      { title: "Auditoria Fiscal", path: paths.servicos.auditoriaFiscal },
+      { title: "Auditoria Fiscal e Contábil", path: paths.servicos.auditoriaFiscal },
       { title: "Recuperação de Empresas", path: paths.servicos.recuperacaoEmpresas },
       { title: "Contabilidade", path: paths.servicos.contabilidade },
+      { title: "Offshore no Exterior", path: paths.servicos.offshoreExterior },
+      { title: "Marcas e Patentes", path: paths.servicos.marcasPatentes },
     ],
   },
 ];
