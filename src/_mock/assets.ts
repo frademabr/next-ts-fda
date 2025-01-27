@@ -74,6 +74,16 @@ export const _whats = [
   `https://wa.me/5519991960007?text=Bem-vindo(a)%20à%20Fradema%20Campinas`,
   `https://wa.me/5561993212541?text=Bem-vindo(a)%20à%20Fradema%20Brasília`,
   `https://wa.me/5571981352347?text=Bem-vindo(a)%20à%20Fradema%20Salvador`,
+  `https://wa.me/5532998201070?text=Bem-vindo(a)%20à%20Fradema%20Piraúba`,
+  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Vitória`,
+  `https://wa.me/5531984032522?text=Bem-vindo(a)%20à%20Fradema%20Belo Horizonte`,
+  `https://wa.me/5541988580841?text=Bem-vindo(a)%20à%20Fradema%20Curitiba`,
+  `https://wa.me/5547988092362?text=Bem-vindo(a)%20à%20Fradema%20Joinville`,
+  `https://wa.me/5581993398499?text=Bem-vindo(a)%20à%20Fradema%20Recife`,
+  `https://wa.me/5592995058017?text=Bem-vindo(a)%20à%20Fradema%20Manaus`,
+  `https://wa.me/5516991036397?text=Bem-vindo(a)%20à%20Fradema%20Ribeirão Preto`,
+  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Nova Iorque`,
+  `https://wa.me/5521970346980?text=Bem-vindo(a)%20à%20Fradema%20Orlando`,
 ];
 
 export const _fullAddress = [
