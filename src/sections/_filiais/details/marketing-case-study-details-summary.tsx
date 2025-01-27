@@ -16,6 +16,8 @@ import type { Variants } from "framer-motion";
 import { m } from "framer-motion";
 import { varFade } from "@/components/animate";
 import { Button } from "@/components/catalyst-ui-kit/typescript/button";
+import { RouterLink } from "@/routes/components";
+import { paths } from "@/routes/paths";
 
 // ----------------------------------------------------------------------
 

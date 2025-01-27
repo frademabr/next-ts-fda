@@ -64,7 +64,7 @@ export function MarketingCaseStudyView({ caseStudy, relatedCaseStudies, sx, ...o
 
             <Grid size={{ xs: 12, md: 8 }}>
               <Markdown content={caseStudy?.content || ""} />
-              <MarketingCaseStudyDetailsGallery images={caseStudy?.galleryImgs || []} />
+              {/* <MarketingCaseStudyDetailsGallery images={caseStudy?.galleryImgs || []} /> */}
             </Grid>
           </Grid>
         </Container>
