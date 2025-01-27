@@ -16,6 +16,8 @@ export const servicos = [
       { title: "Consultoria Tributária", path: paths.servicos.consultoriaTributaria },
       { title: "Blindagem Patrimonial", path: paths.servicos.blindagemPatrimonial },
       { title: "Auditoria Fiscal", path: paths.servicos.auditoriaFiscal },
+      { title: "Recuperação de Empresas", path: paths.servicos.recuperacaoEmpresas },
+      { title: "Contabilidade", path: paths.servicos.contabilidade },
     ],
   },
 ];

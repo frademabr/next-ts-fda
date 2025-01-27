@@ -11,6 +11,8 @@ export const paths = {
     consultoriaTributaria: "/servicos/consultoria-tributaria",
     blindagemPatrimonial: "/servicos/blindagem-patrimonial",
     auditoriaFiscal: "/servicos/auditoria-fiscal",
+    recuperacaoEmpresas: "/servicos/recuperacao-empresas",
+    contabilidade: "/servicos/contabilidade",
   },
 
   /**
