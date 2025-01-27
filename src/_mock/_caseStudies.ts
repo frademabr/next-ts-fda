@@ -70,7 +70,8 @@ Nas imediações da nossa filial, destacam-se importantes pontos de referência,
 A unidade de Campinas que foi inaugurada em 2017 é um ponto estratégico, já que é uma cidade que combina dinamismo econômico com uma excelente infraestrutura urbana, oferta de lazer e serviços, tornando-se uma das melhores cidades para viver e investir. Desta forma, a FRADEMA visa atender às necessidades de empresas e empreendedores da região com a qualidade e confiança.
 </p>
 
-  <h4 class="text-green-500">Parceiros</h4>
+    <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>Av Andrade Neves 1851 – Jardim Chapadão, Campinas - SP</li>
@@ -88,6 +89,9 @@ O Lago Sul, onde nossa filial está situada, é conhecido por suas amplas áreas
 A presença da Fradema Consultores desde 2003 na capital federal simboliza a continuidade de 36 anos de excelência e inovação em soluções tributárias, reafirmando nosso compromisso com o desenvolvimento dos negócios locais e nacionais.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>SHIS QL 06, Conjunto 08 - Casa 11 – Lago Sul</li>
       <li>Telefone: (61) 3263-7672</li>
@@ -104,6 +108,9 @@ Salvador, a primeira capital do Brasil, foi fundada em 1549 e é reconhecida por
 O bairro Caminho das Árvores, onde nossa filial está situada, é uma área nobre e bem planejada, conhecida por sua oferta de serviços, escritórios corporativos e shoppings, como o Salvador Shopping e o Shopping da Bahia. A região também é um importante ponto de conexão para diferentes partes da cidade, facilitando o acesso de clientes e parceiros.
 A unidade de Salvador que foi inaugurada em 2007, reflete o compromisso da Fradema em levar soluções tributárias eficientes e personalizadas a todas as regiões do Brasil. Com 36 anos de experiência, estamos prontos para apoiar empresas e empreendedores locais, contribuindo para o desenvolvimento e sucesso de seus negócios.
 </p>
+
+  <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>Alameda Mongubas, 57 – Caminho das Árvores, Salvador - Bahia</li>
@@ -123,6 +130,9 @@ A Praça Guarurama, onde nossa filial está situada, é um ponto central de Pira
 A unidade de Piraúba reafirma o compromisso da Fradema em levar soluções tributárias de excelência para todas as regiões do Brasil. Nossa missão é contribuir para o desenvolvimento de empresas locais e regionais, valorizando o potencial econômico de Minas Gerais e da pujante indústria moveleira da região.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>Praça Guarurama, 68 – Sobreloja – Centro, Piraúba - Minas Gerais</li>
       <li>Telefone: (32) 3573-1508</li>
@@ -138,6 +148,9 @@ A unidade de Piraúba reafirma o compromisso da Fradema em levar soluções trib
 Vitória, capital do estado, destaca-se por sua geografia única, formada por ilhas e canais, oferecendo um cenário natural encantador. Fundada em 1551, é uma das capitais mais antigas do Brasil, mas mantém um dinamismo moderno. Com uma população aproximada de 370 mil habitantes, Vitória ocupa a 12ª posição entre as capitais no IPS e é referência em eficiência administrativa sendo um dos polos de atuação da Petrobras. A cidade é um importante centro de logística portuária, com destaque para o Porto de Vitória, que movimenta grande parte da economia capixaba.
 Bento Ferreira, o bairro onde estamos situados, é conhecido por sua acessibilidade e proximidade com órgãos governamentais e empresariais, como a Assembleia Legislativa do Espírito Santo e o Tribunal de Justiça. Além disso, está próximo a avenidas importantes, como a Reta da Penha, que conecta diversos bairros estratégicos de Vitória.
 </p>
+
+  <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>Av Joubert de Barros, 690 – Bento Ferreira, Vitória - Espírito Santo</li>
@@ -156,6 +169,9 @@ O bairro Cidade Jardim, onde nossa filial está situada, é conhecido por sua in
 A unidade de Belo Horizonte reforça o compromisso da Fradema em oferecer soluções tributárias de excelência, alinhadas às necessidades específicas do mercado mineiro.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>Rua Eduardo Porto, 333 – Cidade Jardim, Belo Horizonte - Minas Gerais</li>
       <li>Telefone: (31) 3222-9578</li>
@@ -173,6 +189,9 @@ O bairro São Francisco, onde nossa filial está situada, é um dos mais tradici
 A unidade de Curitiba foi inaugurada em 2011 e reforça o compromisso da Fradema de oferecer em soluções tributárias com excelência em todas as regiões do Brasil.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>Rua Paula Gomes, 968 – São Francisco, Curitiba - Paraná</li>
       <li>Telefone: (41) 3353-1001</li>
@@ -188,6 +207,9 @@ A unidade de Curitiba foi inaugurada em 2011 e reforça o compromisso da Fradema
 Joinville, a maior cidade de Santa Catarina, é reconhecida como um dos polos industriais mais importantes do país. Fundada em 1851, a cidade é uma referência nacional em qualidade de vida, desenvolvimento econômico e inovação tecnológica. Com aproximadamente 600 mil habitantes, é também um importante centro cultural e turístico, sendo conhecida como a “Cidade das Flores”, “Cidade das Bicicletas” e a capital nacional da Dança, com eventos renomados como o Festival de Dança de Joinville.
 A unidade de Joinville foi inaugurada em 2008, reforça a presença da Fradema na região sul do Brasil, oferecendo soluções tributárias personalizadas e inovadoras, alinhadas às necessidades do mercado local. Nosso compromisso é fornecer atendimento de excelência, contribuindo para o sucesso de empresas e empreendedores da região.
 </p>
+
+  <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>Rua Esperanto, 52 – Anita Garibaldi, Joinville - Santa Catarina</li>
@@ -206,6 +228,9 @@ O bairro Espinheiro é valorizado por sua localização central e proximidade co
 A unidade de Recife foi inaugurada em 2013, refletindo o compromisso da Fradema em atender às necessidades específicas do mercado nordestino.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>Rua Conselheiro Portela, 286 – Espinheiro, Recife - Pernambuco</li>
       <li>Telefone:   (81) 3129-6450</li>
@@ -223,6 +248,9 @@ Manaus, capital do Amazonas, é um dos principais polos econômicos da região n
 A unidade de Manaus reflete a expansão da Fradema em uma região estratégica do Brasil, oferecendo soluções tributárias que aproveitam os benefícios únicos da Zona Franca de Manaus.
 </p>
 
+  <h4 class="text-green-500">Informações</h4>
+
+
   <ul>
       <li>Av. Rio Madeira, 32 A, Manaus - Amazonas</li>
       <li>Telefone:   (92) 3232-4790 | (92) 3017-7499</li>
@@ -234,7 +262,15 @@ A unidade de Manaus reflete a expansão da Fradema em uma região estratégica d
 
   `
   <h4 class="text-green-500">A Filial, Nova Iorque(New York)</h4>
-  <p></p>
+  <p>Inaugurada como a primeira unidade internacional da Fradema Consultores, a filial em Nova Iorque marca um passo significativo na expansão global da empresa. Localizada no coração de Manhattan, na 12 East, 49th St, 19º andar – Room 1902, a unidade está estrategicamente posicionada em uma das regiões mais prestigiadas e dinâmicas do mundo, próxima ao Rockefeller Center e à Grand Central Terminal.
+Nova Iorque, com uma população de aproximadamente 8,8 milhões de habitantes, abriga a maior comunidade de brasileiros, sendo em torno de 500 mil. É considerada a capital financeira do mundo, sendo sede de algumas das maiores corporações globais, bancos, e instituições de investimento. A cidade também é um importante centro cultural, tecnológico e comercial, atraindo empresas e investidores de todos os continentes.
+A escolha de Manhattan como sede da primeira filial americana reflete o compromisso da Fradema em oferecer soluções tributárias de excelência em um mercado internacional competitivo e desafiador. A localização na Midtown Manhattan proporciona fácil acesso a clientes corporativos e individuais, que buscam suporte especializado para operar tanto nos Estados Unidos quanto no Brasil.
+Com mais de 36 anos de experiência, a Fradema combina sua expertise no mercado brasileiro com soluções adaptadas ao ambiente regulatório e tributário dos Estados Unidos. A filial de Nova Iorque está preparada para atender empresas e empreendedores que buscam internacionalizar seus negócios, aproveitar oportunidades de investimento e navegar pelas complexidades fiscais de ambos os países.
+A expansão para Nova Iorque é um marco histórico para a Fradema, consolidando sua posição como uma referência em consultoria tributária e reafirmando seu compromisso em oferecer serviços personalizados, inovadores e globais.
+</p>
+
+  <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>12 East, 49th St, 19° andar – Room 1902 – Manhattan, Nova Iorque - EUA</li>
@@ -247,7 +283,14 @@ A unidade de Manaus reflete a expansão da Fradema em uma região estratégica d
 
   `
   <h4 class="text-green-500">A Filial, Orlando</h4>
-  <p></p>
+  <p>A Fradema Consultores dá mais um passo importante em sua expansão internacional com a inauguração da unidade em Orlando, estado da Flórida, no início de 2025. Localizada no endereço 8810 Commodity Cir – Bloco 36 – Room 6, a filial está estrategicamente posicionada em uma das cidades mais vibrantes e economicamente dinâmicas dos Estados Unidos.
+Orlando, com uma população de aproximadamente 310 mil habitantes, abriga uma comunidade brasileira significativa. Estima-se que mais de 100 mil brasileiros residam no Condado de Orange, onde Orlando está localizada, com um crescimento anual estimado em 10%, contribuindo ativamente para a diversidade cultural e o desenvolvimento econômico local.
+Orlando, é mundialmente conhecida como um importante centro de turismo e entretenimento, sendo a sede de gigantes como Walt Disney World Resort e Universal Studios. Além disso, a cidade tem se consolidado como um polo crescente para empresas de tecnologia, inovação e serviços corporativos, tornando-se uma escolha estratégica para a Fradema.
+A Fradema está preparada para auxiliar empresas e empreendedores a navegarem pelas complexidades do ambiente fiscal americano, promovendo segurança, eficiência e excelência em cada projeto. Essa nova unidade simboliza não apenas a expansão da Fradema no cenário internacional, mas também sua missão de conectar negócios a oportunidades globais com o mesmo compromisso ético e profissional que marcou sua trajetória no Brasil e no exterior.
+</p>
+
+  <h4 class="text-green-500">Informações</h4>
+
 
   <ul>
       <li>8810 commodity cir – Bloco 36 – Room 6, Orlando - Florida</li>
