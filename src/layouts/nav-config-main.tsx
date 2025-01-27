@@ -20,6 +20,7 @@ export const servicos = [
       { title: "Contabilidade", path: paths.servicos.contabilidade },
       { title: "Offshore no Exterior", path: paths.servicos.offshoreExterior },
       { title: "Marcas e Patentes", path: paths.servicos.marcasPatentes },
+      { title: "Contratos Artísticos", path: paths.servicos.contratosArtisticos },
     ],
   },
 ];

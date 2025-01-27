@@ -15,6 +15,7 @@ export const paths = {
     contabilidade: "/servicos/contabilidade",
     offshoreExterior: "/servicos/offshore-exterior",
     marcasPatentes: "/servicos/marcas-patentes",
+    contratosArtisticos: "/servicos/contratos-artisticos",
   },
 
   /**
