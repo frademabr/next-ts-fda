@@ -1,5 +1,7 @@
-import React from "react";
+import { Bubble } from "@typebot.io/nextjs";
 
-export default function Typebot() {
-  return <Popup typebot="lead-generation-l47h71n" autoShowDelay={3000} />;
+export function Typebot() {
+  return (
+    <Bubble typebot="lead-generation-l47h71n" theme={{ button: { backgroundColor: "#0dce64" } }} />
+  );
 }

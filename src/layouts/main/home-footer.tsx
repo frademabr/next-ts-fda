@@ -8,6 +8,7 @@ import { FacebookIcon, InstagramIcon, LinkedinIcon } from "src/assets/icons";
 
 import { Logo } from "src/components/logo";
 import { IconButton } from "@mui/material";
+import { Typebot } from "@/app/components/typebot/typebot";
 
 // ----------------------------------------------------------------------
 type Props = BoxProps & Partial<ICaseStudyProps>;
@@ -47,7 +48,7 @@ export function HomeFooter({
         }}
       >
         <Logo isSingle sx={{ mb: 1 }} />
-
+        <Typebot />
         <Box component="span" sx={{ color: "text.secondary", typography: "caption" }}>
           Fradema Team {year} © All rights reserved.
         </Box>
