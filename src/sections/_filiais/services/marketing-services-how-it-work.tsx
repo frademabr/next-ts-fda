@@ -19,17 +19,24 @@ import { Container } from "@mui/material";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <div className="object-cover w-full h-auto">
-      <m.div className="-mt-10">
-        <Image src={bluesky} alt="hero_image1" width={1600} />
+    <section className="lg:w-[1500px] md:w-[1050px]">
+      <m.div className=" lg:-mb-10">
+        <Image className="object-cover" src={bluesky} alt="hero_image1" />
+      </m.div>
 
-        <h1 className="tracking-tighter text-center -mt-60 md:text-7xl sm:text-5xl text-pretty h1-seo">
-          FRADEMA
-        </h1>
-      </m.div>
-      <m.div className="w-full -mt-60">
-        <Image className="" src={nyblue} alt="hero_image2" width={1600} />
-      </m.div>
-    </div>
+      <div className=" md:-mt-48">
+        <div className="lg:mt-10">
+          <h1 className=" tracking-tighter text-center lg:text-[220px] md:text-[180px] sm:text-[120px]  font-bold lg:mb-3">
+            FRADEMA
+          </h1>
+        </div>
+
+        <Image
+          className="object-cover w-[2800px] lg:-mt-32 md:-mt-30 sm:-mt-12"
+          src={nyblue}
+          alt="hero_image2"
+        />
+      </div>
+    </section>
   );
 }
