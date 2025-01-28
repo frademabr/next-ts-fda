@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import { CONFIG } from "src/global-config";
 import { m } from "framer-motion";
 
-import skynight from "public/assets/images/home/skynight.jpg";
+import bluesky from "public/assets/images/home/bluesky.jpg";
 import nyblue from "public/assets/images/home/nyblue.png";
 
 import Image from "next/image";
@@ -19,9 +19,9 @@ import { Container } from "@mui/material";
 
 export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
   return (
-    <div className="-mt-96">
+    <div className="-mt-60">
       <m.div className="w-full sm:mt-60">
-        <Image src={skynight} alt="hero_image1" width={1600} loading="lazy" />
+        <Image src={bluesky} alt="hero_image1" height={1400} width={1600} />
         <h1 className="tracking-tighter text-center -mt-96 md:text-7xl md:-mb-60 sm:text-5xl sm:-mb-20 text-pretty h1-seo">
           FRADEMA
         </h1>
