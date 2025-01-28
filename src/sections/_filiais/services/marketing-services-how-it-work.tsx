@@ -32,7 +32,7 @@ export function MarketingServicesHowItWork({ sx, ...other }: BoxProps) {
 
       <div className="">
         <Image
-          className="object-cover lg:-mt-50 md:-mt-30 sm:-mt-12"
+          className="object-cover lg:-mt-55 md:-mt-30 sm:-mt-12"
           src={nyblue}
           alt="hero_image2"
         />
